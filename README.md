@@ -14,6 +14,7 @@ npm run dev
 For Tathva Tech Team developers:
 
 Instructions: 
+
 0. Communicate everything in whatsapp group.
 1. Repo is is NEXT JS
 2. Use Tailwind CSS for 95% of CSS

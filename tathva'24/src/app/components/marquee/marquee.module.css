@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Pricedown";
+  src: url("/fonts/pricedown-bl.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.marquee {
+  font-family: "Pricedown", sans-serif;
+  font-size: 9rem;
+}
+.element1 {
+  color: #b70202;
+}
+.element2 {
+  color: #0a0a00;
+  text-shadow: -2px -2px 0 #b70202, 2px -2px 0 #b70202, -2px 2px 0 #b70202,
+    2px 2px 0 #b70202;
+}

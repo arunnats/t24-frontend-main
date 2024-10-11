@@ -16,16 +16,31 @@ export default function Marquee({ element1, element2, color1, color2 }) {
     const marquee = marqueeRef.current;
     marquee.innerHTML += marquee.innerHTML;
     const totalWidth = marquee.scrollWidth / 2;
+
+    // Animate the marquee scrolling
     gsap.to(marquee, {
       x: -totalWidth,
       duration: 50,
-      ease: "none",
       repeat: -1,
+      delay: 1,
     });
+
+    // Animate the scale and opacity on load
+    gsap.fromTo(
+      marquee,
+      { opacity: 0, scale: 0.5 },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 1.5,
+        delay: 0.5,
+        ease: "power2.out",
+      }
+    );
   }, [marqueeRef]);
 
   return (
-    <div className={`relative overflow-hidden ${styles.marqueecont}`}>
+    <div className={`relative overflow-hidden flex items-center justify-center ${styles.marqueecont}`}>
       <div
         ref={marqueeRef}
         className={`${styles.marquee} whitespace-nowrap flex`}
@@ -45,6 +60,22 @@ export default function Marquee({ element1, element2, color1, color2 }) {
         >
           {element2}
         </span>
+        <span
+          style={{ color: color1 }}
+          className={`-mt-8 mr-8 ${styles.element1}`}
+        >
+          {element1}
+        </span>
+        <span
+          style={{
+            color: color2,
+            textShadow: `-2px -2px 0 ${color1}, 2px -2px 0 ${color1}, -2px 2px 0 ${color1}, 2px 2px 0 ${color1}`,
+          }}
+          className={`-mt-8 mr-8 ${styles.element2}`}
+        >
+          {element2}
+        </span>
+        
       </div>
     </div>
   );

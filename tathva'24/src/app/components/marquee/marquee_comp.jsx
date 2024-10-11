@@ -12,6 +12,27 @@ gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, CSSRulePlugin, Draggable);
 export default function Marquee({ element1, element2, color1, color2 }) {
   const marqueeRef = useRef(null);
 
+// How to use : 
+
+// const element1 = "automative ";
+// const element2 = "summit ";
+// const color1 = "#b70202";
+// const color2 = "#0a0a00";
+
+// const Page = () => {
+// return (
+//   <div>
+//     <Marquee
+//       element1={element1}
+//       element2={element2}
+//       color1={color1}
+//       color2={color2}
+//     />
+//   </div>
+// );
+// };
+
+
   useEffect(() => {
     const marquee = marqueeRef.current;
     marquee.innerHTML += marquee.innerHTML;

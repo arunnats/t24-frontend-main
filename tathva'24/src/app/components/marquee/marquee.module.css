@@ -9,11 +9,15 @@
   font-family: "Pricedown", sans-serif;
   font-size: 9rem;
 }
-.element1 {
-  color: #b70202;
+
+.marquee {
+  opacity: 0; /* Initially hidden */
+  transform: scale(0.5); /* Initially scaled down */
+  will-change: opacity, transform; /* Optimize animation performance */
 }
-.element2 {
-  color: #0a0a00;
-  text-shadow: -2px -2px 0 #b70202, 2px -2px 0 #b70202, -2px 2px 0 #b70202,
-    2px 2px 0 #b70202;
+
+.marqueecont {
+  /* Other styles for the marquee container */
+  overflow: hidden;
+  position: relative;
 }

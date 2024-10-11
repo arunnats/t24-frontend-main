@@ -1,40 +1,22 @@
-"use client";
-import React, { useRef, useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { CSSRulePlugin } from "gsap/CSSRulePlugin";
-import { Draggable } from "gsap/Draggable";
-import styles from "./marquee.module.css";
+import React from "react";
+import Marquee from "./marquee_comp";
 
-gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, CSSRulePlugin, Draggable);
+const element1 = "automative ";
+const element2 = "summit ";
+const color1 = "#b70202";
+const color2 = "#0a0a00";
 
-export default function Home() {
-  const marqueeRef = useRef(null);
-  const element1 = "automative ";
-  const element2 = "summit ";
-
-  useEffect(() => {
-    const marquee = marqueeRef.current;
-    marquee.innerHTML += marquee.innerHTML;
-    const totalWidth = marquee.scrollWidth / 2;
-    gsap.to(marquee, {
-      x: -totalWidth,
-      duration: 50,
-      ease: "none",
-      repeat: -1,
-    });
-  }, [marqueeRef]);
-
+const Page = () => {
   return (
-    <div className={`relative overflow-hidden  ${styles.marqueecont}`}>
-      <div
-        ref={marqueeRef}
-        className={`${styles.marquee} whitespace-nowrap flex`}
-      >
-        <span className={`-mt-8 mr-8 ${styles.element1}`}>{element1}</span>{" "}
-        <span className={`-mt-8 mr-8 ${styles.element2}`}>{element2}</span>
-      </div>
+    <div>
+      <Marquee
+        element1={element1}
+        element2={element2}
+        color1={color1}
+        color2={color2}
+      />
     </div>
   );
-}
+};
+
+export default Page;

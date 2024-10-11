@@ -5,11 +5,10 @@
   font-weight: 400;
   font-size:0.6rem;
   font-style: italic;
-  border-radius: 7vh;
+  border-color: black;
     display: flex;
     flex-grow: 1;
-    border-color: rgb(0, 0, 0);
-    border-width: 0.2rem;
+    border-width: 0.1rem;
     justify-content: center;
   /* className="w-full h-full object-fit ml-7 */
 }

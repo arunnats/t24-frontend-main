@@ -37,8 +37,8 @@ const FooterMobile = () => {
             </div>
           </div>
 
-          <div className="flex mt-7">
-            <div className=" w-[85%] h-full flex  ">
+          <div className="flex mt-7 max-h-44">
+            <div className=" w-[79%] h-full flex  ml-[7vw]">
               {/* <img
               src="/table.svg"
               alt="My Icon"
@@ -46,17 +46,17 @@ const FooterMobile = () => {
             /> */}
               <Quicklink/>
             </div>
-            <div className=" w-[23%] flex items-center justify-center">
+            <div className=" w-[21%] flex items-center justify-center">
               <img
                 src="/buttons.svg"
                 alt="My Icon"
-                className="h-3/5 object-fit ml-8"
+                className="h-3/5 object-fit "
               />
             </div>
           </div>
 
           <div className="flex  max-h-48 ">
-            <div className=" w-[49%]  flex justify-center items-center">
+            <div className=" w-[47%]  flex justify-center items-center">
               <img
                 src="/button.svg"
                 alt="My Icon"
@@ -79,8 +79,8 @@ const FooterMobile = () => {
             </div>
           </div>
 
-          <div className=" h-[10vh] flex justify-center overflow-y-hidden">
-            <div className="border-2 border-gray-200 rounded-tr-3xl rounded-tl-3xl w-1/3 h-full object-fit p-2 pt-0.5 border-b-0 ">
+          <div className="flex justify-center mr-5 overflow-y-hidden">
+            <div className="border-2 border-gray-200 rounded-tr-3xl rounded-tl-3xl w-1/3 h-full object-fit p-4 pt-3 border-b-0 ">
               <img
                 src="/bottom.svg"
                 alt="My Icon"

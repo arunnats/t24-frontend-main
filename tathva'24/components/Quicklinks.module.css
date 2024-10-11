@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.head {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-size:0.6rem;
+  font-style: italic;
+  /* border-radius: 1rem; */
+    display: flex;
+    flex-grow: 1;
+    border-color: rgb(0, 0, 0);
+    border-width: 0.2rem;
+    justify-content: center;
+  /* className="w-full h-full object-fit ml-7 */
+}
+

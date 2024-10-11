@@ -18,55 +18,48 @@
 }
 
 .cont{
-    display: grid;
-    height: 12vh;
-    grid-template-columns: 2fr 19fr 2fr 10fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "c1 c3 c4 c5"
-    "c2 c3 c6 c5";
+    display: flex;
+   
+
 }
 
 
 .c1{
-    grid-area: c1;
-    border-bottom-width: 0.12rem;
+   flex:1;
+    flex-direction: column;
     border-color: rgb(255, 255, 255);
 }
 
 .c2{
-    grid-area: c2;
+    flex:8;
+    height: 80%;
+    margin-top: 3vh;
 }
 
 .c3{
-    grid-area: c3;
-    margin-right: -0.3rem;
-    max-width: 280px;
+    flex:0.5;
+    flex-grow: 1;
+    flex-direction: column;
+    flex:1.5;
 }
 
 .c4{
+    flex:4;
     display: flex;
-    flex-grow: 1;
-    border-bottom-width: 0.12rem;
-    grid-area: c4;
-}
-
-.c5{
-    display: flex;
+    border-width: 0.12rem;
+    border-bottom-left-radius: 2rem;
+    border-top-width: 0em;
+    border-right-width: 0em;
     justify-content: center;
     align-items: center;
-    grid-area: c5;
-    border-width: 0.12rem;
-    border-bottom-left-radius: 3rem;
-    border-top-width: 0em;
-    border-top-color: rgb(0, 0, 0);
-    border-right-width: 0;
+    height: 100%;
+    padding-left:0.3rem;
+    padding-bottom: 1rem;
 }
 
-.c6{
-    grid-area: c6;
+.c4 img{
+    height: 11vh;
 }
-
 
 
 

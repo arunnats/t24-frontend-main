@@ -3,7 +3,7 @@ export default function Quicklink() {
   return (
     <div className={styles.head}>
     
-    <div className="flex flex-col flex-1 rounded-xl border-2 p-4 bg-orange-100">
+    <div className="flex flex-col flex-1 border-2 p-4 bg-orange-100">
       <div className="flex mb-4 border-orange-500 border-4 justify-center"  >Quick Links</div>
       <div className="flex justify-between border-orange-500 border-4 p-2">
         <div className="flex-1 mr-4 pr-4 border-r-2 border-orange-500">

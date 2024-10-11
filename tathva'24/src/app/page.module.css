@@ -1,17 +1,2 @@
 
 
-/* 
-@media (min-width: 468px)
-{
-    .foot_mob{
-        display: none;
-    }
-} */
-
-@media (max-width: 468px)
-{
-}
-
-.foot_pc{
-    display: none;
-}

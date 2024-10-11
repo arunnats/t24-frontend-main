@@ -1,11 +1,12 @@
 import styles from "./page.module.css";
 import FooterMobile from "./footermobile";
+// import FooterPC from "./footerpc";
 
 const Page = () => {
   return (
-    <div className="flex flex-col justify-end h-[100vh] box-border overflow-x-hidden">
-      <FooterMobile />
-    </div>
+    <div >
+    <FooterMobile />
+   </div>
   );
 };
 

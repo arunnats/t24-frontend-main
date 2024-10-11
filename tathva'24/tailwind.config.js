@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       height: {
         '115': '115%', // Add a custom height of 60vh
-        '95': '95%', // Add a custom height of 60vh
+        '95': '95%',
+        '98': '98%', // Add a custom height of 60vh
       },
 
       colors: {

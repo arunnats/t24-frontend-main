@@ -1,19 +1,31 @@
-import styles from './page.module.css';
+import styles from "./page.module.css";
 
-const Footer = () => {
+const FooterMobile = () => {
   return (
     <footer className="flex flex-col w-screen bg-gray-700 ">
-      <div className="flex flex-col h-[26vh]">
-        <div className="flex h-[6vh] ml-20">
-          <img src="/metal.svg" alt="My Icon" />
+      <div className="flex flex-col h-[18vh]">
+        <div className="flex h-[6vh]">
+          <img src="/metal.svg" alt="My Icon"/>
         </div>
         <div className={styles.cont}>
-          <div className={styles.c1}>c1</div>
-          <div className={styles.c2}>c2</div>
-          <div className={styles.c3}>c3</div>
-          <div className={styles.c4}>c4</div>
-          <div className={styles.c5}>c5</div>
-          <div className={styles.c6}>c6</div>
+          <div className={styles.c1}></div>
+          <div className={styles.c2}></div>
+          <div className={styles.c3}>
+            <img
+              src="/small_display.svg"
+              alt="My Icon"
+              className="h-full object-fit"
+            />
+          </div>
+          <div className={styles.c4}></div>
+          <div className={styles.c5}>
+            <img
+              src="/speaker.svg"
+              alt="My Icon"
+              className="h-4/5 object-fit "
+            />
+          </div>
+          <div className={styles.c6}></div>
         </div>
       </div>
 
@@ -34,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex h-[20vh]">
+      <div className="flex h-[15vh]">
         <div className=" w-[48%]  flex justify-center items-center">
           <img
             src="/button.svg"
@@ -74,7 +86,7 @@ const Footer = () => {
 const Page = () => {
   return (
     <div className="flex flex-col justify-end h-[100vh]">
-      <Footer />
+      <FooterMobile />
     </div>
   );
 };

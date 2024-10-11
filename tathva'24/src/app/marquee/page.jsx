@@ -30,10 +30,10 @@ export default function Home() {
     <div className={`relative overflow-hidden  ${styles.marqueecont}`}>
       <div
         ref={marqueeRef}
-        className={`${styles.marquee} whitespace-nowrap flex pb-4`}
+        className={`${styles.marquee} whitespace-nowrap flex`}
       >
-        <span className={`mr-8 ${styles.element1}`}>{element1}</span>{" "}
-        <span className={`mr-8 ${styles.element2}`}>{element2}</span>
+        <span className={`-mt-8 mr-8 ${styles.element1}`}>{element1}</span>{" "}
+        <span className={`-mt-8 mr-8 ${styles.element2}`}>{element2}</span>
       </div>
     </div>
   );

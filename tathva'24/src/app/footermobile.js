@@ -29,17 +29,17 @@ const FooterMobile = () => {
         <img
           src="/upper1.svg"
           alt="My Icon"
-          className="w-[20%] object-fit z-[-6] absolute top-[-12px] right-0"
+          className="w-[20%] object-fit z-[-6] absolute top-[-8px] right-0"
         />
 
         <img
           src="/upper2.svg"
           alt="My Icon"
-          className="w-[20%] object-fit z-[-2] absolute top-[-12px]  left-0"
+          className="w-[20%] object-fit z-[-2] absolute top-[-8px]  left-0"
         />
 
         <div className="flex flex-col ">
-          <div className="flex w-[90vw] h-[7vh] justify-end relative bottom-1 ">
+          <div className="flex w-[90vw] h-[7vh]  justify-end relative right-3 bottom-0 ">
             <img
               src="/metal.svg"
               alt="My Icon"
@@ -47,39 +47,38 @@ const FooterMobile = () => {
             />
           </div>
 
-          <div className={styles.cont}>
-            <div className={styles.c1}>
-              <div className="h-1/2  border-b-2"></div>
+          <div className="flex">
+            <div className="flex flex-col flex-1">
+              <div class="h-[50%] border-b"></div>
               <div></div>
             </div>
-            <div className={styles.c2}>
+            <div className="flex-[8] h-[80%] mt-[3vh] mr-[-1vw] relative z-[5]">
               <img
                 src="/small_display.svg"
                 alt="My Icon"
                 className="h-115 object-fit"
               />
             </div>
-            <div className={styles.c3}>
-              <div className="h-1/2 border-b-2"></div>
+            <div class="flex-grow flex-col flex-[1.5]">
+              <div class="h-[50%] border-b"></div>
               <div></div>
             </div>
-            <div className={styles.c4}>
+            <div class="flex-[4] flex border border-b-l-2xl border-t-0 border-r-0 justify-center items-center rounded-bl-3xl h-full pl-4 mb-4 pb-4">
               <img
                 src="/speaker.svg"
                 alt="My Icon"
-                className="h-90  object-fit pb-2"
+                className="h-[11vh]  object-fit pb-2 "
               />
             </div>
-            <div className={styles.c5}></div>
+            <div></div>
           </div>
         </div>
 
         <div className="flex mt-6 max-h-44">
           <div className=" w-[79%] h-full flex ml-[7vw] mr-[4vw]">
-            
             <Quicklink />
           </div>
-          <div className={styles.button}>
+          <div class="w-[25%] flex items-center justify-center ml-[-1.2rem]">
             <img
               src="/buttons.svg"
               alt="My Icon"
@@ -96,14 +95,14 @@ const FooterMobile = () => {
               className=" w-full h-4/5 object-fit "
             />
           </div>
-          <div className=" w-[45%] flex justify-between items-center border-l-2 ">
+          <div className=" w-[45%] flex justify-between items-center border-l-[1px] ">
             <img
               src="/social_buttons.svg"
               alt="My Icon"
               className=" w-full h-98 object-fit "
             />
           </div>
-          <div className=" w-[6%] flex items-center">
+          <div className=" w-[8%] flex items-center">
             <img
               src="/borderlights.svg"
               alt="My Icon"
@@ -113,7 +112,7 @@ const FooterMobile = () => {
         </div>
 
         <div className="flex justify-center mr-5 overflow-y-hidden">
-          <div className="border-2 border-gray-200 rounded-tr-3xl rounded-tl-3xl w-1/3 h-full object-fit p-4 pt-3 border-b-0 ">
+          <div className="border-[1px] border-gray-200 rounded-tr-3xl rounded-tl-3xl w-1/3 h-full object-fit p-4 pt-3 border-b-0 ">
             <img
               src="/bottom.svg"
               alt="My Icon"

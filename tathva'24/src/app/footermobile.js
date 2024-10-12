@@ -78,7 +78,7 @@ const FooterMobile = () => {
           <div className=" w-[79%] h-full flex ml-[7vw] mr-[4vw]">
             <Quicklink />
           </div>
-          <div class="w-[25%] flex items-center justify-center ml-[-1.2rem]">
+          <div class={styles.button}>
             <img
               src="/buttons.svg"
               alt="My Icon"

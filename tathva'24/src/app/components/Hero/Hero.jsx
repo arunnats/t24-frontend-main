@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
 
@@ -8,24 +6,21 @@ const Hero = () => {
     useEffect(() => {
         const tl = gsap.timeline({ ease: 'power2.inOut' });
 
-          tl.fromTo('.hero-left',   { y: '50%'}, { y: '-5%', duration: 1 }, 0)
-            .fromTo('.hero-right',  { y: '50%'}, { y: '-5%', duration: 1 }, 0)
-            .fromTo('.hero-center', { y: '50%'}, { y: '0%',  duration: 1 }, 0)
+          tl.fromTo('.hero-left',   { scale:0.2 ,y: '50%'}, { scale:1, y: '-5%', duration: 1 }, 0)
+            .fromTo('.hero-right',  { scale:0.2 ,y: '50%'}, { scale:1, y: '-5%', duration: 1 }, 0)
+            .fromTo('.hero-center', { scale:0.2 ,y: '50%'}, { scale:1, y: '0%',  duration: 1 }, 0)
 
             .fromTo('.hero-left',   { y: '50%'}, { y: '-2%', duration: 1  }, 0)
             .fromTo('.hero-right',  { y: '50%'}, { y: '-3%', duration: 1  }, 0)
-            .fromTo('.hero-center', { y: '50%'}, { y: '-2%',  duration: 1  }, 0)
+            .fromTo('.hero-center', { y: '50%'}, { y: '0',  duration: 1  }, 0)
 
             .fromTo('.hero-left',   { x: 0    }, { x: '-90%',duration: 1, delay: 0.4 }, 0)
             .fromTo('.hero-right',  { x: 0    }, { x: '90%', duration: 1, delay: 0.4 }, 0)
             .fromTo('.hero-center', { x: 0    }, { x: '0%',  duration: 1, delay: 0.4 }, 0)
 
-            .fromTo('.hero-left',   { y: 0    }, { y: '-2%',duration: 1, delay: 1.4 }, 0)
-            .fromTo('.hero-right',  { y: 0    }, { y: '-3%',duration: 1, delay: 1.4 }, 0)
-            .fromTo('.hero-center', { y: 0    }, { y: '-2%',  duration: 1, delay: 1.4 }, 0)
-
-            .fromTo('.hero-right', { y: '-3%'}, { y: '6%',  duration: 2, delay:4.4 ,ease: 'power1.inOut', repeat: -1, yoyo: true },0)
-            .fromTo('.hero-left', { y: '-2%'}, { y: '2%',  duration: 2, delay:4.4 ,ease: 'power1.inOut', repeat: -1, yoyo: true },0)
+            .fromTo('.hero-right', { y: '-3%'}, { y: '2%',  duration: 2.05, delay:2.4 ,ease: 'power1.inOut', repeat: -1, yoyo: true },0)
+            .fromTo('.hero-center', { y: '0%'}, { y: '2%',  duration: 2.05, delay:2.4 ,ease: 'power1.inOut', repeat: 2, yoyo: true },0)
+            .fromTo('.hero-left', { y: '-2%'}, { y: '3%',  duration: 2, delay:2.4 ,ease: 'power1.inOut', repeat: -1, yoyo: true },0)
     }, []);
 
     return (

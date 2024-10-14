@@ -8,15 +8,17 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        '115': '115%', // Add a custom height of 60vh
+        '115': '115%',
         '95': '95%',
         '120': '125%',
-        '98': '98%', // Add a custom height of 60vh
+        '98': '98%',
       },
-
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        'cyberway': ['"Cyberway Riders"', 'sans-serif'], // Add custom font
       },
     },
   },

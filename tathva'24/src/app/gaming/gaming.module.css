@@ -1,0 +1,23 @@
+
+.text{
+    font-family: Cyberway Riders; 
+}
+.text_description{
+   font-family: Outfit;
+   /* line-height:normal; */
+}
+.buttonplay{
+    background-color:#ed404f ;
+    font-weight: bolder;
+    justify-content: center;
+    height: 70px;
+}
+.buttoncomp{
+    justify-content: center ;
+    background-color: #596772;
+height: 25px;
+}
+.middleimgg{
+    top:40%;
+    left:40%;
+}

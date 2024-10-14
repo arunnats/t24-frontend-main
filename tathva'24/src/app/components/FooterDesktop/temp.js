@@ -1,49 +1,49 @@
-import styles from "./footermobile.module.css";
+import styles from "./FooterDesktop.module.css";
 import Quicklink from "../QuixkLinks/QuickLinks";
 
-const FooterMobile = () => {
+const FooterDesktop = () => {
   return (
-    <div className="flex flex-col justify-end h-[100vh] box-border relative overflow-y-hidden">
-      <div className={styles.foot_mob}>
+    <div className="flex flex-col justify-end h-full box-border  relative overflow-y-hidden">
+      <div className={`${styles.foot_mob} rounded rounded-t-3xl`}>
         <img
           src="/screw.svg"
           alt="My Icon"
-          className="h-5 object-fit z-5 absolute bottom-4 right-5"
+          className="h-10 object-fit z-5 absolute bottom-4 right-5"
         />
         <img
           src="/screw.svg"
           alt="My Icon"
-          className="h-5 object-fit z-5 absolute bottom-4 left-5 "
+          className="h-10 object-fit z-5 absolute bottom-4 left-5 "
         />
         <img
           src="/screw.svg"
           alt="My Icon"
-          className="h-5 object-fit z-5 absolute top-4 right-4"
+          className="h-10 object-fit z-5 absolute top-4 right-4"
         />
         <img
           src="/screw.svg"
           alt="My Icon"
-          className="h-5 object-fit z-5 absolute top-4 left-5"
+          className="h-10 object-fit z-5 absolute top-4 left-5"
         />
 
         <img
           src="/upper1.svg"
           alt="My Icon"
-          className="w-[20%] object-fit z-[-6] absolute top-[-8px] right-0"
+          className="w-[20%] object-fit z-[-6] absolute top-[-3%] right-0"
         />
 
         <img
           src="/upper2.svg"
           alt="My Icon"
-          className="w-[20%] object-fit z-[-2] absolute top-[-8px]  left-0"
+          className="w-[20%] object-fit z-[-2] absolute top-[-3%]  left-0"
         />
 
         <div className="flex flex-col ">
-          <div className="flex w-[90vw] h-[7vh]  justify-end relative right-3 bottom-0 ">
+          <div className="flex w-[90vw] h-[15vh]  justify-end relative right-3 bottom-0 ">
             <img
               src="/metal.svg"
               alt="My Icon"
-              className="h-120 object-fit relative z-2 "
+              className="h-[full] object-fit relative z-2 "
             />
           </div>
 
@@ -52,6 +52,7 @@ const FooterMobile = () => {
               <div className="h-[50%] border-b"></div>
               <div></div>
             </div>
+
             <div className="flex-[8] h-[80%] mt-[3vh] mr-[-1vw] relative z-[5]">
               <img
                 src="/small_display.svg"
@@ -59,6 +60,7 @@ const FooterMobile = () => {
                 className="h-115 object-fit"
               />
             </div>
+
             <div className="flex-grow flex-col flex-[1.5]">
               <div className="h-[50%] border-b"></div>
               <div></div>
@@ -103,11 +105,11 @@ const FooterMobile = () => {
             />
           </div>
           <div className=" w-[8%] flex flex-col items-center relative">
-            <div className="bg-orange-500 rounded absolute right-[-2px] top-[11px] h-[8px] w-[50px] my-[6px]"></div>
-            <div className="bg-orange-500 rounded absolute right-[-2px] top-[22px] h-[8px] w-[50px] my-[6px]"></div>
-            <div className="bg-orange-500 rounded absolute right-[-2px] top-[33px] h-[8px] w-[50px] my-[6px]"></div>
-            <div className="bg-orange-500 rounded absolute right-[-2px] top-[44px] h-[8px] w-[50px] my-[6px]"></div>
-            <div className="bg-orange-500 rounded absolute right-[-2px] top-[55px] h-[8px] w-[50px] my-[6px]"></div>
+            <div className="bg-orange-500 rounded-[10000px] h-[16px] w-[200px] my-[6px]"></div>
+            <div className="bg-orange-500 rounded-[10000px] h-[16px] w-[200px] my-[6px]"></div>
+            <div className="bg-orange-500 rounded-[10000px] h-[16px] w-[200px] my-[6px]"></div>
+            <div className="bg-orange-500 rounded-[10000px] h-[16px] w-[200px] my-[6px]"></div>
+            <div className="bg-orange-500 rounded-[10000px] h-[16px] w-[200px] my-[6px]"></div>
           </div>
         </div>
 
@@ -125,4 +127,4 @@ const FooterMobile = () => {
   );
 };
 
-export default FooterMobile;
+export default FooterDesktop;

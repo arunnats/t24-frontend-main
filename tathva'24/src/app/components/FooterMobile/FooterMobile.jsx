@@ -1,7 +1,31 @@
+"use client";
+import { useState, useEffect } from "react";
 import styles from "./footermobile.module.css";
 import Quicklink from "../QuixkLinks/QuickLinks";
 
 const FooterMobile = () => {
+  const [isMobile, setIsMobile] = useState(true);
+
+  useEffect(() => {
+    // Function to check screen size and update state
+    const checkScreenWidth = () => {
+      setIsMobile(window.innerWidth <= 1400);
+    };
+
+    // Set initial state based on current screen size
+    checkScreenWidth();
+
+    // Add event listener to update on window resize
+    window.addEventListener("resize", checkScreenWidth);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", checkScreenWidth);
+  }, []);
+
+  if (!isMobile) {
+    return null; // Return null for screens larger than 1400px
+  }
+
   return (
     <div className="flex flex-col justify-end h-[100vh] box-border relative overflow-y-hidden">
       <div className={styles.foot_mob}>
@@ -35,15 +59,15 @@ const FooterMobile = () => {
         <img
           src="/upper2.svg"
           alt="My Icon"
-          className="w-[20%] object-fit z-[-2] absolute top-[-8px]  left-0"
+          className="w-[20%] object-fit z-[-2] absolute top-[-8px] left-0"
         />
 
         <div className="flex flex-col ">
-          <div className="flex w-[90vw] h-[7vh]  justify-end relative right-3 bottom-0 ">
+          <div className="flex w-[90vw] h-[7vh] justify-end relative right-3 bottom-0 ">
             <img
               src="/metal.svg"
               alt="My Icon"
-              className="h-120 object-fit relative z-2 "
+              className="h-120 object-fit relative z-2"
             />
           </div>
 
@@ -67,7 +91,7 @@ const FooterMobile = () => {
               <img
                 src="/speaker.svg"
                 alt="My Icon"
-                className="h-[11vh]  object-fit pb-2 "
+                className="h-[11vh] object-fit pb-2"
               />
             </div>
             <div></div>
@@ -82,27 +106,27 @@ const FooterMobile = () => {
             <img
               src="/buttons.svg"
               alt="My Icon"
-              className="h-3/5 object-fit "
+              className="h-3/5 object-fit"
             />
           </div>
         </div>
 
-        <div className="flex  max-h-44">
-          <div className=" w-[47%]  flex justify-center items-center">
+        <div className="flex max-h-44">
+          <div className="w-[47%] flex justify-center items-center">
             <img
               src="/button.svg"
               alt="My Icon"
-              className=" w-full h-4/5 object-fit "
+              className="w-full h-4/5 object-fit"
             />
           </div>
-          <div className=" w-[45%] flex justify-between items-center border-l-[1px] ">
+          <div className="w-[45%] flex justify-between items-center border-l-[1px]">
             <img
               src="/social_buttons.svg"
               alt="My Icon"
-              className=" w-full h-98 object-fit "
+              className="w-full h-98 object-fit"
             />
           </div>
-          <div className=" w-[8%] flex flex-col items-center relative">
+          <div className="w-[8%] flex flex-col items-center relative">
             <div className="bg-orange-500 rounded absolute right-[-2px] top-[11px] h-[8px] w-[50px] my-[6px]"></div>
             <div className="bg-orange-500 rounded absolute right-[-2px] top-[22px] h-[8px] w-[50px] my-[6px]"></div>
             <div className="bg-orange-500 rounded absolute right-[-2px] top-[33px] h-[8px] w-[50px] my-[6px]"></div>
@@ -112,7 +136,7 @@ const FooterMobile = () => {
         </div>
 
         <div className="flex justify-center mr-5 overflow-y-hidden">
-          <div className="border-[1px] border-gray-200 rounded-tr-3xl rounded-tl-3xl w-1/3 h-full object-fit p-4 pt-3 border-b-0 ">
+          <div className="border-[1px] border-gray-200 rounded-tr-3xl rounded-tl-3xl w-1/3 h-full object-fit p-4 pt-3 border-b-0">
             <img
               src="/bottom.svg"
               alt="My Icon"

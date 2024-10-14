@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import FooterMobile from "./footermobile";
+import FooterMobile from './components/FooterMobile/FooterMobile';
 // import FooterPC from "./footerpc";
 
 const Page = () => {

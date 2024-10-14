@@ -1,5 +1,5 @@
 import styles from "./footermobile.module.css";
-import Quicklink from "./Quicklinks";
+import Quicklink from "../QuixkLinks/QuickLinks";
 
 const FooterMobile = () => {
   return (
@@ -102,12 +102,12 @@ const FooterMobile = () => {
               className=" w-full h-98 object-fit "
             />
           </div>
-          <div className=" w-[8%] flex items-center">
-            <img
-              src="/borderlights.svg"
-              alt="My Icon"
-              className="  w-full object-fit"
-            />
+          <div className=" w-[8%] flex flex-col items-center relative">
+            <div className="bg-orange-500 rounded absolute right-[-2px] top-[11px] h-[8px] w-[50px] my-[6px]"></div>
+            <div className="bg-orange-500 rounded absolute right-[-2px] top-[22px] h-[8px] w-[50px] my-[6px]"></div>
+            <div className="bg-orange-500 rounded absolute right-[-2px] top-[33px] h-[8px] w-[50px] my-[6px]"></div>
+            <div className="bg-orange-500 rounded absolute right-[-2px] top-[44px] h-[8px] w-[50px] my-[6px]"></div>
+            <div className="bg-orange-500 rounded absolute right-[-2px] top-[55px] h-[8px] w-[50px] my-[6px]"></div>
           </div>
         </div>
 

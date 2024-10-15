@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'custom-md': { 'max': '950px' }, // Custom media query for below 1040px
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

@@ -22,7 +22,7 @@ const Dinosaur = () => {
     };
 
     return (
-        <section onClick={handleClick} className="flex w-max text-white font-semibold bg-black border-b border-white gap-[10px] cursor-pointer">
+        <section onClick={handleClick} className="flex w-max  text-white font-semibold border-b border-white gap-[10px] cursor-pointer">
             <div className="w-fit flex items-end">Learn More</div>
             <img src="/dinosaur.svg" alt="image" height="25" width="25" className="dinosaur block" />
         </section>

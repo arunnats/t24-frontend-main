@@ -2,4 +2,7 @@
 
 .outercontainer{
     font-family: "Plus Jakarta Sans", serif;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
 }

@@ -1,9 +1,11 @@
-import Image from "next/image";
+import Workshop from "./workshop/slider";
 
 export default function Home() {
   return (
-    <div>
-      Home
-    </div>
+    <>
+    <Workshop/>
+    </>
   );
 }
+
+

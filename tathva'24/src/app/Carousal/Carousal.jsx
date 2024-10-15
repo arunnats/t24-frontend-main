@@ -4,9 +4,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link'; // Add this import statement
-import styles from '../workshop/slider.module.css';
+import styles from '../Carousal/slider.module.css';
 
-const Home = () => {
+const Carousal = () => {
   const [bannerSrc, setBannerSrc] = useState("/work.png");
   const [nextBannerSrc, setNextBannerSrc] = useState("/work.png");
   const [isHovered, setIsHovered] = useState(false);
@@ -112,5 +112,5 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Carousal;
 

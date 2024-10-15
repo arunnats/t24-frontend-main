@@ -1,12 +1,11 @@
 "use client";
 import Image from "next/image";
 import Hero from "./components/Hero/Hero";
-import Flappy from "./components/Hero/Flappy";
 
 export default function Home() {
   return (
     <div className="h-screen w-screen">
-      {/* <Hero /> */}
+      <Hero />
       {/* <Flappy /> */}
       <div className=" hero-center relative origin-center w-[60vw] h-full z-20 border-[40px] ">
           <img src="/Hero/center.webp"

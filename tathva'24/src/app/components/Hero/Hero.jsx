@@ -1,5 +1,7 @@
-import React, { useEffect } from 'react'
-import gsap from 'gsap'
+import React, { useEffect } from 'react';
+import gsap from 'gsap';
+import Image from 'next/image';
+import JumpToHyperspace from '../HyperSpace/Hyperspace';
 
 const Hero = () => {
 
@@ -25,23 +27,58 @@ const Hero = () => {
 
     return (
         <div className='w-screen min-h-screen overflow-x-hidden flex items-center justify-center relative'>
-        <img 
-            src="/Hero/left.webp" 
-            alt="Left image" 
-            className='hero-left absolute origin-center top-[30%] xl:w-[25vw] lg:w-[30vw] md:w-[40vw] sm:w-[50vw] w-[60vw]' 
-        />
-        <img 
-            src="/Hero/right.webp" 
-            alt="Right image" 
-            className='hero-right absolute origin-center transform scaleX(-1) top-[30%] xl:w-[25vw] lg:w-[30vw] md:w-[40vw] sm:w-[50vw] w-[60vw]' 
-        />
-        <img 
-            src="/Hero/center.webp" 
-            alt="Center image" 
-            className='hero-center absolute origin-center top-[20%] xl:w-[30vw] lg:w-[35vw] md:w-[45vw] sm:w-[55vw] w-[65vw]' 
-        />
+            <JumpToHyperspace />
+            <div className="absolute top-[5%] w-full origin-center h-max z-10 flex items-center justify-center">
+                <Image 
+                    src="/Hero/Line.svg" 
+                    alt="Line Graphic" 
+                    layout="responsive" 
+                    width={1920} 
+                    height={1080}
+                    priority
+                    className='w-full lg:w-[80%] md:w-[90%] sm:w-[95%]' 
+                />
+            </div>
+            <div className="absolute top-[4%] w-full origin-center h-max z-10 flex items-center justify-center">
+                <Image 
+                    src="/Hero/tathva_2026.webp" 
+                    alt="Tathva 2026" 
+                    layout="responsive" 
+                    width={1920} 
+                    height={1080}
+                    priority
+                    className='w-full lg:w-[80%] md:w-[90%] sm:w-[95%]' 
+                />
+            </div>
+            
+            <Image 
+                src="/Hero/left.webp" 
+                alt="Left image" 
+                layout="responsive" 
+                width={500} 
+                height={600}
+                className='hero-left absolute origin-center top-[30%] xl:w-[25vw] lg:w-[28vw] md:w-[30vw] sm:w-[25vw] w-[60vw]' 
+                priority
+            />
+            <Image 
+                src="/Hero/right.webp" 
+                alt="Right image" 
+                layout="responsive" 
+                width={500} 
+                height={600}
+                className='hero-right absolute origin-center top-[30%] xl:w-[25vw] lg:w-[28vw] md:w-[30vw] sm:w-[25vw] w-[60vw]' 
+                priority
+            />
+            <Image 
+                src="/Hero/center.webp" 
+                alt="Center image" 
+                layout="responsive" 
+                width={600} 
+                height={700}
+                className='hero-center absolute origin-center top-[20%] xl:w-[30vw] lg:w-[35vw] md:w-[35vw] sm:w-[35vw] w-[65vw]' 
+                priority
+            />
         </div>
-
     );
 };
 

@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
 import JumpToHyperspace from '../HyperSpace/Hyperspace';
-import Flappy from './Flappy';
 
 const Hero = () => {
 
     useEffect(() => {
         const tl = gsap.timeline({ ease: 'power2.inOut' });
 
-        tl.fromTo('.hero-left', { scale: 0.2, y: '50%' }, { scale: 1, y: '-5%', duration: 1 }, 0)
-            .fromTo('.hero-right', { scale: 0.2, y: '50%' }, { scale: 1, y: '-5%', duration: 1 }, 0)
-            .fromTo('.hero-center', { scale: 0.2, y: '50%' }, { scale: 1, y: '0%', duration: 1 }, 0)
+        tl.fromTo('.hero-left', { scale: 0.02, y: '50%' }, { scale: 1, y: '-5%', duration: 1 }, 0)
+            .fromTo('.hero-right', { scale: 0.02, y: '50%' }, { scale: 1, y: '-5%', duration: 1 }, 0)
+            .fromTo('.hero-center', { scale: 0.02, y: '50%' }, { scale: 1, y: '0%', duration: 1 }, 0)
 
             .fromTo('.hero-left', { y: '50%' }, { y: '-2%', duration: 1 }, 0)
             .fromTo('.hero-right', { y: '50%' }, { y: '-3%', duration: 1 }, 0)

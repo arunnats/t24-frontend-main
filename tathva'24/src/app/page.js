@@ -1,3 +1,4 @@
+import Workshop from "./workshop/slider";
 import styles from "./page.module.css";
 import FooterMobile from './components/FooterMobile/FooterMobile';
 import FooterDesktop from "./components/FooterDesktop/FooterDesktop";

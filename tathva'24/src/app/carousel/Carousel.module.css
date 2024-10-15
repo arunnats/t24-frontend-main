@@ -1,0 +1,58 @@
+.carouselContainer {
+  width: 100%;
+  height: 100%; /* Adjust height as needed */
+  overflow: hidden; /* Hide overflow */
+  position: relative;
+}
+
+.carouselContent {
+  display: flex;
+  transition: transform 0.5s; /* Smooth transition */
+  animation: scroll 9s ease-in-out infinite; /* Adjust duration and iteration */
+}
+
+.carouselContentrev {
+  display: flex;
+  transition: transform 0.5s; /* Smooth transition */
+  animation: scrollrev 9s ease-in-out infinite; /* Adjust duration and iteration */
+}
+
+.carouselItem {
+  min-width: 100%;
+}
+
+@keyframes scroll {
+  0%,
+  15% {
+    transform: translateX(0);
+  }
+  33.33%,
+  48.33% {
+    transform: translateX(-100%);
+  }
+  66.66%,
+  81.66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+@keyframes scrollrev {
+  0%,
+  15% {
+    transform: translateX(-300%);
+  }
+  33.33%,
+  48.33% {
+    transform: translateX(-200%);
+  }
+  66.66%,
+  81.66% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

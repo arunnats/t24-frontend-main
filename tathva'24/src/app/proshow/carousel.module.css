@@ -1,0 +1,84 @@
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+  height: fit-content;
+}
+
+.carouselContent {
+  display: flex;
+  width: 200%;
+  animation: scrollLeft 30s ease-in-out infinite;
+}
+
+.carouselItem {
+  flex: 0 0 25%;
+}
+
+.carouselContent1 {
+  left: -100%;
+  display: flex;
+  width: 200%;
+  animation: scrollRight 30s ease-in-out infinite;
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  10% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-75%);
+  }
+  35% {
+    transform: translateX(-75%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  60% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  85% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  35% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  60% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-75%);
+  }
+  85% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

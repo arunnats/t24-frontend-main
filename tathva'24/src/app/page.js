@@ -6,8 +6,9 @@ import Carousal from "./Carousal/Carousal";
 
 const Page = () => {
   return (
-    <div className="h-[200vh] relative">
+    <div className="h-[400vh] relative">
         <Carousal />
+        <ExpoPage />
 
       <div className="footer h-max w-full absolute bottom-0 left-0">
         <FooterDesktop />

@@ -24,15 +24,11 @@ const Page = () => {
 
   return (
     <div className="relative h-screen overflow-hidden bg-black">
-      {/* Dark overlay background */}
       <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-
-      {/* Overlay text on top of the div */}
       <h1 className="absolute top-1/2 left-0 w-full text-center text-white text-7xl z-10 p-4">
         Pro Show
       </h1>
 
-      {/* Carousel below the overlay */}
       <div className="relative z-0">
         {isMedScreen ? (
           isSmallScreen ? (

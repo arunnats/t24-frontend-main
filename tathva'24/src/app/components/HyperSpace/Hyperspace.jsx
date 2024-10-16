@@ -59,7 +59,7 @@ const generateStarPool = (size) => new Array(size).fill().map(() => new Star());
 const JumpToHyperspace = () => {
   const canvasRef = useRef(null);
   const state = useRef({
-    stars: generateStarPool(300),
+    stars: generateStarPool(500),
     bgAlpha: 0,
     sizeInc: SIZE_INC,
     velocity: VELOCITY_INC,

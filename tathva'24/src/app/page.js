@@ -2,11 +2,14 @@ import styles from "./page.module.css";
 import FooterMobile from './components/FooterMobile/FooterMobile';
 import FooterDesktop from "./components/FooterDesktop/FooterDesktop";
 import Carousal from "./Carousal/Carousal";
+import Hero from "./components/Hero/Hero";
+import ExpoPage from "./expo-page/page";
 // import FooterPC from "./footerpc";
 
 const Page = () => {
   return (
-    <div className="h-[400vh] relative">
+    <div className="h-[400vh] relative overflow-clip bg-black">
+        <Hero />
         <Carousal />
         <ExpoPage />
 

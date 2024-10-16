@@ -17,7 +17,7 @@
 
 .textbg {
     font-family: Cyberway Riders;
-    font-size: 10vw;
+    font-size: 15vw;
 }
 
 .desktop {
@@ -94,7 +94,7 @@
 }
 
 .mobile {
-    @media(min-width:900px) {
+    @media(min-width:834px) {
         display: none;
     }
 

@@ -19,22 +19,24 @@ export default function GamingPage() {
       tl.to(`.${styles.bluebg}`, {
         duration: 0.5,
         scale: 0,
-        y: 20,
         rotateY: 180,
-        ease: "power2.inOut",
+        ease: "power2.in",
+        x:200,
+        y:50,
         onComplete: () => setShowBlueBg(false), // Hide the blue background after animation
       });
+   
     }
 
     // Scroll-triggered animations
     gsap.fromTo(
       `.${styles.buttonplay}`,
-      { y: -100, opacity: 0 },
+      { y: -200, opacity: 0 },
       {
         y: 0,
-        delay:0.5,
+        delay:1.5,
         opacity: 1,
-        duration: 1.5,
+        duration: 2.0,
         ease: "bounce.out",
         scrollTrigger: {
           trigger: `.${styles.buttonplay}`,
@@ -128,7 +130,7 @@ export default function GamingPage() {
             />
           </div>
         )}
-
+        {/* <div className={`flex flex-col bg-white w-full h-screen absolute z-50 ${styles.whitebg}`}></div> */}
         <div className={`flex bg-black w-full h-screen ${styles.desktop}`}>
           {/* Left side */}
           <div className={`flex flex-col w-1/3 justify-evenly items-center h-screen ${styles.left}`}>
@@ -164,8 +166,8 @@ export default function GamingPage() {
         {/* Mobile view */}
         <div className={`flex flex-col bg-black justify-evenly items-center w-full min-h-screen py-5 ${styles.mobile}`}>
           <div className="flex flex-col items-center gap-5">
-            <div className={`text-white text-7xl ${styles.text} mb-2`}>Gaming</div>
-            <div className={`text-white text-7xl ${styles.text}`}>Conclave</div>
+            <div className={`text-white text-8xl ${styles.text} mb-2`}>Gaming</div>
+            <div className={`text-white text-8xl ${styles.text}`}>Conclave</div>
           </div>
           <div>
             <Image src="/mobile.svg" alt="Gaming image" width={285} height={0} className={`flex py-10 ${styles.mobileimgg}`} />

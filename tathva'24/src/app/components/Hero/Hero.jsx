@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
 import JumpToHyperspace from '../HyperSpace/Hyperspace';
-import Flappy from './Flappy';
-
 const Hero = () => {
 
     useEffect(() => {
@@ -40,24 +38,24 @@ const Hero = () => {
             </div>  */}
 
             <img
-                src="/Hero/left.webp"
+                src="/Hero/left_console.webp"
                 alt="Left image"
-                className='hero-left absolute origin-center top-[30%] xl:w-[25vw] lg:w-[28vw] md:w-[30vw] sm:w-[25vw] w-[60vw]'
+                className='hero-left absolute origin-center top-[30%] w-[25vw] w-'
             />
             <img
                 src="/Hero/right.webp"
                 alt="Right image"
-                className='hero-right absolute origin-center top-[30%] xl:w-[25vw] lg:w-[28vw] md:w-[30vw] sm:w-[25vw] w-[60vw]'
+                className='hero-right absolute origin-center top-[30%] w-[25vw] w-'
             />
-            <div className='hero-center absolute origin-center top-[20%] h-auto xl:w-[30vw] lg:w-[35vw] md:w-[35vw] sm:w-[35vw] w-[65vw]'>
-                <div className="relative w-full h-min z-20 ">
+            <div className='hero-center absolute origin-center top-[20%] w-[30vw] h-[64vw] border-red-400 '>
+                <div className="relative w-full h-full z-20 ">
                     <img src="/Hero/center.webp"
                             alt="Center image"
-                            className='hero-center absolute origin-center '
+                            className=' h-full absolute origin-center '
                         />
 
-                    <div className="absolute top-[20%] w-full  flex items-center justify-center ">
-                        <div className="relative  w-[64%] ">
+                    <div className="absolute top-[6.5%] w-full  flex items-center justify-center ">
+                        <div className="relative  w-[63%] ">
                             <img src="/Hero/moreblack.gif" alt="" className=' mix-blend-multiply w-full '/>
                         </div>
                     </div>

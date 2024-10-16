@@ -69,6 +69,8 @@ const JumpToHyperspace = () => {
   });
 
   useEffect(() => {
+    if (typeof window === 'undefined') return; // Ensure this code only runs on the client
+
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
 
@@ -202,21 +204,23 @@ const JumpToHyperspace = () => {
       }
     };
 
+    const debouncedResize = _.debounce(resetStars, 250);
+    
     canvas.addEventListener('mousedown', initiate);
     canvas.addEventListener('mouseup', enter);
-    window.addEventListener('resize', _.debounce(resetStars, 250));
+    window.addEventListener('resize', debouncedResize);
 
     resizeCanvas();
     render();
 
     return () => {
-      window.removeEventListener('resize', _.debounce(resetStars, 250));
+      window.removeEventListener('resize', debouncedResize);
       canvas.removeEventListener('mousedown', initiate);
       canvas.removeEventListener('mouseup', enter);
     };
   }, []);
 
-  return <canvas ref={canvasRef} style={{ display: 'block' }} />;
+  return <canvas ref={canvasRef} />;
 };
 
 export default JumpToHyperspace;

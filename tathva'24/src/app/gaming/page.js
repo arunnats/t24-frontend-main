@@ -11,33 +11,35 @@ export default function GamingPage() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Timeline for initial animations
+    // Timeline for initial animations on desktop
     const tl = gsap.timeline({ delay: 0.5 });
 
-    // Animate blue background (compress and flip)
+    // Animate blue background (compress and flip) for desktop
+    if (showBlueBg) {
       tl.to(`.${styles.bluebg}`, {
         duration: 0.5,
         scale: 0,
-        y:20,
+        y: 20,
         rotateY: 180,
         ease: "power2.inOut",
-        onComplete: () => setShowBlueBg(false) // Hide the blue background after animation
+        onComplete: () => setShowBlueBg(false), // Hide the blue background after animation
       });
+    }
 
-    // Scroll-triggered animations
+    // Scroll-triggered animations for desktop
     gsap.fromTo(
       `.${styles.buttonplay}`,
       { y: -200, opacity: 0 },
       {
         y: 0,
-        delay:0.5,
+        delay: 0.5,
         opacity: 1,
         duration: 1.5,
         ease: "bounce.out",
         scrollTrigger: {
           trigger: `.${styles.buttonplay}`,
-          start: "top 80%", // When the top of buttonplay reaches 80% of the viewport
-          toggleActions: "play none none none", // Only play once when in view
+          start: "top 80%",
+          toggleActions: "play none none none",
         },
       }
     );
@@ -47,7 +49,7 @@ export default function GamingPage() {
       { scale: 0, opacity: 0 },
       {
         scale: 1,
-        delay:0.5,
+        delay: 0.5,
         opacity: 1,
         duration: 1,
         ease: "power2.out",
@@ -74,8 +76,9 @@ export default function GamingPage() {
         },
       }
     );
+
     gsap.fromTo(
-      `.${styles.gekko }`,
+      `.${styles.gekko}`,
       { scale: 0.5, opacity: 0 },
       {
         scale: 1,
@@ -89,13 +92,46 @@ export default function GamingPage() {
         },
       }
     );
-  }, []);
+
+    // Scroll-triggered animations for mobile
+    gsap.fromTo(
+      `.${styles.mobileimgg}`,
+      { scale: 0, opacity: 0 },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: `.${styles.mobileimgg}`,
+          start: "top 90%", // Mobile image appears slightly earlier
+          toggleActions: "play none none none",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      `.${styles.mobilebutton}`,
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: `.${styles.mobilebutton}`,
+          start: "top 90%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+  }, [showBlueBg]);
 
   return (
     <>
       <div className={`flex relative ${styles.main}`}>
-        {/* Blue background with animation */}
-        {  (
+        {/* Blue background with animation for desktop */}
+        {showBlueBg && (
           <div className={`flex flex-col w-full h-screen bg-black absolute z-50 ${styles.bluebg}`}>
             <div className="flex flex-col items-center gap-10">
               <div className={`text-white text-8xl ${styles.textbg} mb-2`}>Gaming</div>
@@ -106,7 +142,7 @@ export default function GamingPage() {
               alt="Gaming image"
               width={1100}
               height={700}
-              className={`flex absolute top-0 left-50 `}
+              className={`flex absolute top-0 left-50`}
             />
           </div>
         )}

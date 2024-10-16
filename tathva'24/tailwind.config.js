@@ -17,9 +17,7 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      fontFamily: {
-        'cyberway': ['"Cyberway Riders"', 'sans-serif'], // Add custom font
-      },
+     
     },
   },
   plugins: [],

@@ -1,36 +1,163 @@
-import React from 'react'
-import styles from '../gaming/gaming.module.css'
-import Image from 'next/image'
-export default function GamingPage() {
-  return (
-    <div className='flex bg-black w-full h-screen overflow-hidden'>
-      {/* left side */}
-      <div className='flex flex-col w-1/3 justify-evenly items-center h-screen '> 
-      <div className='flex flex-col items-center gap-5'>
-      <div className={`text-white text-6xl font-bold ${styles.text} mb-5`}>Gaming</div>
-      <div className={`text-white text-6xl font-bold ${styles.text} `}>Conclave</div></div>
-      <div className={`text-white text-1xl text-start ${styles.text_description} mb-4 px-20`}>Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.</div>
-      <div className='flex justify-center w-full'>
-        <div className='flex flex-col justify-center align-center  w-1/3  h-12'>
-      <button className={`flex bg-white text-white text-3xl text-center font-IBM Plex Sans px-10  py-3 ${styles.buttonplay}`}>PLAY</button>
-      <button className={`flex bg-white text-1xl text-white text-center font-IBM Plex Sans px-10 h-2 ${styles.buttoncomp}`}>COMPETITVE</button>
-     
-      </div>
-      </div>
-      </div>
-      {/* right side */}
-      <div className='flex flex-row w-2/3 h-screen relative'>
-           <div>
-            <Image src="/GEKKO BG.svg" alt="Gaming image" width={550} height={0} className='flex absolute left-0 top-10' />
-           </div>
-           <div>
-            <Image src="/gamingbg.svg" alt="Gaming image" width={385} height={0} className='flex absolute right-2 top-20'/>
-           </div>
-           <div>
-            <Image src="/HERO IMG.svg" alt="Gaming image" width={285} height={0} className={`flex absolute ${styles.middleimgg}`}/>
-           </div>
+'use client'
+import React, { useEffect, useState } from "react";
+import styles from "../gaming/gaming.module.css";
+import Image from "next/image";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+export default function GamingPage() {
+  const [showBlueBg, setShowBlueBg] = useState(true);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Timeline for initial animations
+    const tl = gsap.timeline({ delay: 0.5 });
+
+    // Animate blue background (compress and flip)
+      tl.to(`.${styles.bluebg}`, {
+        duration: 0.5,
+        scale: 0,
+        y:20,
+        rotateY: 180,
+        ease: "power2.inOut",
+        onComplete: () => setShowBlueBg(false) // Hide the blue background after animation
+      });
+
+    // Scroll-triggered animations
+    gsap.fromTo(
+      `.${styles.buttonplay}`,
+      { y: -200, opacity: 0 },
+      {
+        y: 0,
+        delay:0.5,
+        opacity: 1,
+        duration: 1.5,
+        ease: "bounce.out",
+        scrollTrigger: {
+          trigger: `.${styles.buttonplay}`,
+          start: "top 80%", // When the top of buttonplay reaches 80% of the viewport
+          toggleActions: "play none none none", // Only play once when in view
+        },
+      }
+    );
+
+    gsap.fromTo(
+      `.${styles.middleimgg}`,
+      { scale: 0, opacity: 0 },
+      {
+        scale: 1,
+        delay:0.5,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: `.${styles.middleimgg}`,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      `.${styles.gamingbg}`,
+      { scale: 0.5, opacity: 0 },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 1.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: `.${styles.gamingbg}`,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+    gsap.fromTo(
+      `.${styles.gekko }`,
+      { scale: 0.5, opacity: 0 },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 1.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: `.${styles.gamingbg}`,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+  }, []);
+
+  return (
+    <>
+      <div className={`flex relative ${styles.main}`}>
+        {/* Blue background with animation */}
+        {  (
+          <div className={`flex flex-col w-full h-screen bg-black absolute z-50 ${styles.bluebg}`}>
+            <div className="flex flex-col items-center gap-10">
+              <div className={`text-white text-8xl ${styles.textbg} mb-2`}>Gaming</div>
+              <div className={`text-white text-8xl ${styles.textbg}`}>Conclave</div>
+            </div>
+            <Image
+              src="/image 7.svg"
+              alt="Gaming image"
+              width={1100}
+              height={700}
+              className={`flex absolute top-0 left-50 `}
+            />
+          </div>
+        )}
+
+        <div className={`flex bg-black w-full h-screen ${styles.desktop}`}>
+          {/* Left side */}
+          <div className={`flex flex-col w-1/3 justify-evenly items-center h-screen ${styles.left}`}>
+            <div className="flex flex-col items-center gap-5">
+              <div className={`text-white text-7xl ${styles.text} mb-2`}>Gaming</div>
+              <div className={`text-white text-7xl ${styles.text}`}>Conclave</div>
+            </div>
+            <div className={`text-white text-1xl text-start ${styles.text_description} px-20 mb-10`}>
+              Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.
+            </div>
+            <div className="flex justify-center w-full">
+              <div className="flex flex-col justify-center align-center h-12">
+                <button className={`flex bg-white text-white text-3xl text-center font-IBM Plex Sans px-5 py-3 ${styles.buttonplay}`}>PLAY</button>
+                <button className={`flex bg-white text-1xl text-white text-center font-IBM Plex Sans px-5 h-2 ${styles.buttoncomp}`}>COMPETITIVE</button>
+              </div>
+            </div>
+          </div>
+
+          {/* Right side */}
+          <div className="flex flex-row w-2/3 h-screen relative">
+            <div>
+              <Image src="/GEKKO BG.svg" alt="Gaming image" width={550} height={0} className={`flex absolute left-0 ${styles.gekko}`} />
+            </div>
+            <div>
+              <Image src="/gamingbg.svg" alt="Gaming image" width={385} height={0} className={`flex absolute right-0 ${styles.gamingbg}`} />
+            </div>
+            <div>
+              <Image src="/HERO IMG.svg" alt="Gaming image" width={285} height={0} className={`flex absolute ${styles.middleimgg}`} />
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile view */}
+        <div className={`flex flex-col bg-black justify-evenly items-center w-full min-h-screen py-5 ${styles.mobile}`}>
+          <div className="flex flex-col items-center gap-5">
+            <div className={`text-white text-7xl ${styles.text} mb-2`}>Gaming</div>
+            <div className={`text-white text-7xl ${styles.text}`}>Conclave</div>
+          </div>
+          <div>
+            <Image src="/mobile.svg" alt="Gaming image" width={285} height={0} className={`flex py-10 ${styles.mobileimgg}`} />
+          </div>
+          <div className={`text-white text-1xl text-start w-1/2 ${styles.mobiletext} mb-10`}>
+            Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.
+          </div>
+          <button className={`flex bg-[#ed404f] text-white text-2xl text-center font-IBM Plex Sans py-1 ${styles.mobilebutton}`}>PLAY</button>
+        </div>
       </div>
-    </div>
-  )
+    </>
+  );
 }

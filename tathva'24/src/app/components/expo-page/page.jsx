@@ -15,16 +15,16 @@ const DesktopComponent = () => {
           <div className="w-full h-full relative flex items-center">
             <img
               src="/full_build.svg"
-              className="object-cover w-full absolute right-0"
+              className="object-cover w-full absolute right-0 select-none	"
             />
           </div>
         </div>
 
         <div className="flex-[1] flex flex-col justify-around mr-10 ml-8">
           <div className="mt-20">
-            <img src="/expo.svg" className="" />
+            <img src="/expo.svg" className="select-none	" />
             <div className="mb-4">
-              <p>
+              <p className="text-white">
                 National Institute of Technology, Calicut, presents Tathva
                 Interface - Asia's largest student-run Tech Startup Expo. We at
                 the Tathva Interface aim to provide a platform for
@@ -53,17 +53,17 @@ const MobileComponent = () => {
 
         <div className="flex-1 flex flex-col mr-8 ml-8">
           <div className="flex flex-col items-center">
-            <img src="/expo.svg" className="ml-3" />
-            <p className="text-justify text-center px-3">
+            <img src="/expo.svg" className="ml-3 select-none	" />
+            <p className="text-justify text-center px-3 text-white">
               National Institute of Technology, Calicut, presents Tathva
               Interface - Asia's largest student-run Tech Startup Expo. We at
               the Tathva Interface aim to provide a platform for
               all-entrepreneurs.
             </p>
           </div>
-          <div className="flex flex-col px-3 mt-3">
+          <div className="flex flex-col px-3 mt-3 select-none	">
             <Dinosaur />
-            <div className="flex flex-row justify-end">
+            <div className="flex flex-row justify-end select-none	">
             <Torch />
             </div>
           </div>
@@ -79,22 +79,22 @@ const TabComponent = () => {
       <div className="pt-[5%] h-[10vh] ">
         <Marque />
       </div>
-      <div className="h-[90vh] flex flex-col items-center">
-        <img src="/full_build.svg" className="w-[60%] h- mb-4 mt-0" />
+      <div className="h-[90vh] flex flex-col items-center select-none	">
+        <img src="/full_build.svg" className="w-[60%] h- mb-4 mt-0 select-none	" />
 
         <div className="flex-1 flex flex-col mr-8 ml-8">
           <div className="flex flex-col">
-            <img src="/expo.svg" className="ml-3" />
-            <p className="text-justify text-center mx-3">
+            <img src="/expo.svg" className="ml-3 select-none	" />
+            <p className="text-justify text-center mx-3 text-white ">
               National Institute of Technology, Calicut, presents Tathva
               Interface - Asia's largest student-run Tech Startup Expo. We at
               the Tathva Interface aim to provide a platform for
               all-entrepreneurs.
             </p>
           </div>
-          <div className="flex flex-col m-3">
+          <div className="flex flex-col m-3 select-none	">
             <Dinosaur />
-            <div className="flex flex-row justify-end ">
+            <div className="flex flex-row justify-end select-none	">
             <Torch />
             </div>
           </div>
@@ -104,9 +104,9 @@ const TabComponent = () => {
   );
 };
 
-function Page() {
+function ExpoPage() {
   return (
-    <section className={styles.outercontainer}>
+    <section className={` bg-black ${styles.outercontainer}`}>
       <div className="custom-md:hidden">
         <DesktopComponent />
       </div>
@@ -120,4 +120,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default ExpoPage;

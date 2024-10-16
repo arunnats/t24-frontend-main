@@ -1,20 +1,20 @@
 .carouselContainer {
   width: 100%;
-  height: 100%; /* Adjust height as needed */
-  overflow: hidden; /* Hide overflow */
+  height: 100%;
+  overflow: hidden;
   position: relative;
 }
 
 .carouselContent {
   display: flex;
-  transition: transform 0.5s; /* Smooth transition */
-  animation: scroll 9s ease-in-out infinite; /* Adjust duration and iteration */
+  transition: transform 0.5s;
+  animation: scroll 9s ease-in-out infinite;
 }
 
 .carouselContentrev {
   display: flex;
-  transition: transform 0.5s; /* Smooth transition */
-  animation: scrollrev 9s ease-in-out infinite; /* Adjust duration and iteration */
+  transition: transform 0.5s;
+  animation: scrollrev 9s ease-in-out infinite;
 }
 
 .carouselItem {

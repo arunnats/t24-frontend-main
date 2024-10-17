@@ -27,7 +27,8 @@ const Page = ({ params }) => {
     const fetchWorkshop = async () => {
       try {
         const res = await fetch(
-          `${CMS_URL}/api/workshops/${id}?populate=posterImage`,
+          `${CMS_URL}/api/competitions/${id}?populate[coverImage]=*&populate[guidelinesPdf]=*`,
+
           {
             method: "GET",
             headers: {
@@ -55,7 +56,8 @@ const Page = ({ params }) => {
 
   useEffect(() => {
     if (workshop) {
-      console.log("Updated workshop:", workshop); // Logs workshop only after it updates
+      console.log("Updated workshop:", workshop);
+      console.log("GUIDE:", workshop.guidelinesPdf[0].url);
     }
   }, [workshop]);
 
@@ -67,13 +69,18 @@ const Page = ({ params }) => {
     <div>
       {
         <Workshopmodal
-          imageSrc={CMS_URL + workshop.posterImage.url}
-          title={workshop.name}
-          price={workshop.regPrice}
+          imageSrc={CMS_URL + workshop.coverImage?.url}
+          title={workshop.title}
+          price={workshop.regFee}
           date={formatDate(workshop.eventDate)}
           registrationLink={workshop.regLink}
           description={workshop.description}
-          type="Workshop"
+          guidelines={
+            workshop.guidelinesPdf && workshop.guidelinesPdf.length > 0
+              ? CMS_URL + workshop.guidelinesPdf[0].url
+              : null
+          }
+          type="Competition"
         />
       }
     </div>

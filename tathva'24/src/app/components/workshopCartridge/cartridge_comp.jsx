@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./workshopCartridge.module.css";
+import Link from "next/link";
 
 const Cartridge = ({ imageSrc, title, description, price, date, registrationLink }) => {
     return (
-        <div className="relative">
+        <div className="relative h-full w-full ">
             {/* Background image */}
             <img src="/WorkshopCartridge/bg.svg" alt="Background" className="w-full h-auto" />
 
@@ -14,52 +15,31 @@ const Cartridge = ({ imageSrc, title, description, price, date, registrationLink
                         {/* poster image */}
                         <img src={imageSrc} alt={title} className="w-full h-full" />
                     </div>
-                </div>
-
-                {/* title */}
-                <div className={`h-[12%] flex justify-center items-center text-black font-bold ${styles.titleText}`} >
-                    {title}
-                </div>
-
-
-                <div className="h-[27%] w-full flex justify-center pl-[9%]">
-                    <div className={`w-[70%] h-full rounded-md md:rounded-xl p-[0.7%] md:p-[0.5%] ${styles.innerShadow}`}>
-                        <div className="w-full h-full bg-[#140F0F] rounded-md md:rounded-xl flex justify-between">
-                            <div className="w-[95%]">
-
-                                {/* description  */}
-                                <div className={`h-[50%] text-white ${styles.plusJakartaFont} pt-[2%] pl-[5%] pr-[2%] ${styles.responsiveText}`}>
-                                    {description.slice(0, 200)}{description.length > 200 ? "..." : ""}
-                                </div>
-
-                                <div className="h-[50%] flex font-bold text-sm sm:text-sm md:text-2xl lg:text-4xl">
-                                    <div className={`w-[30%] h-full`}>
-                                        {/* price  */}
-                                        <div className={`h-1/2 flex items-center justify-center text-white md:text-3xl lg:text-5xl`}>{price}</div>
-                                        {/* date  */}
-                                        <div className={`h-1/2 flex justify-center text-[#808080]`}>{date}</div>
-                                    </div>
-
-                                    <div className="w-[70%] flex justify-center items-center">
-                                        {/* Register button */}
-                                        <a href={registrationLink} className={`w-full sm:w-[85%] md:w-[75%] lg:w-[60%]`}>
-                                            <button className={`w-full h-full px-4 sm:px-6 md:px-8 py-1 sm:py-2 md:py-1 bg-[#DB162F] text-white font-semibold text-base sm:text-lg md:text-2xl lg:text-3xl rounded-lg md:rounded-xl shadow-md hover:bg-[#B01328]`}>
-                                                REGISTER
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="w-[5%] flex justify-center items-center">
-                                <img src="/WorkshopCartridge/barcode.svg" alt="Barcode" className="w-[75%] h-[83%]" />
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+                </div>  
             </div>
+
+            <div className="w-full h-max flex items-center justify-center absolute left-[5%] bottom-2">
+                <img src="/barcodeBG.png" alt="Inner box" className="h-auto w-[60%]" />
+            </div>
+
+            <div className="w-full h-max flex items-center justify-center absolute top-[60%] ">
+                <p    className={`absolute top-[60%] left-[30%] text-black ${styles.title}`}>{title}</p>
+            </div>
+
+            <p    className={`absolute top-[75%] left-[30%] text-white ${styles.price}`}>{price}</p>
+            <p    className={`absolute top-[84%] left-[30%] text-white ${styles.date}`}>{date}</p>
+            <p    className={`absolute top-[92%] left-[30%] text-white border-[0.5px] border-dashed p-1 ${styles.date}`}>Team Size : 5 </p>
+            <Link className={`absolute top-[89%] right-[20%] text-white font-bold rounded-[03%] py-[1%] px-[4%] w-max text-ellipsis bg-red-600 ${styles.register}`} href={registrationLink} >REGISTER</Link>
+            <div className={`absolute top-[82%] right-[20%] text-white font-bold rounded-[03%] py-[1%] px-[3%] w-max text-ellipsis bg-yellow-600 ${styles.register}`} href={registrationLink} >Learn More</div>
+
+             
+            {/* <div className="w-full h-max flex items-center justify-center absolute left-[5%] top-[80%] bottom-0">
+                <p    className={`absolute w-[50%] text-white  ${styles.description}`}  >{description.slice(0,100)}...</p>
+            </div>  */}
+
+            
         </div>
+
     );
 };
 

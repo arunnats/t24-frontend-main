@@ -1,26 +1,7 @@
 
     
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-.title {
-    font-size: calc(2 *100%);
-    font-size: 200%;
-    font-weight: 600;
-}
 
-.date{
-    font-size: calc(0.8 *100%);
-}
-
-.price{
-    font-size: calc(1.2 *100%);
-    font-weight: 700;
-}
-
-.register{
-    font-size: calc(0.8 *100%);
-}
-
-.description{
-    font-size: calc(0.6 *100%);
-    line-height: calc(0.8 *100%);
+.titlemob{
+    font-weight: 800;
 }

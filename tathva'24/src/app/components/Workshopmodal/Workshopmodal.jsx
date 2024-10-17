@@ -5,8 +5,8 @@ import Cartridge from '../workshopCartridge/cartridge_comp';
 
 const Workshopmodal = () => {
   return (
-    <div className={`flex-col md:flex-row justify-center items-center ${styles.plusJakartaFont}`}>
-      <div className="w-[380px] md:w-[480px]">
+    <div className={`flex-col md:flex-row flex justify-center items-center md:h-[100vh] ${styles.plusJakartaFont}`}>
+      <div className="w-[380px] md:w-[480px] m-2">
           <Cartridge 
             imageSrc="/WorkshopCartridge/workshop.jpg"
             title="DATA SCIENCE"
@@ -16,7 +16,7 @@ const Workshopmodal = () => {
             description="LOREM IPSUM DOLOR SIT AMET CONSECTETUR. AMET DOLOR MAURIS NIBH VIVAMUS VELIT LECTUS. UT FRINGILLA MALESUADA ULLAMCORPER ET JUSTO VARIUS BLANDIT NEQUE MASSA. MASSA PELLENTESQUE VOLUTPAT ET ENIM LAOREET BIBENDUM DICTUMST. CURSUS ETIAM LOREM ID IACULIS ELEMENTUM NISL CURSUS TRISTIQUE ID."
           /> 
       </div>
-      <div className='p-2 m-2 sm:w-[40%]'>
+      <div className='p-2 m-2 w-[80%] md:w-[40%]'>
         <h1 className='text-5xl mb-2 font-bold'>Prompt Engineering</h1>
         <h2 className='text-lg mb-4'>Learn the language of AI</h2>
         <h1 className='text-2xl mb-4 font-bold'>About the workshop</h1>

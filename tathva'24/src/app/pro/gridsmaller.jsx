@@ -23,81 +23,96 @@ const Carousel = ({ images, reverse = false }) => {
   );
 };
 
+const getRandomOrder = () => {
+  const images = [
+    "shilpa1.webp",
+    "shilpa2.webp",
+    "shilpa3.webp",
+    "shilpa4.webp",
+    "shilpa5.webp",
+    "shilpa6.webp",
+    "shilpa7.webp",
+    "shilpa8.webp",
+    "shilpa9.webp",
+    "shilpa10.webp",
+    "shilpa11.webp",
+    "shilpa12.webp",
+  ];
+
+  for (let i = images.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [images[i], images[j]] = [images[j], images[i]];
+  }
+
+  return images;
+};
+
 const CarouselGridxsm = () => {
+  const shuffledImages = getRandomOrder();
+
   return (
     <div className="p-1 h-screen overflow-hidden">
       <div className={`grid grid-cols-2 ${styles.firstrow}`}>
-        {Array.from({ length: 2 }).map((_, index) => (
-          <div className="flex justify-center items-center" key={index}>
-            <Carousel
-              images={["shilpa1.webp", "shilpa2.webp", "shilpa3.webp"]}
-              reverse={false}
-            />
-          </div>
-        ))}
+        <div className="flex justify-center items-center">
+          <Carousel images={shuffledImages.slice(0, 3)} reverse={false} />
+        </div>
+        <div className="flex justify-center items-center">
+          <Carousel images={shuffledImages.slice(3, 6)} reverse={false} />
+        </div>
       </div>
 
       <div className={`grid grid-cols-2 ${styles.secondrow}`}>
-        {Array.from({ length: 2 }).map((_, index) => (
-          <div className="flex justify-center items-center" key={index + 4}>
-            <Carousel
-              images={["shilpa2.webp", "shilpa1.webp", "shilpa3.webp"]}
-              reverse={true}
-            />
-          </div>
-        ))}
+        <div className="flex justify-center items-center">
+          <Carousel images={shuffledImages.slice(6, 9)} reverse={true} />
+        </div>
+        <div className="flex justify-center items-center">
+          <Carousel images={shuffledImages.slice(9, 12)} reverse={true} />
+        </div>
       </div>
 
       <div className={`grid grid-cols-2 ${styles.thirdrow}`}>
-        {Array.from({ length: 2 }).map((_, index) => (
-          <div className="flex justify-center items-center" key={index + 8}>
-            <Carousel
-              images={["shilpa3.webp", "shilpa2.webp", "shilpa1.webp"]}
-              reverse={false}
-            />
-          </div>
-        ))}
+        <div className="flex justify-center items-center">
+          <Carousel images={shuffledImages.slice(8, 11)} reverse={true} />
+        </div>
+        <div className="flex justify-center items-center">
+          <Carousel images={shuffledImages.slice(1, 4)} reverse={true} />
+        </div>
       </div>
 
       <div className="p-1 h-screen overflow-hidden -translate-y-[22vw]">
         <div className={`grid grid-cols-2 ${styles.firstrow}`}>
-          {Array.from({ length: 2 }).map((_, index) => (
-            <div className="flex justify-center items-center" key={index}>
-              <Carousel
-                images={["shilpa1.webp", "shilpa2.webp", "shilpa3.webp"]}
-                reverse={false}
-              />
-            </div>
-          ))}
+          <div className="flex justify-center items-center">
+            <Carousel images={shuffledImages.slice(2, 5)} reverse={false} />
+          </div>
+          <div className="flex justify-center items-center">
+            <Carousel images={shuffledImages.slice(7, 10)} reverse={false} />
+          </div>
         </div>
 
         <div className={`grid grid-cols-2 ${styles.secondrow}`}>
-          {Array.from({ length: 2 }).map((_, index) => (
-            <div className="flex justify-center items-center" key={index + 4}>
-              <Carousel
-                images={["shilpa2.webp", "shilpa1.webp", "shilpa3.webp"]}
-                reverse={true}
-              />
-            </div>
-          ))}
+          <div className="flex justify-center items-center">
+            <Carousel images={shuffledImages.slice(5, 8)} reverse={true} />
+          </div>
+          <div className="flex justify-center items-center">
+            <Carousel images={shuffledImages.slice(4, 7)} reverse={true} />
+          </div>
         </div>
 
         <div className={`grid grid-cols-2 ${styles.thirdrow}`}>
-          {Array.from({ length: 2 }).map((_, index) => (
-            <div className="flex justify-center items-center" key={index + 8}>
-              <Carousel
-                images={["shilpa3.webp", "shilpa2.webp", "shilpa1.webp"]}
-                reverse={false}
-              />
-            </div>
-          ))}
+          <div className="flex justify-center items-center">
+            <Carousel images={shuffledImages.slice(8, 11)} reverse={true} />
+          </div>
+          <div className="flex justify-center items-center">
+            <Carousel images={shuffledImages.slice(1, 4)} reverse={true} />
+          </div>
         </div>
+
         <div className="p-1 h-screen overflow-hidden -translate-y-[22vw]">
           <div className={`grid grid-cols-2 ${styles.firstrow}`}>
             {Array.from({ length: 2 }).map((_, index) => (
               <div className="flex justify-center items-center" key={index}>
                 <Carousel
-                  images={["shilpa1.webp", "shilpa2.webp", "shilpa3.webp"]}
+                  images={getRandomOrder().slice(0, 3)}
                   reverse={false}
                 />
               </div>
@@ -108,7 +123,7 @@ const CarouselGridxsm = () => {
             {Array.from({ length: 2 }).map((_, index) => (
               <div className="flex justify-center items-center" key={index + 4}>
                 <Carousel
-                  images={["shilpa2.webp", "shilpa1.webp", "shilpa3.webp"]}
+                  images={getRandomOrder().slice(0, 3)}
                   reverse={true}
                 />
               </div>
@@ -119,18 +134,19 @@ const CarouselGridxsm = () => {
             {Array.from({ length: 2 }).map((_, index) => (
               <div className="flex justify-center items-center" key={index + 8}>
                 <Carousel
-                  images={["shilpa3.webp", "shilpa2.webp", "shilpa1.webp"]}
+                  images={getRandomOrder().slice(0, 3)}
                   reverse={false}
                 />
               </div>
             ))}
           </div>
+
           <div className="p-1 h-screen overflow-hidden -translate-y-[22vw]">
             <div className={`grid grid-cols-2 ${styles.firstrow}`}>
               {Array.from({ length: 2 }).map((_, index) => (
                 <div className="flex justify-center items-center" key={index}>
                   <Carousel
-                    images={["shilpa1.webp", "shilpa2.webp", "shilpa3.webp"]}
+                    images={getRandomOrder().slice(0, 3)}
                     reverse={false}
                   />
                 </div>
@@ -144,7 +160,7 @@ const CarouselGridxsm = () => {
                   key={index + 4}
                 >
                   <Carousel
-                    images={["shilpa2.webp", "shilpa1.webp", "shilpa3.webp"]}
+                    images={getRandomOrder().slice(0, 3)}
                     reverse={true}
                   />
                 </div>
@@ -158,51 +174,11 @@ const CarouselGridxsm = () => {
                   key={index + 8}
                 >
                   <Carousel
-                    images={["shilpa3.webp", "shilpa2.webp", "shilpa1.webp"]}
+                    images={getRandomOrder().slice(0, 3)}
                     reverse={false}
                   />
                 </div>
               ))}
-            </div>
-            <div className="p-1 h-screen overflow-hidden -translate-y-[22vw]">
-              <div className={`grid grid-cols-2 ${styles.firstrow}`}>
-                {Array.from({ length: 2 }).map((_, index) => (
-                  <div className="flex justify-center items-center" key={index}>
-                    <Carousel
-                      images={["shilpa1.webp", "shilpa2.webp", "shilpa3.webp"]}
-                      reverse={false}
-                    />
-                  </div>
-                ))}
-              </div>
-
-              <div className={`grid grid-cols-2 ${styles.secondrow}`}>
-                {Array.from({ length: 2 }).map((_, index) => (
-                  <div
-                    className="flex justify-center items-center"
-                    key={index + 4}
-                  >
-                    <Carousel
-                      images={["shilpa2.webp", "shilpa1.webp", "shilpa3.webp"]}
-                      reverse={true}
-                    />
-                  </div>
-                ))}
-              </div>
-
-              <div className={`grid grid-cols-2 ${styles.thirdrow}`}>
-                {Array.from({ length: 2 }).map((_, index) => (
-                  <div
-                    className="flex justify-center items-center"
-                    key={index + 8}
-                  >
-                    <Carousel
-                      images={["shilpa3.webp", "shilpa2.webp", "shilpa1.webp"]}
-                      reverse={false}
-                    />
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>

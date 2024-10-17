@@ -1,19 +1,10 @@
-@font-face {
-    font-family: "Supply";
-    src: url("/fonts/Supply-Regular.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: "JakartaSans";
-    src: url("/fonts/PlusJakartaSans.ttf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-
+    
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 .title {
     font-size: calc(2 *100%);
+    font-size: 200%;
+    font-weight: 600;
 }
 
 .date{
@@ -21,8 +12,8 @@
 }
 
 .price{
-    font-size: calc(1.5 *100%);
-    font-weight: 900;
+    font-size: calc(1.2 *100%);
+    font-weight: 700;
 }
 
 .register{

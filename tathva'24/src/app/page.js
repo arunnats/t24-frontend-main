@@ -3,7 +3,7 @@ import Cartridge from "./components/workshopCartridge/cartridge_comp";
 
 export default function Home() {
   return (
-    <div className="w-full flex items-center justify-evenly flex-wrap">
+    <div className="w-full flex items-center justify-center font-jakarta">
       
       <div className="w-[552px] h-[585px]">
       <Cartridge 

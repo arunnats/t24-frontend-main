@@ -26,7 +26,7 @@ const CartridgeMob = ({
         </div>
       </div>
 
-      <div className="flex items-center justify-center absolute left-[22%] bottom-0">
+      <div className="flex items-center justify-center absolute left-[22%] bottom-[2%]">
         <img src="/black4.svg" alt="Inner box" className="" />
       </div>
 
@@ -39,12 +39,12 @@ const CartridgeMob = ({
       </div>
 
       <p
-        className={`absolute top-[74%] left-[30%] text-white text-[1.3rem] font-bold`}
+        className={`absolute top-[74%] left-[28%] text-white text-[1.3rem] font-bold`}
       >
         {price}
       </p>
       <p
-        className={`absolute top-[83%] left-[30%] text-white text-[0.7rem] font-bold`}
+        className={`absolute top-[83%] left-[28%] text-white text-[0.7rem] font-bold`}
       >
         {date}
       </p>
@@ -54,13 +54,13 @@ const CartridgeMob = ({
         TEAM SIZE: 5{" "}
       </p>
       <Link
-        className={`absolute top-[90%] right-[19%] text-white font-bold rounded-[03%] py-[1%] px-[4%] w-max text-[0.6rem]  text-ellipsis bg-red-600 `}
+        className={`absolute top-[89%] right-[19%] text-white font-bold rounded-[03%] py-[1%] px-[4%] w-max text-[0.6rem]  text-ellipsis bg-red-600 `}
         href={registrationLink}
       >
         REGISTER
       </Link>
       <div
-        className={`absolute top-[90%] left-[28%] text-white font-bold rounded-[03%] py-[1%] px-[3%] w-max text-ellipsis text-[0.6rem]  bg-yellow-600`}
+        className={`absolute top-[89%] left-[28%] text-white font-bold rounded-[03%] py-[1%] px-[3%] w-max text-ellipsis text-[0.6rem]  bg-yellow-500`}
         href={registrationLink}
       >
         LEARN MORE

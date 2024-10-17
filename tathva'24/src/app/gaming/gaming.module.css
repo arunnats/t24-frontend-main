@@ -3,7 +3,6 @@
         display: none;
     }
     z-index: 100;
-    min-height: 100vh;
     background-color: rgb(29, 29, 230);
     justify-content: center;
     align-items: center;
@@ -34,7 +33,9 @@
 
 .text {
     font-family: Cyberway Riders;
-
+@media(max-width:480px){
+    font-size: 20vw;
+}
 }
 
 .text_description {
@@ -86,8 +87,6 @@
     position: absolute;
     top: 100px;
     z-index: 0;
-
-    /* height: 100vh;  */
     width: 45vw;
     aspect-ratio: 1/1;
     object-fit: contain;
@@ -119,4 +118,51 @@
     @media(max-width:600px) {
         width: 18%;
     }
+    @media(max-width:600px) {
+        width: 25%;
+    }
 }
+@media(max-width:1400px){
+.gekko{
+height: 50vw;
+}
+.gamingbg{
+height: 50vw;
+}
+}
+@media(max-width:1300px){
+.gekko{
+height: 54vw;
+}
+.gamingbg{
+height: 54vw;
+}
+}
+@media(max-width:1200px){
+.gekko{
+height: 58vw;
+}
+.gamingbg{
+height: 58vw;
+}
+}
+@media(max-width:1100px){
+.gekko{
+height: 68vw;
+top:70px;
+}
+.gamingbg{
+    height: 68vw;
+    /* top:50px; */
+ width: 40vw;
+}
+}
+@media(max-width:950px){
+    .gekko{
+        top:40px;
+    height: 75vw;
+    }
+    .gamingbg{
+    height: 75vw;
+    }
+    }

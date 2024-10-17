@@ -113,10 +113,10 @@ export default function GamingPage() {
 
   return (
     <>
-      <div className={`flex relative ${styles.main}`}>
+      <div className={`flex relative overflow-hidden ${styles.main}`}>
         {/* Blue background with animation */}
         {showBlueBg && (
-          <div className={`flex flex-col w-full h-screen bg-black absolute z-50 ${styles.bluebg}`}>
+          <div className={`flex flex-col w-full h-screen bg-black absolute ${styles.bluebg}`}>
             <div className="flex flex-col items-center gap-10">
               <div className={`text-white text-8xl ${styles.textbg} mb-2`}>Gaming</div>
               <div className={`text-white text-8xl ${styles.textbg}`}>Conclave</div>
@@ -126,7 +126,7 @@ export default function GamingPage() {
               alt="Gaming image"
               width={1100}
               height={500}
-              className={`flex absolute top-0 left-50 `}
+              className={`flex absolute top-(-2)left-50 `}
             />
           </div>
         )}

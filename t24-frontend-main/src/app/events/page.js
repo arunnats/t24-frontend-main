@@ -1,8 +1,8 @@
 "use client"; // Add this directive at the top to mark this as a client-side component
 
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import Eventpage from "../components/Event_card/eventpageComp";
+import Pacman from "../components/pacman/Pacman";
 
 const CMS_URL = "https://cms.tathva.org";
 const CMS_API_TOKEN =
@@ -10,6 +10,7 @@ const CMS_API_TOKEN =
 
 const Page = () => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchWorkshops = async () => {
@@ -25,10 +26,11 @@ const Page = () => {
           }
         );
         const fetchedData = await res.json();
-        console.log(fetchedData);
         setData(fetchedData.data);
+        setLoading(false); // Don't forget to set loading to false after fetching
       } catch (error) {
         console.error("Error fetching competitions:", error);
+        setLoading(false); // Stop loading if there's an error
       }
     };
 
@@ -36,9 +38,14 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden">
-      {" "}
-      <Eventpage event="COMPETITIONS" cards={data} />
+    <div className="min-h-[100vh] bg-black">
+      {loading ? (
+        <div className="flex  items-center h-[100vh]">
+          <Pacman />
+        </div>
+      ) : (
+        <Eventpage event="COMPETITIONS" cards={data} />
+      )}
     </div>
   );
 };

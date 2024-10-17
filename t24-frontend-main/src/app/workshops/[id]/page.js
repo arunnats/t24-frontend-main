@@ -1,6 +1,13 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Workshopmodal from "../../components/Workshopmodal/Workshopmodal";
+
+const formatDate = (dateString) => {
+  const date = new Date(dateString);
+  const options = { day: "numeric", month: "short" };
+  return date.toLocaleDateString("en-US", options).toUpperCase();
+};
 
 const CMS_URL = "https://cms.tathva.org";
 const CMS_API_TOKEN =
@@ -19,13 +26,16 @@ const Page = ({ params }) => {
 
     const fetchWorkshop = async () => {
       try {
-        const res = await fetch(`${CMS_URL}/api/workshops/${id}`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${CMS_API_TOKEN}`,
-          },
-        });
+        const res = await fetch(
+          `${CMS_URL}/api/workshops/${id}?populate=posterImage`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${CMS_API_TOKEN}`,
+            },
+          }
+        );
 
         if (!res.ok) {
           throw new Error(`Error fetching workshop: ${res.statusText}`);
@@ -53,7 +63,21 @@ const Page = ({ params }) => {
   if (error) return <p>Error: {error}</p>;
   if (!workshop) return <p>No workshop data found</p>;
 
-  return <div>{<h1>{workshop.name}</h1>}</div>;
+  return (
+    <div>
+      {
+        <Workshopmodal
+          imageSrc={CMS_URL + workshop.posterImage.url}
+          title={workshop.name}
+          price={workshop.regPrice}
+          date={formatDate(workshop.eventDate)}
+          registrationLink={workshop.regLink}
+          description={workshop.description}
+          type="Workshop"
+        />
+      }
+    </div>
+  );
 };
 
 export default Page;

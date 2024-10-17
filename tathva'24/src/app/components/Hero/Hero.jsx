@@ -86,6 +86,12 @@ const Hero = () => {
                             </video>
                         </div>
                     </div>
+
+                    <div className="absolute top-[6.5%] w-full  flex items-center justify-center ">
+                        <div className="relative  w-[63%] ">
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
              

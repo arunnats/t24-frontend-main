@@ -1,36 +1,69 @@
-import styles from "./page.module.css";
-import FooterMobile from "./components/FooterMobile/FooterMobile";
-import FooterDesktop from "./components/FooterDesktop/FooterDesktop";
-import Carousal from "./Carousal/Carousal";
-// import Hero from "./components/Hero/Hero";
-import ExpoPage from "./components/expo-page/page";
-// import FooterPC from "./footerpc";
-import Eventpage from "./components/Event_card/eventpage";
+import CartridgeMob from "./components/workshopCartridge/cartridge_mob";
 
-const Page = () => {
+export default function Home() {
   return (
-    // <div className="h-[400vh] relative overflow-clip bg-black">
-    //     <Hero />
-    //     <Carousal />
-    //     <ExpoPage />
-    //   <div className="footer h-max w-full absolute bottom-0 left-0">
-    //     <FooterDesktop />
-    //     <FooterMobile />
-    //   </div>
-    // </div>
-    <Eventpage
-      event = "WORKSHOP"
-      cards = {[
-        'Column 1',
-        'Column 2',
-        'Column 3',
-        'Column 4',
-        'Column 5',
-        'Column 6',
-        'Column 7',
-      ]}
-    />
-  );
-};
+    <div>
+      <div className="custom-sm:hidden font-jakarta">
+        {/* for desktop */}
+        <div className="">
+          <CartridgeMob
+            imageSrc="/WorkshopCartridge/workshop.jpg"
+            title="DATA SCIENCE"
+            price="₹999"
+            date="27 OCT"
+            registrationLink="https://www.google.com/"
+            description="LOREM IPSUM DOLOR SIT AMET CONSECTETUR. AMET DOLOR MAURIS NIBH VIVAMUS VELIT LECTUS. UT FRINGILLA MALESUADA ULLAMCORPER ET JUSTO VARIUS BLANDIT NEQUE MASSA. MASSA PELLENTESQUE VOLUTPAT ET ENIM LAOREET BIBENDUM DICTUMST. CURSUS ETIAM LOREM ID IACULIS ELEMENTUM NISL CURSUS TRISTIQUE ID."
+          />
+        </div>
+      </div>
 
-export default Page;
+      <div className="hidden custom-sm:flex w-full flex items-center justify-center font-jakarta bg-black">
+        <div className="flex flex-col">
+          <div className="">
+            <CartridgeMob
+              imageSrc="/WorkshopCartridge/workshop.jpg"
+              title="DATA SCIENCE"
+              price="₹999"
+              date="27 OCT"
+              registrationLink="https://www.google.com/"
+              description="LOREM IPSUM DOLOR SIT AMET CONSECTETUR. AMET DOLOR MAURIS NIBH VIVAMUS VELIT LECTUS. UT FRINGILLA MALESUADA ULLAMCORPER ET JUSTO VARIUS BLANDIT NEQUE MASSA. MASSA PELLENTESQUE VOLUTPAT ET ENIM LAOREET BIBENDUM DICTUMST. CURSUS ETIAM LOREM ID IACULIS ELEMENTUM NISL CURSUS TRISTIQUE ID."
+            />
+          </div>
+
+          <div className="">
+            <CartridgeMob
+              imageSrc="/WorkshopCartridge/workshop.jpg"
+              title="DATA SCIENCE"
+              price="₹999"
+              date="27 OCT"
+              registrationLink="https://www.google.com/"
+              description="LOREM IPSUM DOLOR SIT AMET CONSECTETUR. AMET DOLOR MAURIS NIBH VIVAMUS VELIT LECTUS. UT FRINGILLA MALESUADA ULLAMCORPER ET JUSTO VARIUS BLANDIT NEQUE MASSA. MASSA PELLENTESQUE VOLUTPAT ET ENIM LAOREET BIBENDUM DICTUMST. CURSUS ETIAM LOREM ID IACULIS ELEMENTUM NISL CURSUS TRISTIQUE ID."
+            />
+          </div>
+
+          <div className="">
+            <CartridgeMob
+              imageSrc="/WorkshopCartridge/workshop.jpg"
+              title="DATA SCIENCE"
+              price="₹999"
+              date="27 OCT"
+              registrationLink="https://www.google.com/"
+              description="LOREM IPSUM DOLOR SIT AMET CONSECTETUR. AMET DOLOR MAURIS NIBH VIVAMUS VELIT LECTUS. UT FRINGILLA MALESUADA ULLAMCORPER ET JUSTO VARIUS BLANDIT NEQUE MASSA. MASSA PELLENTESQUE VOLUTPAT ET ENIM LAOREET BIBENDUM DICTUMST. CURSUS ETIAM LOREM ID IACULIS ELEMENTUM NISL CURSUS TRISTIQUE ID."
+            />
+          </div>
+
+          <div className="">
+            <CartridgeMob
+              imageSrc="/WorkshopCartridge/workshop.jpg"
+              title="DATA SCIENCE"
+              price="₹999"
+              date="27 OCT"
+              registrationLink="https://www.google.com/"
+              description="LOREM IPSUM DOLOR SIT AMET CONSECTETUR. AMET DOLOR MAURIS NIBH VIVAMUS VELIT LECTUS. UT FRINGILLA MALESUADA ULLAMCORPER ET JUSTO VARIUS BLANDIT NEQUE MASSA. MASSA PELLENTESQUE VOLUTPAT ET ENIM LAOREET BIBENDUM DICTUMST. CURSUS ETIAM LOREM ID IACULIS ELEMENTUM NISL CURSUS TRISTIQUE ID."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

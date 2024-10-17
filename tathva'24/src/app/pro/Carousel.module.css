@@ -4,6 +4,12 @@
   overflow: hidden;
   position: relative;
 }
+@font-face {
+  font-family: "Rage Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Rage Italic"), url("/fonts/RAGE_1.woff") format("woff");
+}
 
 .carouselContent {
   display: flex;
@@ -31,6 +37,18 @@
 .thirdrow {
   clip-path: polygon(0 0, 100% 39%, 100% 100%, 0 100%);
   transform: translateY(-57%);
+}
+
+.proshowtext {
+  text-shadow: -10px -10px 0 #000, 10px -10px 0 #000, -10px 10px 0 #000,
+    10px 10px 0 #000;
+}
+.artistname {
+  font-family: "Rage Italic";
+  color: white;
+  text-shadow: -4px -4px 0 #00004e, 4px -4px 0 #00004e, -4px 4px 0 #00004e,
+    4px 4px 0 #00004e;
+  transform: rotate(-5deg) translatey(-1.5rem);
 }
 
 @keyframes scroll {

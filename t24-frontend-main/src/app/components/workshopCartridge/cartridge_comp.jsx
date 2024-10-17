@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./workshopCartridge.module.css";
 
+const CMS_URL = "https://cms.tathva.org";
+
 const Cartridge = ({
   imageSrc,
   title,
@@ -8,6 +10,7 @@ const Cartridge = ({
   price,
   date,
   registrationLink,
+  guidelines,
 }) => {
   return (
     <div className="relative">
@@ -54,19 +57,35 @@ const Cartridge = ({
                   <div className={`w-[30%] h-full`}>
                     {/* price  */}
                     <div
-                      className={`h-1/2 flex items-center justify-center text-white  text-[80%] ${styles.supplyFont}`}
+                      className={`h-1/2 flex items-center justify-center text-white  text-[100%] ${styles.supplyFont}`}
                     >
-                      {price}
+                      ₹{price}
                     </div>
                     {/* date  */}
                     <div
-                      className={`h-1/2 flex justify-center text-[#808080] text-[70%] ${styles.supplyFont}`}
+                      className={`h-1/2 flex justify-center text-[#808080] text-[90%] ${styles.supplyFont}`}
                     >
                       {date}
                     </div>
                   </div>
 
-                  <div className="w-[70%] flex justify-center items-center">
+                  <div className="w-[70%] flex justify-center items-center flex-col">
+                    {/* Guidelines button */}
+                    {guidelines && (
+                      <a
+                        href={`${CMS_URL}${guidelines}`} // PDF link
+                        target="_blank" // Opens the PDF in a new tab
+                        rel="noopener noreferrer" // Security for opening new tabs
+                        className={`w-[80%] mb-2 ${styles.supplyFont}`}
+                      >
+                        <button
+                          className={`w-full h-full px-4 py-1 bg-yellow-500 text-black font-semibold text-[80%] rounded-md shadow-md hover:bg-[#B01328]`}
+                        >
+                          GUIDELINES
+                        </button>
+                      </a>
+                    )}
+
                     {/* Register button */}
                     <a
                       href={registrationLink}

@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link'; // Add this import statement
 import styles from '../Carousal/slider.module.css';

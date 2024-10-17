@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./eventpage.module.css";
+import CartridgeMob from "../workshopCartridge/cartridge_mob";
 
 const Eventpage = ({event, cards}) => {
 
@@ -15,11 +16,19 @@ const Eventpage = ({event, cards}) => {
                 <p className={`text-white text-[12vw] m-0 leading-none ${styles.supplyregular}`}>{event}</p>
             </div>
             <hr className="border-t-2 border-white" />
-            <div className="flex flex-wrap p-[3vh] md:p-[4%]">
+            <div className="flex flex-wrap p-[3vh] md:p-[4%] mx-auto">
                 {cards.map((card, index) => (
-                    <div key={index} className="basis-full md:basis-1/3 p-4 h-[30vh] md:h-[30vw] pl-[5vw] border">
-                        <div>
-                            {card}
+                    <div key={index} className="mr-10">
+                        <div className="">
+                        <CartridgeMob
+            imageSrc="/WorkshopCartridge/workshop.jpg"
+            title="DATA SCIENCE"
+            price="₹999"
+            date="27 OCT"
+            registrationLink="https://www.google.com/"
+            description="LOREM IPSUM DOLOR SIT AMET CONSECTETUR. AMET DOLOR MAURIS NIBH VIVAMUS VELIT LECTUS. UT FRINGILLA MALESUADA ULLAMCORPER ET JUSTO VARIUS BLANDIT NEQUE MASSA. MASSA PELLENTESQUE VOLUTPAT ET ENIM LAOREET BIBENDUM DICTUMST. CURSUS ETIAM LOREM ID IACULIS ELEMENTUM NISL CURSUS TRISTIQUE ID."
+          />
+        
                         </div>
                     </div>
                 ))}

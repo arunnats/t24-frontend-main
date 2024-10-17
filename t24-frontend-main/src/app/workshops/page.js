@@ -1,7 +1,6 @@
 "use client"; // Add this directive at the top to mark this as a client-side component
 
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import Eventpage from "../components/Event_card/eventpage";
 
 const CMS_URL = "https://cms.tathva.org";

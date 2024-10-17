@@ -10,6 +10,7 @@ const CartridgeMob = ({
   registrationLink,
   docID,
   teamSize,
+  type,
 }) => {
   return (
     <div className="relative w-[292px] h-[309px] mt-10">
@@ -72,7 +73,7 @@ const CartridgeMob = ({
       </Link>
       <Link
         className={`absolute top-[89%] left-[28%] text-white font-bold rounded-[03%] py-[1%] px-[3%] w-max text-ellipsis text-[0.6rem]  bg-yellow-500`}
-        href={`./workshops/${docID}`}
+        href={`./${type}/${docID}`}
       >
         LEARN MORE
       </Link>

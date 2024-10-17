@@ -46,8 +46,8 @@
 .artistname {
   font-family: "Rage Italic";
   color: white;
-  text-shadow: -4px -4px 0 #00004e, 4px -4px 0 #00004e, -4px 4px 0 #00004e,
-    4px 4px 0 #00004e;
+  text-shadow: -3px -3px 0 #fc49dc, 3px -3px 0 #fc49dc, -3px 3px 0 #fc49dc,
+    3px 3px 0 #fc49dc;
   transform: rotate(-5deg) translatey(-1.5rem);
 }
 

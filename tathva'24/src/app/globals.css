@@ -9,7 +9,8 @@
     src: url("/fonts/pricedown-bl.otf") format("opentype"),
          url("/fonts/pricedown-bl.woff") format("woff"),
          url("/fonts/pricedown-bl.woff2") format("woff2");
- 
+         font-family: Cyberway Riders;
+         src:url("/fonts/Cyberway Riders.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
   }

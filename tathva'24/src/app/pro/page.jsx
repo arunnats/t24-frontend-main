@@ -26,10 +26,12 @@ const Page = () => {
   return (
     <div className="relative h-screen overflow-hidden bg-black">
       <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-      <div className="absolute top-1/4 left-0 w-full text-center text-white text-9xl p-4 z-10">
+      <div className="absolute top-1/4 left-0 w-full text-center text-white  text-8xl p-4 z-10 md:text-9xl">
         <h1 className={`font-[pricedown] ${styles.proshowtext} `}>PRO-</h1>
         <h1 className={`font-[pricedown] ${styles.proshowtext}`}>Show</h1>
-        <h2 className={`${styles.artistname} text-9xl`}>Shilpa Rao</h2>
+        <h2 className={`${styles.artistname} text-8xl md:text-9xl`}>
+          Shilpa Rao
+        </h2>
       </div>
 
       <div className="relative z-0">

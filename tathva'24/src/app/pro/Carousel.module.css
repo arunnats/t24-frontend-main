@@ -14,13 +14,13 @@
 .carouselContent {
   display: flex;
   transition: transform 0.5s;
-  animation: scroll 9s ease-in-out infinite;
+  animation: scroll 11s ease-in-out infinite;
 }
 
 .carouselContentrev {
   display: flex;
   transition: transform 0.5s;
-  animation: scrollrev 9s ease-in-out infinite;
+  animation: scrollrev 11s ease-in-out infinite;
 }
 
 .carouselItem {
@@ -51,17 +51,28 @@
   transform: rotate(-5deg) translatey(-1.5rem);
 }
 
+@media screen and (max-width: 768px) {
+  .proshowtext {
+    text-shadow: -7px -7px 0 #000, 7px -7px 0 #000, -7px 7px 0 #000,
+      7px 7px 0 #000;
+  }
+  .artistname {
+    text-shadow: -3px -3px 0 #00004e, 3px -3px 0 #00004e, -3px 3px 0 #00004e,
+      3px 3px 0 #00004e;
+    transform: rotate(-5deg) translatey(-1.5rem);
+  }
+}
 @keyframes scroll {
   0%,
-  15% {
+  25% {
     transform: translateX(0);
   }
   33.33%,
-  48.33% {
+  58.33% {
     transform: translateX(-100%);
   }
   66.66%,
-  81.66% {
+  91.66% {
     transform: translateX(-200%);
   }
   100% {
@@ -71,17 +82,18 @@
 
 @keyframes scrollrev {
   0%,
-  15% {
+  25% {
     transform: translateX(-300%);
   }
   33.33%,
-  48.33% {
+  58.33% {
     transform: translateX(-200%);
   }
   66.66%,
-  81.66% {
+  91.66% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }

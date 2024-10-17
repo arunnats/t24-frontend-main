@@ -1,5 +1,4 @@
-// components/Modal.js
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Worskshopmodal.module.css";
 import Cartridge from "../workshopCartridge/cartridge_comp";
 
@@ -11,11 +10,16 @@ const Workshopmodal = ({
   registrationLink,
   description,
   type,
+  guidelines,
   workshopTitle,
   workshopSubtitle,
   aboutText,
   contactDetails,
 }) => {
+  useEffect(() => {
+    console.log("Guidelines:", guidelines); // Logs guidelines to the console
+  }, [guidelines]);
+
   return (
     <div
       className={`flex-col md:flex-row flex justify-center items-center h-[100vh] bg-black text-slate-200 ${styles.plusJakartaFont}`}
@@ -28,6 +32,7 @@ const Workshopmodal = ({
           date={date}
           registrationLink={registrationLink}
           description=""
+          guidelinesLink={guidelines}
         />
       </div>
       <div className="p-2 m-2 w-[80%] md:w-[40%]">

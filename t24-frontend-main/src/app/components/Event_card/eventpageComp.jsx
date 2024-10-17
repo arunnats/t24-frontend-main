@@ -40,9 +40,9 @@ const Eventpage = ({ event, cards }) => {
           {cards.map((card, index) => {
             // Check if all required fields are present
             if (
-              card.posterImage?.url &&
-              card.name &&
-              card.regPrice &&
+              card.coverImage?.url &&
+              card.title &&
+              card.regFee &&
               card.eventDate &&
               card.regLink &&
               card.documentId
@@ -51,13 +51,13 @@ const Eventpage = ({ event, cards }) => {
                 <div key={index} className="mr-10">
                   <div className="">
                     <CartridgeMob
-                      imageSrc={CMS_URL + card.posterImage.url}
-                      title={card.name}
-                      price={card.regPrice}
+                      imageSrc={CMS_URL + card.coverImage.url}
+                      title={card.title}
+                      price={card.regFee}
                       date={formatDate(card.eventDate)}
                       registrationLink={card.regLink}
                       docID={card.documentId}
-                      type="workshops"
+                      type="events"
                     />
                   </div>
                 </div>

@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./workshopCartridge.module.css";
 
-const CMS_URL = "https://cms.tathva.org";
-
 const Cartridge = ({
   imageSrc,
   title,
@@ -10,7 +8,7 @@ const Cartridge = ({
   price,
   date,
   registrationLink,
-  guidelines,
+  guidelinesLink,
 }) => {
   return (
     <div className="relative">
@@ -71,15 +69,15 @@ const Cartridge = ({
 
                   <div className="w-[70%] flex justify-center items-center flex-col">
                     {/* Guidelines button */}
-                    {guidelines && (
+                    {guidelinesLink && (
                       <a
-                        href={`${CMS_URL}${guidelines}`} // PDF link
+                        href={guidelinesLink}
                         target="_blank" // Opens the PDF in a new tab
                         rel="noopener noreferrer" // Security for opening new tabs
                         className={`w-[80%] mb-2 ${styles.supplyFont}`}
                       >
                         <button
-                          className={`w-full h-full px-4 py-1 bg-yellow-500 text-black font-semibold text-[80%] rounded-md shadow-md hover:bg-[#B01328]`}
+                          className={`w-full h-full px-4 py-1 bg-yellow-500 text-black font-semibold text-[80%] rounded-md shadow-md hover:bg-yellow-600`}
                         >
                           GUIDELINES
                         </button>

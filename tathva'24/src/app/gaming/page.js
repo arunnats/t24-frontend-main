@@ -118,8 +118,7 @@ export default function GamingPage() {
         {showBlueBg && (
           <div className={`flex flex-col w-full h-screen bg-black absolute ${styles.bluebg}`}>
             <div className="flex flex-col items-center gap-10">
-              <div className={`text-white text-8xl ${styles.textbg} mb-2`}>Gaming</div>
-              <div className={`text-white text-8xl ${styles.textbg}`}>Conclave</div>
+            <div className={`text-white text-8xl ${styles.textbg} mb-2`}>Glitch</div>
             </div>
             <Image
               src="/image 7.svg"
@@ -135,8 +134,7 @@ export default function GamingPage() {
           {/* Left side */}
           <div className={`flex flex-col w-1/3 justify-evenly items-center h-screen ${styles.left}`}>
             <div className="flex flex-col items-center gap-5">
-              <div className={`text-white text-7xl ${styles.text} mb-2`}>Gaming</div>
-              <div className={`text-white text-7xl ${styles.text}`}>Conclave</div>
+            <div className={`text-white text-8xl ${styles.text} mb-2`}>Glitch</div>
             </div>
             <div className={`text-white text-1xl text-start ${styles.text_description} px-20 mb-10`}>
               Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.
@@ -166,8 +164,8 @@ export default function GamingPage() {
         {/* Mobile view */}
         <div className={`flex flex-col bg-black justify-evenly items-center w-full min-h-screen py-5 ${styles.mobile}`}>
           <div className="flex flex-col items-center gap-5">
-            <div className={`text-white text-8xl ${styles.text} mb-2`}>Gaming</div>
-            <div className={`text-white text-8xl ${styles.text}`}>Conclave</div>
+            <div className={`text-white text-8xl ${styles.text} mb-2`}>Glitch</div>
+          
           </div>
           <div>
             <Image src="/mobile.svg" alt="Gaming image" width={285} height={0} className={`flex py-10 ${styles.mobileimgg}`} />

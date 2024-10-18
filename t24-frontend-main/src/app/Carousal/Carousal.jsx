@@ -95,7 +95,7 @@ const Carousal = () => {
           onMouseEnter={() => handleMouseEnter('LECTURES')}
           onMouseLeave={handleMouseLeave}
         >
-          <Link href="/workshops">LECTURES</Link>
+          <Link href="/lectures">LECTURES</Link>
         </h2>
         
         
@@ -104,7 +104,7 @@ const Carousal = () => {
           onMouseEnter={() => handleMouseEnter('COMPETITION')}
           onMouseLeave={handleMouseLeave}
         >
-          <Link href="/workshops">COMPETITION</Link>
+          <Link href="/events">COMPETITION</Link>
         </h2>
         
       </div>

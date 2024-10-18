@@ -7,14 +7,18 @@ import Hero from "./components/Hero/Hero";
 import ExpoPage from "./components/expo-page/page";
 import ProshowMod from "./components/Proshow/ProshowMod";
 import GamingPage from "./components/glitchPage/GamingPage";
+import MainMarquee from "./components/mainPageMarquee/marque";
 import { Analytics } from "@vercel/analytics/react";
+
 // import FooterPC from "./footerpc";
 
 const Page = () => {
   return (
     <div className="h-[800vh] relative overflow-clip bg-black">
       <Hero />
+
       <Carousal />
+
       <ProshowMod />
       <GamingPage />
       <ExpoPage />

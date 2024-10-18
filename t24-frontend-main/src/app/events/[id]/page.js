@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Workshopmodal from "../../components/Workshopmodal/Workshopmodal";
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 
 const formatDate = (dateString) => {
   const date = new Date(dateString);

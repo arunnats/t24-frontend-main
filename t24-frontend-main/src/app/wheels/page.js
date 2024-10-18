@@ -5,6 +5,6 @@ import AutomotiveSummit from '../../app/components/AutomotiveSummit/automotiveSu
       <AutomotiveSummit/>
     </div>
   )
-}
+
 
 export default page

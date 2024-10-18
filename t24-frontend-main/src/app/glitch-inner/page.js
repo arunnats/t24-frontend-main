@@ -5,6 +5,7 @@ import FooterMobile from "../components/FooterMobile/FooterMobile";
 import FooterDesktop from "../components/FooterDesktop/FooterDesktop";
 import InnerDescription from "../components/InnerPages/InnerDescription/InnerDescription";
 import Link from "next/link";
+import Navbar from "../components/Navbar/Navbar";
 
 const page = () => {
   const desc =
@@ -15,6 +16,8 @@ const page = () => {
 
   return (
     <div className="w-full h-[232vh] md:h-[208vh] relative overflow-hidden ">
+      <Navbar />
+
       <div className="h-screen">
         <div className="w-full h-[15%] lg:h-[20%] flex justify-between items-center p-2 ">
           <div className="m-2 h-full w-full p-2 rounded  ">

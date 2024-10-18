@@ -19,15 +19,15 @@ const Navbar_mob = () => {
         <div className="space-y-1">
           {isOpen ? (
             // Close (X) icon
-            <div className="text-black w-8 h-8 bg-white font-bold text-black flex  justify-center align-middle text-3xl">
+            <div className=" w-8 h-8 bg-white font-bold text-black flex  justify-center align-middle text-3xl">
               ✕
             </div>
           ) : (
             // Hamburger icon
             <>
-              <div className="w-8 h-1 bg-black"></div>
-              <div className="w-8 h-1 bg-black"></div>
-              <div className="w-8 h-1 bg-black"></div>
+              <div className="w-8 h-1 bg-white"></div>
+              <div className="w-8 h-1 bg-white"></div>
+              <div className="w-8 h-1 bg-white  "></div>
             </>
           )}
         </div>

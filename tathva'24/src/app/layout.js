@@ -14,7 +14,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "Tathva 24",
-  description: "Welcome to Tathva 24, South India's largest techno-management fest",
+  description: "Welcome to Tathva 24, South India &apos; s largest techno-management fest",
 };
 
 export default function RootLayout({ children }) {
@@ -24,7 +24,6 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="icon" href="./MainLogo.png" />
-        <link rel="stylesheet" href="/fonts/fonts.css" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

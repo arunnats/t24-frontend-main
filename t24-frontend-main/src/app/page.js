@@ -65,13 +65,12 @@ export default function Home() {
       {
         opacity: 1,
         y: 0,
-        duration: 0.5,
         scale:1,
         ease: "power2.out",
         // marker: true,
         scrollTrigger: {
           trigger: ".text-container2", 
-          start: "top 50%",
+          start: "top 80%",
           toggleActions: "play none none none",
           // markers: true
         },
@@ -122,12 +121,12 @@ export default function Home() {
       {
         opacity: 1,
         y: 0,
-        duration: 1.5,
+        duration: 0.5,
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".expo-container",
           start: "top 0%",
-          toggleActions: "play none none none",
+          toggleActions: "play none reverse none",
           // markers: true,
         },
       }

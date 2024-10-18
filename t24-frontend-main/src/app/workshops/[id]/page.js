@@ -1,10 +1,17 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Workshopmodal from "../../components/Workshopmodal/Workshopmodal";
+
+const formatDate = (dateString) => {
+  const date = new Date(dateString);
+  const options = { day: "numeric", month: "short" };
+  return date.toLocaleDateString("en-US", options).toUpperCase();
+};
 
 const CMS_URL = "https://cms.tathva.org";
 const CMS_API_TOKEN =
-  "994fefbd051fa13866a7b0eed4df028a0d4b2bbbc22b1feaa23b0dfd849fc804e26750a92be9c4205fefd04c5aab555ebd2436e60f68ec0287c34e6fb7763a54b89d7239b1d73dcc1650f2eea905279f2c8eaafeed4b083294c30a8c9bdb4edefde6dea87986f992ff69a687d84d39ce2ad02c19fcbb053f57b6e29357cf7538";
+  "fecee17e1e701ae4b85dfe015508ab24270c911fed283fa78752a6a233c11a2c232c464cc88dd0d96a07a9a71c82f6f04391795e58f94561fdfafa45a8d22d88209ee67f06b0ecfbe8ff6be3473f533fab42d6fd3b0c5cbc9a860b6733e744104818e113022e0e46f3b459acb648f8e04bc66198cd47ed303ea62a1f7186c980";
 
 const Page = ({ params }) => {
   const { id } = params;
@@ -19,13 +26,16 @@ const Page = ({ params }) => {
 
     const fetchWorkshop = async () => {
       try {
-        const res = await fetch(`${CMS_URL}/api/workshops/${id}`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${CMS_API_TOKEN}`,
-          },
-        });
+        const res = await fetch(
+          `${CMS_URL}/api/workshops/${id}?populate=posterImage`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${CMS_API_TOKEN}`,
+            },
+          }
+        );
 
         if (!res.ok) {
           throw new Error(`Error fetching workshop: ${res.statusText}`);
@@ -53,7 +63,21 @@ const Page = ({ params }) => {
   if (error) return <p>Error: {error}</p>;
   if (!workshop) return <p>No workshop data found</p>;
 
-  return <div>{<h1>{workshop.name}</h1>}</div>;
+  return (
+    <div>
+      {
+        <Workshopmodal
+          imageSrc={CMS_URL + workshop.posterImage.url}
+          title={workshop.name}
+          price={workshop.regPrice}
+          date={formatDate(workshop.eventDate)}
+          registrationLink={workshop.regLink}
+          description={workshop.description}
+          type="Workshop"
+        />
+      }
+    </div>
+  );
 };
 
 export default Page;

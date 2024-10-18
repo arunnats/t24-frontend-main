@@ -15,8 +15,8 @@
 }
 
 .textbg {
-    font-family: Cyberway Riders;
-    font-size: 20vw;
+    font-family: 'Cyberway Riders', sans-serif;
+    font-size: 30vw;
     letter-spacing: 1vw;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .text {
-    font-family: Cyberway Riders;
+    font-family: 'Cyberway Riders';
 @media(max-width:480px){
     font-size: 20vw;
 }

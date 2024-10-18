@@ -55,4 +55,14 @@ html {
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'Cyberway Riders';
+    src: url('/fonts/Cyberway Riders.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
  

@@ -108,7 +108,7 @@ export default function GamingPage() {
             className={`flex flex-col w-full h-screen bg-black absolute ${styles.bluebg}`}
           >
             <div className="flex flex-col items-center gap-10">
-              <div className={`text-white text-8xl ${styles.textbg} mb-2`}>
+              <div className={`text-white text-8xl font-valorant ${styles.textbg} mb-2`}>
                 Glitch
               </div>
             </div>

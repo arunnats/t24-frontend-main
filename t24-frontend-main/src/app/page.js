@@ -165,7 +165,7 @@ export default function Home() {
 
       <GamingPage />
 
-      <div className="expo-container w-screen h-min-screen">
+      <div className="expo-container w-screen h-min-screen my-[4vh]">
         <ExpoPage />
       </div>
 
@@ -177,8 +177,7 @@ export default function Home() {
         <ProShow />
       </div>
 
-      <div>
-        {" "}
+      <div className=" mt-[10vh] h-full">
         <OthersLanding />
       </div>
 

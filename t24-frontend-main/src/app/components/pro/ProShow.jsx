@@ -5,6 +5,7 @@ import CarouselGrid from "./gridmd";
 import CarouselGridxsm from "./gridsmaller";
 import CarouselGridsm from "./gridsm";
 import gsap from "gsap";
+import Link from "next/link";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -64,24 +65,36 @@ const ProShow = () => {
         },
       }
     );
-
-    
   }, []);
 
   return (
-    <div  className="relative h-screen overflow-hidden bg-black">
+    <div className="relative h-screen overflow-hidden bg-black">
       <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-      <div ref={proShowRef} className="absolute top-1/4 left-0 w-full text-center text-white text-8xl p-4 z-10 md:text-9xl flex flex-col">
-        <h1 className={`font-[pricedown] ${styles.proshowtext}`}>PRO-</h1>
-        <h1 className={`font-[pricedown] ${styles.proshowtext}`}>Show</h1>
-        <h2 className={`${styles.artistname} text-8xl md:text-9xl`}>
+      <Link
+        ref={proShowRef}
+        href={"./proshow"}
+        className="absolute top-1/4 left-0 w-full text-center text-white text-8xl p-4 z-10 md:text-9xl flex flex-col "
+      >
+        <h1
+          className={`font-[pricedown] ${styles.proshowtext} transform transition-transform duration-300 hover:translate-y-[-5px] `}
+        >
+          PRO-
+        </h1>
+        <h1
+          className={`font-[pricedown] ${styles.proshowtext} transform transition-transform duration-300 hover:translate-y-[-5px] `}
+        >
+          Show
+        </h1>
+        <h2
+          className={`${styles.artistname} text-8xl md:text-9xl transform transition-transform duration-300 hover:translate-y-[-5px] `}
+        >
           Shilpa Rao
         </h2>
         <div className="flex justify-center items-center sm:gap-16">
           <img src="TVWhite.svg" className="mr-4" alt="TV Logo" />
           <img src="Wonderwall.svg" alt="Wonderwall Logo" />
         </div>
-      </div>
+      </Link>
 
       <div ref={proShowRef2} className="relative z-0">
         {isMedScreen ? (

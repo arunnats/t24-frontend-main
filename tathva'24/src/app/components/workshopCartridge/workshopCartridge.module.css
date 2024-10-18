@@ -1,12 +1,10 @@
 
-<<<<<<< HEAD
     
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 .titlemob{
     font-weight: 800;
 }
-=======
 @font-face {
     font-family: "JakartaSans";
     src: url("/fonts/PlusJakartaSans.ttf") format("opentype");
@@ -47,4 +45,3 @@
             inset 0 0.4em 0.8em rgba(0, 0, 0, 0.1);   /* Bottom shadow */
     }
 }
->>>>>>> origin/workshopCartridge

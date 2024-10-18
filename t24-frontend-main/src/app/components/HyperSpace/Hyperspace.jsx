@@ -69,7 +69,7 @@ const JumpToHyperspace = () => {
   });
 
   useEffect(() => {
-    if (typeof window === 'undefined') return; // Ensure this code only runs on the client
+    if (typeof window === "undefined") return; // Ensure this code only runs on the client
 
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
@@ -212,39 +212,23 @@ const JumpToHyperspace = () => {
       }
     };
 
-<<<<<<< HEAD:t24-frontend-main/src/app/components/HyperSpace/Hyperspace.jsx
     const debouncedResize = _.debounce(resetStars, 250);
-    
-    canvas.addEventListener('mousedown', initiate);
-    canvas.addEventListener('mouseup', enter);
-    window.addEventListener('resize', debouncedResize);
-=======
+
     canvas.addEventListener("mousedown", initiate);
     canvas.addEventListener("mouseup", enter);
-    window.addEventListener("resize", _.debounce(resetStars, 250));
->>>>>>> proshow:tathva'24/src/app/components/HyperSpace/Hyperspace.jsx
+    window.addEventListener("resize", debouncedResize);
 
     resizeCanvas();
     render();
 
     return () => {
-<<<<<<< HEAD:t24-frontend-main/src/app/components/HyperSpace/Hyperspace.jsx
-      window.removeEventListener('resize', debouncedResize);
-      canvas.removeEventListener('mousedown', initiate);
-      canvas.removeEventListener('mouseup', enter);
-    };
-  }, []);
-
-  return <canvas ref={canvasRef} />;
-=======
-      window.removeEventListener("resize", _.debounce(resetStars, 250));
+      window.removeEventListener("resize", debouncedResize);
       canvas.removeEventListener("mousedown", initiate);
       canvas.removeEventListener("mouseup", enter);
     };
   }, []);
 
-  return <canvas ref={canvasRef} style={{ display: "block" }} />;
->>>>>>> proshow:tathva'24/src/app/components/HyperSpace/Hyperspace.jsx
+  return <canvas ref={canvasRef} />;
 };
 
 export default JumpToHyperspace;

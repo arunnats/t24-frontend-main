@@ -26,7 +26,7 @@ const Page = () => {
           }
         );
         const fetchedData = await res.json();
-        setData(fetchedData.data);
+        setData(fetchedData.data || []);
         setLoading(false); // Don't forget to set loading to false after fetching
       } catch (error) {
         console.error("Error fetching competitions:", error);
@@ -39,7 +39,7 @@ const Page = () => {
 
   return (
     <div className="min-h-[100vh] bg-black">
-      {loading ? (
+      {loading || (data && data.length === 0) ? (
         <div className="flex  items-center h-[100vh]">
           <Pacman />
         </div>

@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from 'react';
-import { TweenMax } from 'gsap';
-import _ from 'lodash';
+import { useEffect, useRef } from "react";
+import { TweenMax } from "gsap";
 
-const randomInRange = (max, min) => Math.floor(Math.random() * (max - min + 1)) + min;
+const randomInRange = (max, min) =>
+  Math.floor(Math.random() * (max - min + 1)) + min;
 
 const ACTIVE_PROBABILITY = 0;
 const BASE_SIZE = 1;
@@ -72,7 +72,7 @@ const JumpToHyperspace = () => {
     if (typeof window === 'undefined') return; // Ensure this code only runs on the client
 
     const canvas = canvasRef.current;
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext("2d");
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
@@ -85,14 +85,8 @@ const JumpToHyperspace = () => {
     };
 
     const render = () => {
-      const {
-        bgAlpha,
-        velocity,
-        sizeInc,
-        initiating,
-        jumping,
-        stars,
-      } = state.current;
+      const { bgAlpha, velocity, sizeInc, initiating, jumping, stars } =
+        state.current;
 
       // Clear the canvas
       context.clearRect(0, 0, window.innerWidth, window.innerHeight);
@@ -167,7 +161,10 @@ const JumpToHyperspace = () => {
       state.current.initiating = true;
       state.current.initiateTimestamp = new Date().getTime();
 
-      TweenMax.to(state.current, 0.25, { velocity: VELOCITY_INIT_INC, bgAlpha: 0.3 });
+      TweenMax.to(state.current, 0.25, {
+        velocity: VELOCITY_INIT_INC,
+        bgAlpha: 0.3,
+      });
 
       for (const star of state.current.stars.filter((s) => s.STATE.active)) {
         star.STATE = {
@@ -184,10 +181,18 @@ const JumpToHyperspace = () => {
       state.current.bgAlpha = 0;
       state.current.jumping = true;
 
-      TweenMax.to(state.current, 0.25, { velocity: JUMP_VELOCITY_INC, bgAlpha: 0.75, sizeInc: JUMP_SIZE_INC });
+      TweenMax.to(state.current, 0.25, {
+        velocity: JUMP_VELOCITY_INC,
+        bgAlpha: 0.75,
+        sizeInc: JUMP_SIZE_INC,
+      });
       setTimeout(() => {
         state.current.jumping = false;
-        TweenMax.to(state.current, 0.25, { bgAlpha: 0, velocity: VELOCITY_INC, sizeInc: SIZE_INC });
+        TweenMax.to(state.current, 0.25, {
+          bgAlpha: 0,
+          velocity: VELOCITY_INC,
+          sizeInc: SIZE_INC,
+        });
       }, 2500);
     };
 
@@ -200,20 +205,30 @@ const JumpToHyperspace = () => {
       if (new Date().getTime() - initiateTimestamp > 600) {
         jump();
       } else {
-        TweenMax.to(state.current, 0.25, { velocity: VELOCITY_INC, bgAlpha: 0 });
+        TweenMax.to(state.current, 0.25, {
+          velocity: VELOCITY_INC,
+          bgAlpha: 0,
+        });
       }
     };
 
+<<<<<<< HEAD:t24-frontend-main/src/app/components/HyperSpace/Hyperspace.jsx
     const debouncedResize = _.debounce(resetStars, 250);
     
     canvas.addEventListener('mousedown', initiate);
     canvas.addEventListener('mouseup', enter);
     window.addEventListener('resize', debouncedResize);
+=======
+    canvas.addEventListener("mousedown", initiate);
+    canvas.addEventListener("mouseup", enter);
+    window.addEventListener("resize", _.debounce(resetStars, 250));
+>>>>>>> proshow:tathva'24/src/app/components/HyperSpace/Hyperspace.jsx
 
     resizeCanvas();
     render();
 
     return () => {
+<<<<<<< HEAD:t24-frontend-main/src/app/components/HyperSpace/Hyperspace.jsx
       window.removeEventListener('resize', debouncedResize);
       canvas.removeEventListener('mousedown', initiate);
       canvas.removeEventListener('mouseup', enter);
@@ -221,6 +236,15 @@ const JumpToHyperspace = () => {
   }, []);
 
   return <canvas ref={canvasRef} />;
+=======
+      window.removeEventListener("resize", _.debounce(resetStars, 250));
+      canvas.removeEventListener("mousedown", initiate);
+      canvas.removeEventListener("mouseup", enter);
+    };
+  }, []);
+
+  return <canvas ref={canvasRef} style={{ display: "block" }} />;
+>>>>>>> proshow:tathva'24/src/app/components/HyperSpace/Hyperspace.jsx
 };
 
 export default JumpToHyperspace;

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Marquee from "../components/InnerPages/marquee/marquee_comp";
 import Arrow from "../components/InnerPages/InnerDescription/arrow";

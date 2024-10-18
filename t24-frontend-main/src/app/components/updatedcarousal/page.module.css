@@ -36,6 +36,10 @@
     margin-left: 100px;
     margin-right: 100px;
   }
+  .divcontl:hover {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 @media (max-width: 785px) and (min-width: 650px) {
   .heading {
@@ -59,6 +63,9 @@
 @media (max-width: 450px) {
 
   .divcont{
+    width: 60vw;
+  }
+  .divcontl{
     width: 60vw;
   }
   .heading {
@@ -87,3 +94,7 @@
 .divcont{
   transition: all 0.4s ease-in-out;
 }
+.divcontl{
+  transition: all 0.4s ease-in-out;
+}
+

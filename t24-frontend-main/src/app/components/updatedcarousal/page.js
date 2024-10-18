@@ -5,36 +5,19 @@ import styles from "./page.module.css";
 
 const Carousal = () => {
   return (
-
-    <div className="flex flex-row bg-black p-10 justify-evenly custom-sm:flex-col h-full flex gap-6 items-center text-2xl">
+    <div className="flex flex-row bg-black p-10 justify-evenly custom-sm:flex-col h-[130%] flex gap-10 items-center text-2xl">
       {/* Card 1 - Workshops */}
       <Link href="/workshops" passHref legacyBehavior>
         <a
           className={`${styles.divcont} relative flex flex-col items-center rounded-2xl overflow-hidden`}
         >
-          <div className={`${styles.heading} ${styles["workshop-heading"]}`}>
+          {/* <div className={`${styles.heading} ${styles["workshop-heading"]}`}>
             WORKSHOPS
-          </div>
+          </div> */}
           <img
-            src="/work.png"
-            alt="Workshops"
-            className="object-fit h-full w-full rounded-tl-md object-cover rounded-bl-md"
-          />
-        </a>
-      </Link>
-
-      {/* Card 2 - Lectures */}
-      <Link href="/lectures" passHref legacyBehavior>
-        <a
-          className={`${styles.divcont} relative flex flex-col items-center rounded-2xl overflow-hidden`}
-        >
-          <h2 className={`${styles.heading} ${styles["lecture-heading"]}`}>
-            LECTURES
-          </h2>
-          <img
-            src="/lec.png"
+            src="/workshop_black.png"
             alt="Lectures"
-            className="object-fit h-full w-full rounded-tl-md object-cover rounded-bl-md"
+            className="object-cover rounded-[20px] border-[5px] border-white"
           />
         </a>
       </Link>
@@ -44,13 +27,29 @@ const Carousal = () => {
         <a
           className={`${styles.divcont} relative flex flex-col items-center rounded-2xl overflow-hidden`}
         >
-          <h2 className={`${styles.heading} ${styles["competition-heading"]}`}>
+          {/* <h2 className={`${styles.heading} ${styles["competition-heading"]}`}>
             COMPETITIONS
-          </h2>
+          </h2> */}
           <img
-            src="/comp.png"
-            alt="Competitions"
-            className="object-fit h-full w-full rounded-tl-md object-cover rounded-bl-md"
+            src="/lecture_black.png"
+            alt="Lectures"
+            className="object-cover rounded-[20px] border-[5px] border-white"
+          />
+        </a>
+      </Link>
+
+      {/* Card 2 - Lectures */}
+      <Link href="/lectures" passHref legacyBehavior>
+        <a
+          className={`${styles.divcontl} relative flex flex-colitems-center rounded-2xl overflow-hidden`}
+        >
+          {/* <h2 className={`${styles.heading} ${styles["lecture-heading"]}`}>
+            LECTURES
+          </h2> */}
+          <img
+            src="/comp_black.png"
+            alt="Lectures"
+            className="object-cover rounded-[20px] border-[5px] border-white"
           />
         </a>
       </Link>

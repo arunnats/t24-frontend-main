@@ -10,13 +10,13 @@ export default function GamingPage() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-  
-    // Initial animation for the blue background 
+
+    // Initial animation for the blue background
     if (showBlueBg) {
       gsap.to(`.${styles.bluebg}`, {
         duration: 0.5,
         scale: 0,
-        delay:0.5,
+        delay: 0.5,
         rotateY: 180,
         ease: "power2.in",
         x: 200,
@@ -29,7 +29,7 @@ export default function GamingPage() {
         },
       });
     }
-  
+
     // Other animations for elements triggered by scroll
     gsap.fromTo(
       `.${styles.buttonplay}`,
@@ -46,7 +46,7 @@ export default function GamingPage() {
         },
       }
     );
-  
+
     gsap.fromTo(
       `.${styles.middleimgg}`,
       { scale: 0, opacity: 0 },
@@ -62,7 +62,7 @@ export default function GamingPage() {
         },
       }
     );
-  
+
     // Animation for the background image when in view
     gsap.fromTo(
       `.${styles.gamingbg}`,
@@ -97,7 +97,6 @@ export default function GamingPage() {
       }
     );
   }, [showBlueBg]);
-  
 
   return (
     <>
@@ -108,8 +107,10 @@ export default function GamingPage() {
             className={`flex flex-col w-full h-screen bg-black absolute ${styles.bluebg}`}
           >
             <div className="flex flex-col items-center gap-10">
-              <div className={`text-white text-8xl font-valorant ${styles.textbg} mb-2`}>
-                Glitch
+              <div
+                className={`text-white text-3xl font-valorant ${styles.textbg} mb-2`}
+              >
+                GLITCH
               </div>
             </div>
             <Image
@@ -125,29 +126,30 @@ export default function GamingPage() {
         <div className={`flex bg-black w-full h-screen ${styles.desktop}`}>
           {/* Left side */}
           <div
-            className={`flex flex-col w-1/3 justify-evenly items-center h-screen ${styles.left}`}
+            className={`flex flex-col  justify-evenly h-screen ${styles.left}`}
           >
-            <div className="flex flex-col items-center gap-5">
-              <div className={`text-white text-8xl ${styles.text} mb-2`}>
-                Glitch
-              </div>
-            </div>
             <div
-              className={`text-white text-1xl text-start ${styles.text_description} px-20 mb-10`}
+              className={`text-white text-8xl pl-[55px]   mt-[40px] ${styles.text}`}
+            >
+              GLiTCH
+            </div>
+
+            <div
+              className={`text-white text-1xl -mt-[130px] ${styles.text_description} pl-[55px] `}
             >
               Gekko the Angeleno leads a tight-knit crew of calamitous
               creatures. His buddies bound forward, scattering enemies out of
               the way, with Gekko chasing them down to regroup and go again.
             </div>
-            <div className="flex justify-center w-full">
-              <div className="flex flex-col justify-center align-center h-12">
+            <div className="flex relative  w-full">
+              <div className="flex flex-col justify-center align-center absolute bottom-12 right-10 pl-[55px]  ">
                 <button
-                  className={`flex bg-white text-white text-3xl text-center font-IBM Plex Sans px-5 py-3 ${styles.buttonplay}`}
+                  className={`flex bg-white text-white text-[15px] text-center font-IBM Plex Sans pt-1  ${styles.buttonplay}`}
                 >
                   PLAY
                 </button>
                 <button
-                  className={`flex bg-white text-1xl text-white text-center font-IBM Plex Sans px-5 h-2 ${styles.buttoncomp}`}
+                  className={`flex bg-white text-[15px] text-white text-center font-IBM Plex pt-1  px-2 ${styles.buttoncomp}`}
                 >
                   COMPETITIVE
                 </button>

@@ -8,15 +8,23 @@ import GamingPage from "./gaming/page";
 import ExpoPage from "./components/expo-page/page";
 import FooterDesktop from "./components/FooterDesktop/FooterDesktop";
 import FooterMobile from "./components/FooterMobile/FooterMobile";
+import { useEffect } from "react";
+
+
+
+
 
 export default function Home() {
+
+useEffect
+
   return (
-    <div className="h-[800vh] relative overflow-clip bg-black">
+    <div className="h-max relative overflow-clip bg-black flex flex-col">
       <Hero />
       <Carousal />
       <GamingPage />
       <ExpoPage />
-      <div className="footer h-max w-full absolute bottom-0 left-0">
+      <div className="footer flex h-max w-full ">
         <FooterDesktop />
         <FooterMobile />
       </div>

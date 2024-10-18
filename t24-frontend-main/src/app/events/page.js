@@ -62,7 +62,7 @@ const Page = () => {
               />
             </div>
           </div>
-<Navbar />
+          <Navbar />
           <Eventpage event="COMPETITIONS" cards={data} />
         </div>
       )}

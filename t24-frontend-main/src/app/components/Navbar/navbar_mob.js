@@ -41,8 +41,8 @@ const Navbar_mob = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/navbar_mab.svg')",
-            filter: "blur(4px)",
+            WebkitBackdropFilter: "blur(14px)",
+            backdropFilter: "blur(14px)",
           }}
         ></div>
 

@@ -46,18 +46,22 @@ const Navbar = () => {
 
           {/* Slide Down Menu */}
           <div
-            className={`fixed inset-0 z-10 bg-blue-500 transition-transform duration-500 ease-in-out ${
+            className={`fixed inset-0 z-10 transition-transform duration-500 ease-in-out ${
               isOpen ? "translate-y-0" : "-translate-y-full"
             }`}
           >
             <div className="h-screen flex items-center justify-center relative">
               <div
                 className="absolute inset-0"
+                // style={{
+                //   backgroundImage: "url('/navbar_bg.svg')",
+                //   filter: "blur(4px)",
+                //   backgroundSize: "cover",
+                //   backgroundPosition: "center",
+                // }}
                 style={{
-                  backgroundImage: "url('/navbar_bg.svg')",
-                  filter: "blur(4px)",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
+                  WebkitBackdropFilter: "blur(14px)",
+                  backdropFilter: "blur(14px)",
                 }}
               ></div>
 
@@ -65,7 +69,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-start">
                   <button
                     onClick={toggleMenu}
-                    className="text-7xl w-25 border-none bg-white text-black p-1"
+                    className="text-6xl w-25 border-none bg-white text-black p-1"
                     style={{ fontWeight: "100", width: "64px", height: "64px" }}
                   >
                     X

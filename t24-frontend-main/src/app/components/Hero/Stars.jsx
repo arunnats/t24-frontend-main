@@ -1,6 +1,6 @@
-"use client"; 
+"use client";
 
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from "react";
 
 const StarfieldEffect = () => {
   const canvasRef = useRef(null);
@@ -17,30 +17,28 @@ const StarfieldEffect = () => {
       }
     };
 
-    updateCanvasSize(); 
+    updateCanvasSize();
 
-   
     const container = containerRef.current;
     if (container) {
-      container.addEventListener('resize', updateCanvasSize);
+      container.addEventListener("resize", updateCanvasSize);
     }
 
-   
     return () => {
       if (container) {
-        container.removeEventListener('resize', updateCanvasSize);
+        container.removeEventListener("resize", updateCanvasSize);
       }
     };
   }, []);
 
   useEffect(() => {
     const outerspace = canvasRef.current;
-    const mainContext = outerspace.getContext('2d');
+    const mainContext = outerspace.getContext("2d");
 
     const canvasWidth = dimensions.width;
     const canvasHeight = dimensions.height;
 
-    if (canvasWidth === 0 || canvasHeight === 0) return; 
+    if (canvasWidth === 0 || canvasHeight === 0) return;
 
     const centerX = canvasWidth * 0.5;
     const centerY = canvasHeight * 0.5;
@@ -89,7 +87,7 @@ const StarfieldEffect = () => {
         mainContext.beginPath();
         mainContext.arc(starX, starY, radius, 0, Math.PI * 2, false);
         mainContext.closePath();
-        mainContext.fillStyle = '#FFF';
+        mainContext.fillStyle = "#FFF";
         mainContext.fill();
       }
     }
@@ -110,7 +108,7 @@ const StarfieldEffect = () => {
         previousTime = currentTime - (deltaTime % interval);
 
         mainContext.clearRect(0, 0, canvasWidth, canvasHeight);
-        mainContext.fillStyle = '#000';
+        mainContext.fillStyle = "#000";
         mainContext.fillRect(0, 0, canvasWidth, canvasHeight);
 
         mainContext.save();
@@ -118,7 +116,7 @@ const StarfieldEffect = () => {
 
         stars.forEach((star) => {
           star.drawStar();
-        });gti 
+        });
 
         mainContext.restore();
       }
@@ -135,7 +133,6 @@ const StarfieldEffect = () => {
       return ostart + (ostop - ostart) * ((value - istart) / (istop - istart));
     }
 
-    
     return () => {
       cancelAnimationFrame(draw);
     };
@@ -144,13 +141,13 @@ const StarfieldEffect = () => {
   return (
     <div
       ref={containerRef}
-      style={{ width: '100vw', height: '100vh', position: 'relative' }}
+      style={{ width: "100vw", height: "100vh", position: "relative" }}
     >
       <canvas
         ref={canvasRef}
         width={dimensions.width}
         height={dimensions.height}
-        style={{ display: 'block', background: '#111' }}
+        style={{ display: "block", background: "#111" }}
       />
     </div>
   );

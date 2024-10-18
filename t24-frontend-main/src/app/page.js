@@ -22,12 +22,12 @@ export default function Home() {
 
     gsap.fromTo(
       ".hero-container",
-      { scale:1},
+      { scale: 1 },
       {
         opacity: 0,
         y: 0,
         duration: 2.5,
-        scale:5 ,
+        scale: 5,
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".hero-container",
@@ -80,12 +80,12 @@ export default function Home() {
 
     gsap.fromTo(
       ".carousal-container",
-      { opacity: 0, y: 50 ,scale:0.1},
+      { opacity: 0, y: 50, scale: 0.1 },
       {
         opacity: 1,
         y: 0,
         duration: 0.5,
-        scale:1,
+        scale: 1,
         ease: "power2.out",
         position: "sticky",
         scrollTrigger: {

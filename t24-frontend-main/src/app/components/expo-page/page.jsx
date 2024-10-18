@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import Dinosaur from "./components/dinosaur";
 import Marque from "./components/marque";
@@ -7,60 +8,57 @@ import styles from ".//page.module.css";
 import { gsap } from "gsap";
 
 const DesktopComponent = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".expo-marque",
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".expo-page",
+          start: "top 60%",
+          toggleActions: "play none none none",
+          // markers: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      ".expo-img",
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".expo-page",
+          start: "top 50%",
+          toggleActions: "play none none none",
+          // markers: true,
+        },
+      }
+    );
 
-useEffect(() => {
-  gsap.fromTo(
-    ".expo-marque",
-    { opacity: 0, y: 50 },
-    {
-      opacity: 1,
-      y: 0,
-      duration: 1.5,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: ".expo-page",
-        start: "top 60%",
-        toggleActions: "play none none none",
-        // markers: true,
-      },
-    }
-  );
-  gsap.fromTo(
-    ".expo-img",
-    { opacity: 0, y: 50 },
-    {
-      opacity: 1,
-      y: 0,
-      duration: 1.5,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: ".expo-page",
-        start: "top 50%",
-        toggleActions: "play none none none",
-        // markers: true,
-      },
-    }
-  );
-
-  gsap.fromTo(
-    ".expo-txt",
-    { opacity: 0, y: 50 },
-    {
-      opacity: 1,
-      y: 0,
-      duration: 1.5,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: ".expo-page",
-        start: "top 50%",
-        toggleActions: "play none none none",
-        // markers: true,
-      },
-    }
-  );
-
-
-}, []);
+    gsap.fromTo(
+      ".expo-txt",
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".expo-page",
+          start: "top 50%",
+          toggleActions: "play none none none",
+          // markers: true,
+        },
+      }
+    );
+  }, []);
 
   return (
     <div className="expo-page">
@@ -83,8 +81,8 @@ useEffect(() => {
             <div className="mb-4">
               <p className="text-white">
                 National Institute of Technology, Calicut, presents Tathva
-                Interface - Asia&apos;s largest student-run Tech Startup Expo. We at
-                the Tathva Interface aim to provide a platform for
+                Interface - Asia&apos;s largest student-run Tech Startup Expo.
+                We at the Tathva Interface aim to provide a platform for
                 all-entrepreneurs.
               </p>
             </div>
@@ -113,8 +111,8 @@ const MobileComponent = () => {
             <img src="/expo.svg" className="ml-3 select-none	" />
             <p className="text-justify text-center px-3 text-white">
               National Institute of Technology, Calicut, presents Tathva
-              Interface - Asia&apos;s largest student-run Tech Startup Expo. We at
-              the Tathva Interface aim to provide a platform for
+              Interface - Asia&apos;s largest student-run Tech Startup Expo. We
+              at the Tathva Interface aim to provide a platform for
               all-entrepreneurs.
             </p>
           </div>
@@ -122,8 +120,7 @@ const MobileComponent = () => {
           <div className="flex relative flex-col px-3 mt-3 select-none	">
             <Dinosaur />
             <div className=" flex flex-row justify-end absolute right-3 top-1	">
-
-            <Torch />
+              <Torch />
             </div>
           </div>
         </div>
@@ -139,7 +136,10 @@ const TabComponent = () => {
         <Marque />
       </div>
       <div className="h-[90vh] flex flex-col items-center select-none	">
-        <img src="/full_build.svg" className="w-[60%] h- mb-4 mt-0 select-none	" />
+        <img
+          src="/full_build.svg"
+          className="w-[60%] h- mb-4 mt-0 select-none	"
+        />
 
         <div className="flex-1 flex flex-col mr-8 ml-8">
           <div className="flex flex-col">
@@ -147,8 +147,8 @@ const TabComponent = () => {
 
             <p className=" text-justify mx-3 text-white ">
               National Institute of Technology, Calicut, presents Tathva
-              Interface - Asia&apos;s largest student-run Tech Startup Expo. We at
-              the Tathva Interface aim to provide a platform for
+              Interface - Asia&apos;s largest student-run Tech Startup Expo. We
+              at the Tathva Interface aim to provide a platform for
               all-entrepreneurs.
             </p>
           </div>
@@ -156,7 +156,7 @@ const TabComponent = () => {
             <Dinosaur />
 
             <div className="flex flex-row justify-end 	">
-            <Torch />
+              <Torch />
             </div>
           </div>
         </div>

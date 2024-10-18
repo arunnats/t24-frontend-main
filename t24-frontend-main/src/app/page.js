@@ -139,34 +139,34 @@ export default function Home() {
     <div className="min-h-[200vh] relative overflow-x-clip bg-black flex flex-col z-50">
       <Navbar />
       <div className="hero-container h-[130vh]">
-        <Hero />
+        {/* <Hero /> */}
       </div>
       <div className="text-container h-[50vh] opacity-0">
         <div className="w-full h-full">
           <div className="upppercase w-full h-full text-white flex flex-col items-center justify-center ">
-            <p className="text-9xl text-pricedown">What have we </p>
-            <p className="text-9xl text-pricedown">
-              got f<span className="ooo">o</span>r you ?
+            <p className="text-5xl md:text-8xl lg:text-9xl  text-pricedown">What have we </p>
+            <p className="text-5xl md:text-8xl lg:text-9xl  text-pricedown">
+              got for you ?
             </p>
           </div>
         </div>
       </div>
       <div className="carousal-container h-screen">
-        <Carousal />
+        {/* <Carousal /> */}
       </div>
 
       <div className="text-container2 h-[50vh] opacity-0">
         <div className="w-full h-full">
           <div className="upppercase w-full h-full text-white flex flex-col items-center ">
-            <p className="text-9xl text-pricedown">And much More... </p>
+            <p className="text-5xl md:text-8xl lg:text-9xl text-pricedown">And much More... </p>
           </div>
         </div>
       </div>
 
-      <GamingPage />
+      {/* <GamingPage /> */}
 
       <div className="expo-container w-screen h-min-screen">
-        <ExpoPage />
+        {/* <ExpoPage /> */}
       </div>
 
       <div>{/* <AutomotiveSummit /> */}</div>

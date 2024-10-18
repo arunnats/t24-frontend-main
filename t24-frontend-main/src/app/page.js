@@ -6,6 +6,7 @@ import Carousal from "./components/updatedcarousal/page";
 import Hero from "./components/Hero/Hero";
 import ExpoPage from "./components/expo-page/page";
 import ProshowMod from "./components/Proshow/ProshowMod";
+import GamingPage from "./components/glitchPage/GamingPage";
 import { Analytics } from "@vercel/analytics/react";
 // import FooterPC from "./footerpc";
 
@@ -15,6 +16,7 @@ const Page = () => {
       <Hero />
       <Carousal />
       <ProshowMod />
+      <GamingPage />
       <ExpoPage />
       <div className="footer h-max w-full absolute bottom-0 left-0">
         <FooterDesktop />

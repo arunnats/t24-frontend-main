@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <div className="min-h-[760vh] relative overflow-clip bg-black flex flex-col">
       <Hero />
-      <div className="carousal-container h-[80vh]">
+      <div className="carousal-container h-screen">
         <Carousal />
       </div>
       <GamingPage />

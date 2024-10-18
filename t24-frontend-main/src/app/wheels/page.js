@@ -6,6 +6,6 @@ const Page = () => {
       <AutomotiveSummit/>
     </div>
   )
-}
+
 
 export default Page

@@ -1,21 +1,11 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+"use client";
 import Image from "next/image";
 import Cartridge from "./components/workshopCartridge/cartridge_comp";
 import Workshopmodal from "./components/Workshopmodal/Workshopmodal";
-=======
-"use client";
-import Image from "next/image";
 import Hero from "./components/Hero/Hero";
->>>>>>> proshow
 
 export default function Home() {
   return (
-<<<<<<< HEAD
-    <div className="flex">
-      <Workshopmodal/>
-=======
     <div className="h-screen w-screen">
       <Hero />
       {/* <Flappy /> */}
@@ -36,8 +26,6 @@ export default function Home() {
           </div>
         </div>
       </div>
->>>>>>> proshow
     </div>
   );
 }
->>>>>>> origin/workshopCartridge

@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 
 const Page = () => {
   return (
+
     <div className="flex flex-row bg-black p-10 justify-evenly custom-sm:flex-col gap-6 items-center text-2xl">
       {/* Card 1 - Workshops */}
       <Link href="/workshop" passHref legacyBehavior>

@@ -42,11 +42,13 @@
     font-size: 1.1rem;
   }
 }
+
 @media (max-width: 650px) and (min-width: 580px) {
   .heading {
     font-size: 0.9rem;
   }
 }
+
 @media (max-width: 580px) and (min-width: 450px) {
   .heading {
     font-size: 0.6rem;
@@ -63,6 +65,7 @@
     font-size: 1.7rem;
   }
   .competition-heading {
+
     padding-left: 1rem;
     font-size: 1.5rem;
   }
@@ -78,6 +81,7 @@
 
 .divcont:hover {
   transform: scale(1.03);
+
   
 }
 .divcont{

@@ -4,6 +4,7 @@
 /* src/styles/globals.css */
 
 
+
 @font-face {
     font-family: "Pricedown";
     src: url("/fonts/pricedown-bl.otf") format("opentype"),
@@ -29,4 +30,4 @@
     font-style: normal;
   }
   
- 
+

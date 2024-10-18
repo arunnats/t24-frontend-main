@@ -61,6 +61,7 @@ const MobileComponent = () => {
               all-entrepreneurs.
             </p>
           </div>
+
           <div className="flex relative flex-col px-3 mt-3 select-none	">
             <Dinosaur />
             <div className=" flex flex-row justify-end absolute right-3 top-1	">
@@ -86,6 +87,7 @@ const TabComponent = () => {
         <div className="flex-1 flex flex-col mr-8 ml-8">
           <div className="flex flex-col">
             <img src="/expo.svg" className="ml-3 select-none	" />
+
             <p className=" text-justify mx-3 text-white ">
               National Institute of Technology, Calicut, presents Tathva
               Interface - Asia&apos;s largest student-run Tech Startup Expo. We at
@@ -95,6 +97,7 @@ const TabComponent = () => {
           </div>
           <div className="flex flex-col m-3 select-none	">
             <Dinosaur />
+
             <div className="flex flex-row justify-end 	">
             <Torch />
             </div>

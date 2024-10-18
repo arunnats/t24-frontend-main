@@ -3,9 +3,9 @@ import React from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
 
-const Page = () => {
+const Carousal = () => {
   return (
-    <div className="flex flex-row bg-black p-10 justify-evenly custom-sm:flex-col gap-6 items-center text-2xl">
+    <div className="flex flex-row bg-black p-10 justify-evenly custom-sm:flex-col h-full gap-6 items-center text-2xl">
       {/* Card 1 - Workshops */}
       <Link href="/workshop" passHref legacyBehavior>
         <a
@@ -17,7 +17,7 @@ const Page = () => {
           <img
             src="/work.png"
             alt="Workshops"
-            className="object-fit h-full w-full rounded-tl-md rounded-bl-md"
+            className="object-fit h-full w-full rounded-tl-md object-cover rounded-bl-md"
           />
         </a>
       </Link>
@@ -33,7 +33,7 @@ const Page = () => {
           <img
             src="/lec.png"
             alt="Lectures"
-            className="object-fit h-full w-full rounded-tl-md rounded-bl-md"
+            className="object-fit h-full w-full rounded-tl-md object-cover rounded-bl-md"
           />
         </a>
       </Link>
@@ -49,7 +49,7 @@ const Page = () => {
           <img
             src="/comp.png"
             alt="Competitions"
-            className="object-fit h-full w-full rounded-tl-md rounded-bl-md"
+            className="object-fit h-full w-full rounded-tl-md object-cover rounded-bl-md"
           />
         </a>
       </Link>
@@ -57,4 +57,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Carousal;

@@ -29,7 +29,7 @@ const page = () => {
             <div className="w-full h-[49%] m-1 flex justify-between">
               <Link
                 href={"./expo-inner"}
-                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px] "
               >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
@@ -43,7 +43,7 @@ const page = () => {
               </Link>
               <Link
                 href={"./proshow"}
-                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
               >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
@@ -59,7 +59,7 @@ const page = () => {
             <div className="w-full h-[49%] m-1 flex justify-between">
               <Link
                 href={"./glitch-inner"}
-                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
               >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
@@ -73,7 +73,7 @@ const page = () => {
               </Link>
               <Link
                 href={"./drone-racing"}
-                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
               >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
@@ -88,7 +88,7 @@ const page = () => {
             </div>
           </div>
           <div className="m-2  h-full w-[61%] p-2 rounded  ">
-            <div className="w-[99%] h-full border-4 border-white rounded-2xl overflow-clip relative object-cover">
+            <div className="w-[99%] h-full border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px] object-cover">
               <img
                 src={"/grid/red_car.jpg"}
                 className="object-cover absolute bottom-0 fill h-full w-full "
@@ -100,7 +100,7 @@ const page = () => {
         {/* Mobile */}
         <div className="w-full lg:hidden h-[70%] flex flex-col justify-between items-center p-2 ">
           <div className="m-2 h-[58%] w-full rounded flex items-center justify-center">
-            <div className="w-[99%] h-full border-4 border-white rounded-3xl overflow-clip relative object-cover">
+            <div className="w-[99%] h-full border-4 border-white rounded-3xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px] object-cover">
               <img
                 src={"/grid/red_car.jpg"}
                 className="object-cover absolute bottom-0 fill h-full w-full "
@@ -110,7 +110,7 @@ const page = () => {
 
           <div className="m-2 h-[75%] w-full rounded flex flex-col items-center justify-center">
             <div className="w-full h-[49%] m-1 flex justify-between">
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]">
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown ">
                   Expo
@@ -120,7 +120,7 @@ const page = () => {
                   className=" object-cover fill h-full w-full "
                 />
               </div>
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]">
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
                   Concert
@@ -132,7 +132,7 @@ const page = () => {
               </div>
             </div>
             <div className="w-full h-[49%] m-1 flex justify-between">
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]">
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
                   Arcade
@@ -142,7 +142,7 @@ const page = () => {
                   className=" object-cover fill h-full w-full "
                 />
               </div>
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]">
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
                   Drone Racing

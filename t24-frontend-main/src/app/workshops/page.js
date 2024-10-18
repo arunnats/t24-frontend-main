@@ -37,31 +37,32 @@ const Page = () => {
 
     fetchWorkshops();
   }, []);
-
   return (
-    <div className="min-h-full bg-black overflow-hidden relative p-14 md:p-8 ">
-      <div className="absolute inset-0 flex justify-center overflow-hidden  left-0">
-        <div
-          className="-rotate-90"
-          style={{
-            height: "100vw",
-            display: "flex",
-          }}
-        >
-          <Marqueework
-            element1={"TATHVA 2024"}
-            element2={"WORKSHOP"}
-            color={"#b7c9e2"}
-          />
-        </div>
-      </div>
+    <div className="min-h-full bg-black overflow-hidden relative p-10 md:p-8 ">
       <div>
         {loading || (data && data.length === 0) ? (
           <div className="flex items-center justify-center h-screen">
             <Pacman />
           </div>
         ) : (
-          <Eventpage event="WORKSHOPS" cards={data} />
+          <div>
+            <div className="absolute inset-0 flex justify-center overflow-hidden left-0">
+              <div
+                className="-rotate-90"
+                style={{
+                  height: "100vw",
+                  display: "flex",
+                }}
+              >
+                <Marqueework
+                  element1={"TATHVA 2024"}
+                  element2={"WORKSHOP"}
+                  color={"#b7c9e2"}
+                />
+              </div>
+            </div>
+            <Eventpage event="WORKSHOPS" cards={data} />
+          </div>
         )}
       </div>
     </div>

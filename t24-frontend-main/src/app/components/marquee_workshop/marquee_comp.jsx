@@ -39,12 +39,16 @@ export default function Marqueework({ element1, element2, color }) {
       marquee.innerHTML +
       marquee.innerHTML +
       marquee.innerHTML +
+      marquee.innerHTML +
+      marquee.innerHTML +
+      marquee.innerHTML +
+      marquee.innerHTML +
       marquee.innerHTML;
     const totalWidth = marquee.scrollWidth / 2;
 
     gsap.to(marquee, {
       x: -totalWidth,
-      duration: 100, // Adjust the duration to control the speed (lower value makes it faster)
+      duration: 300, // Adjust the duration to control the speed (lower value makes it faster)
       ease: "linear", // Linear animation for smooth continuous scrolling
       repeat: -1, // Infinite loop
       delay: 0,
@@ -66,7 +70,7 @@ export default function Marqueework({ element1, element2, color }) {
 
   return (
     <div
-      className={`relative overflow-hidden w-full flex h-min items-center justify-center m-0 md:pt-2 pt-0 ${styles.marqueecont}`}
+      className={`relative overflow-hidden w-full flex h-min items-center justify-center m-0  md:pt-2 ${styles.marqueecont}`}
       style={{ backgroundColor: `${color}` }}
     >
       <div

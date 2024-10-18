@@ -4,27 +4,22 @@ import Cartridge from "./components/workshopCartridge/cartridge_comp";
 import Workshopmodal from "./components/Workshopmodal/Workshopmodal";
 import Hero from "./components/Hero/Hero";
 
+import Carousal from "./updatedcarousal/page";
+import GamingPage from "./gaming/page";
+import ExpoPage from "./components/expo-page/page";
+import FooterDesktop from "./components/FooterDesktop/FooterDesktop";
+import FooterMobile from "./components/FooterMobile/FooterMobile";
+
 export default function Home() {
   return (
-    <div className="h-screen w-screen">
+    <div className="h-[800vh] relative overflow-clip bg-black">
       <Hero />
-      {/* <Flappy /> */}
-      <div className=" hero-center relative origin-center w-[60vw] h-full z-20 border-[40px] ">
-        <img
-          src="/Hero/center.webp"
-          alt="Center image"
-          className="hero-center absolute origin-center top-[20%] "
-        />
-
-        <div className="absolute top-[37%] w-full h-full ">
-          <div className="relative left-0 w-full flex items-center justify-center ">
-            <img
-              src="/Hero/moreblack.gif"
-              alt=""
-              className=" mix-blend-multiply w-[64%]	"
-            />
-          </div>
-        </div>
+      <Carousal />
+      <GamingPage />
+      <ExpoPage />
+      <div className="footer h-max w-full absolute bottom-0 left-0">
+        <FooterDesktop />
+        <FooterMobile />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/press-start-2p");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,3 +25,20 @@ html {
 .text-pricedown {
   font-family: "Pricedown", sans-serif;
 }
+
+  
+  @font-face {
+    font-family: "Supply";
+    src: url("/fonts/Supply-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "SupplyUltraLight";
+    src: url("/fonts/Supply-UltraLight.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+ 

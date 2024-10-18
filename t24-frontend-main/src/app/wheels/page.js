@@ -1,9 +1,8 @@
 import React from 'react'
-
-const page = () => {
+import AutomotiveSummit from '../../app/components/AutomotiveSummit/automotiveSummit'
   return (
-    <div>
-      
+    <div >
+      <AutomotiveSummit/>
     </div>
   )
 }

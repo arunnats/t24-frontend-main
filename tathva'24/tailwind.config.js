@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        '115': '115%', // Add a custom height of 60vh
+        '115': '115%',
         '95': '95%',
         '120': '125%',
-        '98': '98%', // Add a custom height of 60vh
+        '98': '98%',
       },
       fontFamily: {
         jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
@@ -28,6 +28,7 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+     
     },
   },
   plugins: [],

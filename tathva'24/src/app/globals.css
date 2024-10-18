@@ -14,5 +14,19 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: "Supply";
+    src: url("/fonts/Supply-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "SupplyUltraLight";
+    src: url("/fonts/Supply-UltraLight.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
   
-  
+ 

@@ -6,7 +6,7 @@ import Link from "next/link";
 const InnerDescription = ({ num, heading, text }) => {
   return (
     <div
-      className={`bg-[#ECECEC] relative  w-full h-full px-[5%] pb-[20] rounded-[12px] md:rounded-[30px]`}
+      className={`bg-[#ECECEC] relative  w-full h-full px-[5%] pb-[20px] rounded-[12px] md:rounded-[30px]`}
     >
       <div className="flex justify-between items-center">
         <div
@@ -28,13 +28,15 @@ const InnerDescription = ({ num, heading, text }) => {
         className={`text-black h-min-[65%] lg:text-[1.8vw] pt-[2%] ${styles.description}`}
       >
         {text}
-        <div className=" text-black font-bold absolute bottom-4 ">◻◻◻</div>
-        <Link href={"#"}>
+        <div className=" text-black font-bold absolute bottom-2 right-3 ">
+          ◻◻◻
+        </div>
+        {/* <Link href={"#"}>
           <img
             className="h-[100px] hover:scale-110 transition-all aspect-square absolute bottom-2 right-2 "
             src="/components/InnerPages/arrow_border.svg"
           />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

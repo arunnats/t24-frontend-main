@@ -101,7 +101,10 @@ const page = () => {
           </div>
           <div className="m-2 h-full w-[39%] p-2 rounded flex flex-col justify-between items-center ">
             <div className="w-full h-[49%] m-1 flex justify-between">
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              <Link
+                href={"./expo-inner"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
                   Expo
@@ -111,7 +114,7 @@ const page = () => {
                   style={{ fontFamily: '"Pricedown", sans-serif' }}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
+              </Link>
               <Link
                 href={"./automotive-summit"}
                 className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
@@ -127,11 +130,11 @@ const page = () => {
                 />
               </Link>
             </div>
-            <Link
-              href={"./drone-racing"}
-              className="w-full h-[49%] m-1 flex justify-between"
-            >
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+            <div className="w-full h-[49%] m-1 flex justify-between">
+              <Link
+                href={"./drone-racing"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
                   Drone Racing
@@ -141,7 +144,7 @@ const page = () => {
                   style={{ fontFamily: '"Pricedown", sans-serif' }}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
+              </Link>
               <Link
                 href={"./proshow"}
                 className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
@@ -156,7 +159,7 @@ const page = () => {
                   className=" object-cover fill h-full w-full "
                 />
               </Link>
-            </Link>
+            </div>
           </div>
         </div>
 

@@ -4,7 +4,7 @@ import Arrow from "../components/InnerPages/InnerDescription/arrow";
 import FooterMobile from "../components/FooterMobile/FooterMobile";
 import FooterDesktop from "../components/FooterDesktop/FooterDesktop";
 import InnerDescription from "../components/InnerPages/InnerDescription/InnerDescription";
-
+import Link from "next/link";
 const page = () => {
   const desc =
     "Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!";
@@ -27,7 +27,10 @@ const page = () => {
         <div className="w-full hidden h-[60%] lg:flex justify-between items-center p-2 ">
           <div className="m-2 h-full w-[38%] p-2 rounded flex flex-col justify-between items-center ">
             <div className="w-full h-[49%] m-1 flex justify-between">
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              <Link
+                href={"./expo-inner"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
                   Expo
@@ -37,21 +40,27 @@ const page = () => {
                   style={{ fontFamily: '"Pricedown", sans-serif' }}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              </Link>
+              <Link
+                href={"./proshow"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
-                  ProShow
+                  Pro Show
                 </p>{" "}
                 <img
                   src={"/grid/concert.webp"}
                   style={{ fontFamily: '"Pricedown", sans-serif' }}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
+              </Link>
             </div>
             <div className="w-full h-[49%] m-1 flex justify-between">
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              <Link
+                href={"./glitch-inner"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
                   Gaming Conclave
@@ -61,8 +70,11 @@ const page = () => {
                   style={{ fontFamily: '"Pricedown", sans-serif' }}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              </Link>
+              <Link
+                href={"./drone-racing"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
                   Drone Racing
@@ -72,7 +84,7 @@ const page = () => {
                   style={{ fontFamily: '"Pricedown", sans-serif' }}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
+              </Link>
             </div>
           </div>
           <div className="m-2  h-full w-[61%] p-2 rounded  ">

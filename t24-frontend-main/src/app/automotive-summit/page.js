@@ -155,7 +155,7 @@ const page = () => {
           </div>
         </div> */}
 
-        <div className="w-full h-[40%] flex justify-between items-center p-2 ">
+        <div className="w-full h-[50%] flex justify-between items-center px-5">
           <div className="h-full w-full rounded">
             <InnerDescription num="02" heading="About" text={desc} />
           </div>

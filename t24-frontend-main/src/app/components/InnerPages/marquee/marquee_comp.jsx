@@ -12,36 +12,41 @@ gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, CSSRulePlugin, Draggable);
 export default function Marquee({ element1, element2, color1, color2 }) {
   const marqueeRef = useRef(null);
 
-// How to use : 
+  // How to use :
 
-// const element1 = "automative ";
-// const element2 = "summit ";
-// const color1 = "#b70202";
-// const color2 = "#0a0a00";
+  // const element1 = "automative ";
+  // const element2 = "summit ";
+  // const color1 = "#b70202";
+  // const color2 = "#0a0a00";
 
-// const Page = () => {
-// return (
-//   <div>
-//     <Marquee
-//       element1={element1}
-//       element2={element2}
-//       color1={color1}
-//       color2={color2}
-//     />
-//   </div>
-// );
-// };
-
+  // const Page = () => {
+  // return (
+  //   <div>
+  //     <Marquee
+  //       element1={element1}
+  //       element2={element2}
+  //       color1={color1}
+  //       color2={color2}
+  //     />
+  //   </div>
+  // );
+  // };
 
   useEffect(() => {
     const marquee = marqueeRef.current;
     marquee.innerHTML += marquee.innerHTML;
+    marquee.innerHTML += marquee.innerHTML;
+    marquee.innerHTML += marquee.innerHTML;
+    marquee.innerHTML += marquee.innerHTML;
+
     const totalWidth = marquee.scrollWidth / 2;
+
+    const isMediumOrLarger = window.matchMedia("(min-width: 768px)").matches;
 
     // Animate the marquee scrolling
     gsap.to(marquee, {
       x: -totalWidth,
-      duration: 50,
+      duration: 2200,
       repeat: -1,
       delay: 1,
     });
@@ -52,25 +57,24 @@ export default function Marquee({ element1, element2, color1, color2 }) {
       { opacity: 0, scale: 0.5 },
       {
         opacity: 1,
-        scale: 1,
-        duration: 1.5,
-        delay: 0,
+        scale: 0.8,
+        duration: 2.5,
+        delay: 0.5,
         ease: "power2.out",
-        y: "-15",
+        y: isMediumOrLarger ? -65 : 0,
       }
     );
   }, [marqueeRef]);
 
   return (
-    <div className={`relative overflow-hidden flex items-center justify-center -my-0 lg:-my-6 ${styles.marqueecont}`}>
-      <div ref={marqueeRef} className={`${styles.marquee} whitespace-nowrap flex justify-center items-center h-min text-[4rem] sm:text-[3rem] md:text-[4rem] lg:text-[6rem] xl:text-[8rem]   `}
-         style={{FontSize: 'clamp(1.5rem, 3vw, 2.5rem)'}}
+    <div
+      className={`relative overflow-hidden flex h-min items-center justify-center m-0 ${styles.marqueecont}`}
+    >
+      <div
+        ref={marqueeRef}
+        className={`${styles.marquee} whitespace-nowrap flex text-[4rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem]   `}
       >
-
-        <span
-          style={{ color: color1 }}
-          className={` mx-4 ${styles.element1}`}
-        >
+        <span style={{ color: color1 }} className={` mx-4 ${styles.element1}`}>
           {element1}
         </span>
 
@@ -82,8 +86,7 @@ export default function Marquee({ element1, element2, color1, color2 }) {
           className={` mx-4  ${styles.element2}`}
         >
           {element2}
-        </span> 
-
+        </span>
       </div>
     </div>
   );

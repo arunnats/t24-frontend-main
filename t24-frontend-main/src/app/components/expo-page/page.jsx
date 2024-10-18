@@ -21,7 +21,7 @@ useEffect(() => {
         trigger: ".expo-page",
         start: "top 60%",
         toggleActions: "play none none none",
-        markers: true,
+        // markers: true,
       },
     }
   );

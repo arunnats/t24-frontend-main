@@ -42,18 +42,21 @@ const Eventpage = ({ event, cards }) => {
             if (
               card.coverImage?.url &&
               card.title &&
-              card.regFee &&
               card.eventDate &&
               card.regLink &&
               card.documentId
             ) {
+              const price =
+                card.regFee !== undefined && card.regFee !== null
+                  ? card.regFee
+                  : "0";
               return (
                 <div key={index} className="mr-10">
                   <div className="">
                     <CartridgeMob
                       imageSrc={CMS_URL + card.coverImage.url}
                       title={card.title}
-                      price={card.regFee}
+                      price={card.price}
                       date={formatDate(card.eventDate)}
                       registrationLink={card.regLink}
                       docID={card.documentId}

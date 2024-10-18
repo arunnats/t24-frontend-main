@@ -1,7 +1,10 @@
 import React from "react";
 import Marquee from "../components/InnerPages/marquee/marquee_comp";
 import Arrow from "../components/InnerPages/InnerDescription/arrow";
+import FooterMobile from "../components/FooterMobile/FooterMobile";
+import FooterDesktop from "../components/FooterDesktop/FooterDesktop";
 import InnerDescription from "../components/InnerPages/InnerDescription/InnerDescription";
+import Link from "next/link";
 
 const page = () => {
   const desc =
@@ -11,15 +14,15 @@ const page = () => {
   const venue = "Ground";
 
   return (
-    <div className="w-full h-max overflow-x-clip  ">
+    <div className="w-full h-[232vh] md:h-[205vh] relative overflow-hidden ">
       <div className="h-screen">
         <div className="w-full h-[15%] lg:h-[20%] flex justify-between items-center p-2 ">
           <div className="m-2 h-full w-full p-2 rounded  ">
             <Marquee
-              element1={"proshow "}
-              element2={"proshow "}
-              color1={"#C0FF00"}
-              color2={"#C0FF00"}
+              element1={"glitch "}
+              element2={"glitch "}
+              color1={"#D181D7"}
+              color2={"#D181D7"}
             />
           </div>
         </div>
@@ -59,7 +62,7 @@ const page = () => {
                   <div className="date whitespace-normal flex justify-between">
                     <span className="font-presstart">{"Date:"}</span>
                     <span
-                      className={`place font-presstart text-right text-[#C0FF00] inline-block w-[100%]`}
+                      className={`place font-presstart text-right text-[#D181D7] inline-block w-[100%]`}
                     >
                       {date}
                     </span>
@@ -67,7 +70,7 @@ const page = () => {
                   <div className="rt whitespace-normal flex justify-between">
                     <span className="venue font-presstart ">{"Venue: "} </span>
                     <span
-                      className={`place font-presstart text-right text-[#C0FF00] inline-block w-[60%]`}
+                      className={`place font-presstart text-right text-[#D181D7] inline-block w-[60%]`}
                     >
                       {venue}
                     </span>
@@ -85,7 +88,7 @@ const page = () => {
           <div className="m-3 ml-0 h-full w-[61%] p-2 rounded flex justify-end">
             <div className="w-[95%] h-full border-4 border-white rounded-2xl overflow-clip relative object-cover">
               <img
-                src={"/grid/concert.webp"}
+                src={"/grid/arcade.jpg"}
                 className="object-cover absolute bottom-0 fill h-full w-full "
               />
             </div>
@@ -109,7 +112,10 @@ const page = () => {
                   className=" object-cover fill h-full w-full "
                 />
               </div>
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              <Link
+                href={"./automotive-summit"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
                   Automotive Summit
@@ -119,20 +125,12 @@ const page = () => {
                   style={{ fontFamily: '"Pricedown", sans-serif' }}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
+              </Link>
             </div>
-            <div className="w-full h-[49%] m-1 flex justify-between">
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
-                {" "}
-                <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
-                  Gaming Conclave
-                </p>{" "}
-                <img
-                  src={"/grid/arcade.jpg"}
-                  style={{ fontFamily: '"Pricedown", sans-serif' }}
-                  className=" object-cover fill h-full w-full "
-                />
-              </div>
+            <Link
+              href={"./drone-racing"}
+              className="w-full h-[49%] m-1 flex justify-between"
+            >
               <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
@@ -144,7 +142,21 @@ const page = () => {
                   className=" object-cover fill h-full w-full "
                 />
               </div>
-            </div>
+              <Link
+                href={"./proshow"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+              >
+                {" "}
+                <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
+                  Pro Show
+                </p>{" "}
+                <img
+                  src={"/grid/concert.webp"}
+                  style={{ fontFamily: '"Pricedown", sans-serif' }}
+                  className=" object-cover fill h-full w-full "
+                />
+              </Link>
+            </Link>
           </div>
         </div>
 
@@ -183,7 +195,7 @@ const page = () => {
                   <div className="date whitespace-normal flex justify-between">
                     <span className="font-presstart">{"Date:"}</span>
                     <span
-                      className={`place font-presstart text-right text-[#C0FF00] inline-block w-[100%]`}
+                      className={`place font-presstart text-right text-[#D181D7] inline-block w-[100%]`}
                     >
                       {date}
                     </span>
@@ -191,7 +203,7 @@ const page = () => {
                   <div className="rt whitespace-normal flex justify-between">
                     <span className="venue font-presstart ">{"Venue: "} </span>
                     <span
-                      className={`place font-presstart text-right text-[#C0FF00] inline-block w-[60%]`}
+                      className={`place font-presstart text-right text-[#D181D7] inline-block w-[60%]`}
                     >
                       {venue}
                     </span>
@@ -209,7 +221,7 @@ const page = () => {
           <div className="m-2 h-[100%] w-full rounded flex items-center justify-center ">
             <div className="w-[99%] h-full border-4 border-white rounded-3xl overflow-clip relative object-cover mt-3">
               <img
-                src={"/grid/concert.webp"}
+                src={"/grid/arcade.jpg"}
                 className="object-cover absolute bottom-0 fill h-full w-full "
               />
             </div>
@@ -242,10 +254,10 @@ const page = () => {
               <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
-                  Arcade
+                  Pro Show
                 </p>{" "}
                 <img
-                  src={"/grid/arcade.jpg"}
+                  src={"/grid/concert.webp"}
                   className=" object-cover fill h-full w-full "
                 />
               </div>
@@ -279,6 +291,10 @@ const page = () => {
             </div>
           </div>
         </div> */}
+      </div>
+      <div className="footer h-max w-full absolute bottom-0 left-0">
+        <FooterDesktop />
+        <FooterMobile />
       </div>
     </div>
   );

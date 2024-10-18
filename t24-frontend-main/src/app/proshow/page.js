@@ -1,6 +1,8 @@
 import React from "react";
 import Marquee from "../components/InnerPages/marquee/marquee_comp";
 import Arrow from "../components/InnerPages/InnerDescription/arrow";
+import FooterMobile from "../components/FooterMobile/FooterMobile";
+import FooterDesktop from "../components/FooterDesktop/FooterDesktop";
 import InnerDescription from "../components/InnerPages/InnerDescription/InnerDescription";
 
 const page = () => {
@@ -11,7 +13,7 @@ const page = () => {
   const venue = "Ground";
 
   return (
-    <div className="w-full h-max overflow-x-clip  ">
+    <div className="w-full h-[232vh] md:h-[205vh] relative overflow-hidden ">
       <div className="h-screen">
         <div className="w-full h-[15%] lg:h-[20%] flex justify-between items-center p-2 ">
           <div className="m-2 h-full w-full p-2 rounded  ">
@@ -279,6 +281,10 @@ const page = () => {
             </div>
           </div>
         </div> */}
+      </div>
+      <div className="footer h-max w-full absolute bottom-0 left-0">
+        <FooterDesktop />
+        <FooterMobile />
       </div>
     </div>
   );

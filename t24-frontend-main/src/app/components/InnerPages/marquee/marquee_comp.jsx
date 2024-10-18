@@ -48,7 +48,7 @@ export default function Marquee({ element1, element2, color1, color2 }) {
       x: -totalWidth,
       duration: 2200,
       repeat: -1,
-      delay: 1,
+      delay: 0,
     });
 
     // Animate the scale and opacity on load
@@ -57,9 +57,9 @@ export default function Marquee({ element1, element2, color1, color2 }) {
       { opacity: 0, scale: 0.5 },
       {
         opacity: 1,
-        scale: 0.8,
-        duration: 2.5,
-        delay: 0.5,
+        scale: isMediumOrLarger ? 0.8 : 1.2,
+        duration: 1,
+        delay: 0.1,
         ease: "power2.out",
         y: isMediumOrLarger ? -65 : 0,
       }

@@ -1,6 +1,8 @@
 import React from "react";
 import Marquee from "../components/InnerPages/marquee/marquee_comp";
 import Arrow from "../components/InnerPages/InnerDescription/arrow";
+import FooterMobile from "../components/FooterMobile/FooterMobile";
+import FooterDesktop from "../components/FooterDesktop/FooterDesktop";
 import InnerDescription from "../components/InnerPages/InnerDescription/InnerDescription";
 
 const page = () => {
@@ -8,7 +10,7 @@ const page = () => {
     "Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!";
 
   return (
-    <div className="w-full h-max overflow-x-clip bg-black">
+    <div className="w-full h-[215vh] md:h-[222vh] relative overflow-hidden ">
       <div className="h-screen">
         <div className="w-full h-[15%] lg:h-[20%] flex justify-between items-center p-2 ">
           <div className="m-2 h-full w-full p-2 rounded  ">
@@ -160,6 +162,10 @@ const page = () => {
             <InnerDescription num="02" heading="About" text={desc} />
           </div>
         </div>
+      </div>
+      <div className="footer h-max w-full absolute bottom-0 left-0">
+        <FooterDesktop />
+        <FooterMobile />
       </div>
     </div>
   );

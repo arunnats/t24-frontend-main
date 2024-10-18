@@ -40,7 +40,12 @@ const Navbar = () => {
               style={{ fontSize: "2rem" }}
               onClick={toggleMenu}
             >
-              ☰
+              {/* Replace text icon with SVG */}
+              <img
+                src="/hamburgerIcon.svg" // Path to your SVG
+                alt="Menu"
+                style={{ width: "60px", height: "60px" }} // Adjust size if needed
+              />
             </button>
           )}
 

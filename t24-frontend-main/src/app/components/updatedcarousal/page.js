@@ -5,7 +5,6 @@ import styles from "./page.module.css";
 
 const Carousal = () => {
   return (
-
     <div className="flex flex-row bg-transparent p-10 justify-evenly custom-sm:flex-col h-full gap-6 items-center text-2xl">
       {/* Card 1 - Workshops */}
       <Link href="/workshops" passHref legacyBehavior>
@@ -32,7 +31,7 @@ const Carousal = () => {
             COMPETITIONS
           </h2> */}
           <img
-            src="/lecture_black.png"
+            src="/comp_black.png"
             alt="Lectures"
             className="object-cover rounded-[20px] border-[5px] border-white"
           />
@@ -48,7 +47,7 @@ const Carousal = () => {
             LECTURES
           </h2> */}
           <img
-            src="/comp_black.png"
+            src="/lecture_black.png"
             alt="Lectures"
             className="object-cover rounded-[20px] border-[5px] border-white"
           />

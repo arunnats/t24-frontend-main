@@ -13,6 +13,7 @@ import FooterDesktop from "./components/FooterDesktop/FooterDesktop";
 import FooterMobile from "./components/FooterMobile/FooterMobile";
 import ProShow from "./components/pro/ProShow";
 import OthersLanding from "./components/Others/Other";
+import AutomotiveSummit from "./components/AutomotiveSummit/automotiveSummit";
 import MainMarquee from "./components/mainPageMarquee/marque";
 import Navbar from "./components/Navbar/Navbar";
 import { Analytics } from "@vercel/analytics/react";
@@ -164,15 +165,20 @@ export default function Home() {
 
       <GamingPage />
 
-      <div className="proshow-container">
-        <ProShow />
-      </div>
-
       <div className="expo-container w-screen h-min-screen">
         <ExpoPage />
       </div>
 
-      <OthersLanding />
+      <div>{/* <AutomotiveSummit /> */}</div>
+
+      <div className="proshow-container my-[2vh]">
+        <ProShow />
+      </div>
+
+      <div>
+        {" "}
+        <OthersLanding />
+      </div>
 
       <div className="footer flex h-screen w-full bottom-0">
         <FooterDesktop />

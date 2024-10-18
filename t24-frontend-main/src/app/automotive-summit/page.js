@@ -5,12 +5,17 @@ import FooterMobile from "../components/FooterMobile/FooterMobile";
 import FooterDesktop from "../components/FooterDesktop/FooterDesktop";
 import InnerDescription from "../components/InnerPages/InnerDescription/InnerDescription";
 import Link from "next/link";
+
+import Navbar from "../components/Navbar/Navbar";
+
 const page = () => {
   const desc =
     "Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!";
 
   return (
     <div className="w-full h-[200vh] md:h-[220vh] relative overflow-hidden ">
+      <Navbar />
+
       <div className="h-screen">
         <div className="w-full h-[15%] lg:h-[20%] flex justify-between items-center p-2 ">
           <div className="m-2 h-full w-full p-2 rounded  ">

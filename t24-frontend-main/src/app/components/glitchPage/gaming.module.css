@@ -60,7 +60,9 @@
     font-weight: bolder;
     justify-content: center;
     height: 30px;
-    transition: all 0.1s;
+    transition: color 0.1s;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 
@@ -76,6 +78,9 @@
     background-color: #596772;
     font-weight: bolder;
     height: 30px;
+    
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .buttoncomp:hover {

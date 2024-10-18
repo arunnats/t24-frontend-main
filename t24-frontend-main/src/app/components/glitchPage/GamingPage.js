@@ -142,7 +142,7 @@ export default function GamingPage() {
               the way, with Gekko chasing them down to regroup and go again.
             </div>
             <div className="flex relative  w-full">
-              <div className="flex flex-col justify-center align-center absolute bottom-12 right-10 pl-[55px]  ">
+              <div className="flex flex-col justify-center align-center absolute bottom-16 right-7 pl-[55px]  ">
                 <button
                   className={`flex bg-white text-white text-[15px] text-center font-IBM Plex Sans pt-1  ${styles.buttonplay}`}
                 >

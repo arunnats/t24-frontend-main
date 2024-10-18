@@ -11,26 +11,7 @@ gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, CSSRulePlugin, Draggable);
 
 export default function Marquee({ element1, element2, color1, color2 }) {
   const marqueeRef = useRef(null);
-
-  // How to use :
-
-  // const element1 = "automative ";
-  // const element2 = "summit ";
-  // const color1 = "#b70202";
-  // const color2 = "#0a0a00";
-
-  // const Page = () => {
-  // return (
-  //   <div>
-  //     <Marquee
-  //       element1={element1}
-  //       element2={element2}
-  //       color1={color1}
-  //       color2={color2}
-  //     />
-  //   </div>
-  // );
-  // };
+  const element2Ref = useRef(null); // Ref for element2
 
   useEffect(() => {
     const marquee = marqueeRef.current;
@@ -40,7 +21,6 @@ export default function Marquee({ element1, element2, color1, color2 }) {
     marquee.innerHTML += marquee.innerHTML;
 
     const totalWidth = marquee.scrollWidth / 2;
-
     const isMediumOrLarger = window.matchMedia("(min-width: 768px)").matches;
 
     // Animate the marquee scrolling
@@ -65,10 +45,12 @@ export default function Marquee({ element1, element2, color1, color2 }) {
       }
     );
 
-    setTimeout(() => {
-      marquee.style.textShadow = `-2px -2px 0 ${color1}, 2px -2px 0 ${color1}, -2px 2px 0 ${color1}, 2px 2px 0 ${color1}`;
-    }, 100);
-  }, [marqueeRef]);
+    // Apply the text shadow and stroke only to element2
+    if (element2Ref.current) {
+      element2Ref.current.style.textShadow = `-2px -2px 0 ${color1}, 2px -2px 0 ${color1}, -2px 2px 0 ${color1}, 2px 2px 0 ${color1}`;
+      element2Ref.current.style.webkitTextStroke = `2px ${color1}`;
+    }
+  }, [marqueeRef, element2Ref, color1]);
 
   return (
     <div
@@ -78,16 +60,18 @@ export default function Marquee({ element1, element2, color1, color2 }) {
         ref={marqueeRef}
         className={`${styles.marquee} whitespace-nowrap flex text-[4rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem]   `}
       >
-        <span style={{ color: color1 }} className={` mx-4 ${styles.element1}`}>
+        <span style={{ color: color1 }} className={`mx-4 ${styles.element1}`}>
           {element1}
         </span>
 
         <span
+          ref={element2Ref} // Add ref here
           style={{
             color: "black",
-            textShadow: `-2px -2px 0  ${color1}, 2px -2px 0 ${color1}, -2px 2px 0 ${color1}, 2px 2px 0 ${color1} ; -webkit-text-stroke: 2px ${color1};`,
+            textShadow: `-2px -2px 0 ${color1}, 2px -2px 0 ${color1}, -2px 2px 0 ${color1}, 2px 2px 0 ${color1}`,
+            WebkitTextStroke: `2px ${color1}`,
           }}
-          className={` mx-4  ${styles.element2}`}
+          className={`mx-4 ${styles.element2}`}
         >
           {element2}
         </span>

@@ -10,7 +10,7 @@ const page = () => {
     "Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!";
 
   return (
-    <div className="w-full h-[215vh] md:h-[222vh] relative overflow-hidden ">
+    <div className="w-full h-[215vh] md:h-[226vh] relative overflow-hidden ">
       <div className="h-screen">
         <div className="w-full h-[15%] lg:h-[20%] flex justify-between items-center p-2 ">
           <div className="m-2 h-full w-full p-2 rounded  ">
@@ -33,7 +33,7 @@ const page = () => {
               >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
-                  Expo
+                  Student Expo
                 </p>{" "}
                 <img
                   src={"/grid/expo.webp"}
@@ -47,7 +47,7 @@ const page = () => {
               >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
-                  Pro Show
+                  Proshow
                 </p>{" "}
                 <img
                   src={"/grid/concert.webp"}
@@ -63,7 +63,7 @@ const page = () => {
               >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
-                  Gaming Conclave
+                  Glitch
                 </p>{" "}
                 <img
                   src={"/grid/arcade.jpg"}
@@ -110,39 +110,51 @@ const page = () => {
 
           <div className="m-2 h-[75%] w-full rounded flex flex-col items-center justify-center">
             <div className="w-full h-[49%] m-1 flex justify-between">
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]">
+              <Link
+                href={"./expo-inner"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown ">
-                  Expo
+                  Student Expo
                 </p>{" "}
                 <img
                   src={"/grid/expo.webp"}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]">
+              </Link>
+              <Link
+                href={"./proshow"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
-                  Concert
+                  Proshow
                 </p>{" "}
                 <img
                   src={"/grid/concert.webp"}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
+              </Link>
             </div>
             <div className="w-full h-[49%] m-1 flex justify-between">
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]">
+              <Link
+                href={"./glitch-inner"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
-                  Arcade
+                  Glitch
                 </p>{" "}
                 <img
                   src={"/grid/arcade.jpg"}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]">
+              </Link>
+              <Link
+                href={"./drone-racing"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
                   Drone Racing
@@ -151,7 +163,7 @@ const page = () => {
                   src={"/grid/drone.webp"}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -169,9 +181,9 @@ const page = () => {
           </div>
         </div> */}
 
-        <div className="w-full h-[50%] flex justify-between items-center px-5">
+        <div className="w-full  flex justify-between items-center px-5">
           <div className="h-full w-full rounded">
-            <InnerDescription num="02" heading="About" text={desc} />
+            <InnerDescription num="01" heading="About" text={desc} />
           </div>
         </div>
       </div>

@@ -26,7 +26,7 @@ export default function Marquee({ element1, element2, color1, color2 }) {
 
   return (
     <div className={styles.rotate}>
-    <div className={`relative  ${styles.marqueecont}`}>
+    <div className={`relative h-full w-full ${styles.marqueecont} bg-gray-300`}>
       <div
         ref={marqueeRef}
         className={`${styles.marquee} whitespace-nowrap flex`}

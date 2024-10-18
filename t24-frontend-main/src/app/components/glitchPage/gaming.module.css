@@ -1,0 +1,169 @@
+.bluebg {
+    @media(max-width: 834px){
+        display: none;
+    }
+    z-index: 100;
+    background-color: rgb(29, 29, 230);
+    justify-content: center;
+    align-items: center;
+    background-image: url('/image 12.svg');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.textbg {
+    font-family: 'Cyberway Riders', sans-serif;
+    font-size: 30vw;
+    letter-spacing: 1vw;
+}
+
+.desktop {
+    @media(max-width:834px) {
+        display: none;
+    }
+
+    z-index: 10;
+}
+
+.left {
+    width: 40%;
+}
+
+.text {
+    font-family: 'Cyberway Riders';
+@media(max-width:480px){
+    font-size: 20vw;
+}
+}
+
+.text_description {
+    font-family: Outfit;
+    opacity: 0.5;
+    width: 28vw;
+
+    /* line-height:normal; */
+    @media(max-width: 1200px) {
+        width: 35vw;
+    }
+
+    @media(max-width: 1000px) {
+        width: 40vw;
+    }
+}
+
+.buttonplay {
+    background-color: #ed404f;
+    font-weight: bolder;
+    justify-content: center;
+    height: 70px;
+}
+
+.buttoncomp {
+    justify-content: center;
+    background-color: #596772;
+    height: 25px;
+}
+
+.middleimgg {
+    top: 45%;
+    width: 18vw;
+    aspect-ratio: 1/1;
+    z-index: 3;
+    left: 34%;
+}
+
+.gekko {
+    position: absolute;
+    left: -10%;
+    top: 100px;
+    width: 45vw;
+    aspect-ratio: 1/1;
+    z-index: 1;
+}
+
+.gamingbg {
+    position: absolute;
+    top: 100px;
+    z-index: 0;
+    width: 45vw;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.mobile {
+    @media(min-width:834px) {
+        display: none;
+    }
+
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileimgg {
+    width: 50vw;
+
+    @media(max-width:500px) {
+        width: 60vw;
+    }
+}
+
+.mobilebutton {
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+
+    @media(max-width:600px) {
+        width: 18%;
+    }
+    @media(max-width:600px) {
+        width: 25%;
+    }
+}
+@media(max-width:1400px){
+.gekko{
+height: 50vw;
+}
+.gamingbg{
+height: 50vw;
+}
+}
+@media(max-width:1300px){
+.gekko{
+height: 54vw;
+}
+.gamingbg{
+height: 54vw;
+}
+}
+@media(max-width:1200px){
+.gekko{
+height: 58vw;
+}
+.gamingbg{
+height: 58vw;
+}
+}
+@media(max-width:1100px){
+.gekko{
+height: 68vw;
+top:70px;
+}
+.gamingbg{
+    height: 68vw;
+    /* top:50px; */
+ width: 40vw;
+}
+}
+@media(max-width:950px){
+    .gekko{
+        top:40px;
+    height: 75vw;
+    }
+    .gamingbg{
+    height: 75vw;
+    }
+    }

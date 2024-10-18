@@ -27,7 +27,7 @@ const Page = () => {
         );
         const fetchedData = await res.json();
         console.log(fetchedData);
-        setData(fetchedData.data);
+        setData(fetchedData.data || []);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching workshops:", error);
@@ -40,7 +40,7 @@ const Page = () => {
 
   return (
     <div className="min-h-[100vh] bg-black">
-      {loading ? (
+      {loading || (data && data.length === 0) ? (
         <div className="flex  items-center h-[100vh]">
           <Pacman />
         </div>

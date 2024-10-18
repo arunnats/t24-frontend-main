@@ -42,18 +42,22 @@ const Eventpage = ({ event, cards }) => {
             if (
               card.posterImage?.url &&
               card.name &&
-              card.regPrice &&
               card.eventDate &&
               card.regLink &&
               card.documentId
             ) {
+              const price =
+                card.regPrice !== undefined && card.regPrice !== null
+                  ? card.regPrice
+                  : "0";
+
               return (
                 <div key={index} className="mr-10">
                   <div className="">
                     <CartridgeMob
                       imageSrc={CMS_URL + card.posterImage.url}
                       title={card.name}
-                      price={card.regPrice}
+                      price={price}
                       date={formatDate(card.eventDate)}
                       registrationLink={card.regLink}
                       docID={card.documentId}
@@ -63,7 +67,6 @@ const Eventpage = ({ event, cards }) => {
                 </div>
               );
             }
-            // Return null if any of the fields are missing (don't render the card)
             return null;
           })}
         </div>

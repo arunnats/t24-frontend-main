@@ -10,6 +10,8 @@ module.exports = {
       fontFamily: {
         presstart: ["Press Start 2P", "sans-serif"],
         pricedown: ["Pricedown", "sans-serif"],
+        valorant: ['valorant', 'sans-serif'], // Add the Valorant font
+        PlusJakartaSans: ['PlusJakartaSans', 'sans-serif'], 
       },
       height: {
         115: "115%", // Add a custom height of 60vh

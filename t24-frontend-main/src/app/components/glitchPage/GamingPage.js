@@ -10,47 +10,48 @@ export default function GamingPage() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    // Timeline for initial animations
-    const tl = gsap.timeline({ delay: 0.5 });
-
-    // Animate blue background (compress and flip)
+  
+    // Initial animation for the blue background 
     if (showBlueBg) {
-      tl.to(`.${styles.bluebg}`, {
+      gsap.to(`.${styles.bluebg}`, {
         duration: 0.5,
         scale: 0,
+        delay:0.5,
         rotateY: 180,
         ease: "power2.in",
         x: 200,
         y: 50,
-        onComplete: () => setShowBlueBg(false), // Hide the blue background after animation
+        onComplete: () => setShowBlueBg(false),
+        scrollTrigger: {
+          trigger: `.${styles.main}`, // The trigger element
+          start: "top 50%", // Start animation when the element is 50% into view
+          toggleActions: "play none none none", // Only play once
+        },
       });
     }
-
-    // Scroll-triggered animations
+  
+    // Other animations for elements triggered by scroll
     gsap.fromTo(
       `.${styles.buttonplay}`,
       { y: -200, opacity: 0 },
       {
         y: 0,
-        delay: 1.5,
         opacity: 1,
-        duration: 2.0,
+        duration: 0.7,
         ease: "bounce.out",
         scrollTrigger: {
           trigger: `.${styles.buttonplay}`,
-          start: "top 80%", // When the top of buttonplay reaches 80% of the viewport
-          toggleActions: "play none none none", // Only play once when in view
+          start: "top 80%",
+          toggleActions: "play none none none",
         },
       }
     );
-
+  
     gsap.fromTo(
       `.${styles.middleimgg}`,
       { scale: 0, opacity: 0 },
       {
         scale: 1,
-        delay: 0.8,
         opacity: 1,
         duration: 0.7,
         ease: "power2.out",
@@ -61,19 +62,21 @@ export default function GamingPage() {
         },
       }
     );
-
+  
+    // Animation for the background image when in view
     gsap.fromTo(
       `.${styles.gamingbg}`,
       { scale: 0.5, opacity: 0 },
       {
         scale: 1,
         opacity: 1,
-        duration: 1.5,
+        duration: 0.7,
         ease: "power2.out",
         scrollTrigger: {
           trigger: `.${styles.gamingbg}`,
           start: "top 80%",
           toggleActions: "play none none none",
+          // markers: true,
         },
       }
     );
@@ -83,32 +86,18 @@ export default function GamingPage() {
       {
         scale: 1,
         opacity: 1,
-        duration: 1.5,
+        duration: 0.7,
         ease: "power2.out",
         scrollTrigger: {
           trigger: `.${styles.gamingbg}`,
           start: "top 80%",
           toggleActions: "play none none none",
+          // markers: true,
         },
       }
     );
-    // Scroll-triggered animations for mobile
-    gsap.fromTo(
-      `.${styles.mobileimgg}`,
-      { scale: 0, opacity: 0 },
-      {
-        scale: 1,
-        opacity: 1,
-        duration: 1,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: `.${styles.mobileimgg}`,
-          start: "top 90%", // Mobile image appears slightly earlier
-          toggleActions: "play none none none",
-        },
-      }
-    );
-  }, []);
+  }, [showBlueBg]);
+  
 
   return (
     <>
@@ -119,7 +108,7 @@ export default function GamingPage() {
             className={`flex flex-col w-full h-screen bg-black absolute ${styles.bluebg}`}
           >
             <div className="flex flex-col items-center gap-10">
-              <div className={`text-white text-8xl ${styles.textbg} mb-2`}>
+              <div className={`text-white text-8xl font-valorant ${styles.textbg} mb-2`}>
                 Glitch
               </div>
             </div>

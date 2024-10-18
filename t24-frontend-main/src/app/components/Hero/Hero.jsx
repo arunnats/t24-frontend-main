@@ -31,9 +31,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className={`w-screen min-h-screen overflow-x-hidden flex items-center justify-center relative bg-black overflow-clip ${isLoaded ? '' : 'opacity-0'}`}>
+    <div className={`w-screen min-h-[130vh] overflow-x-clip flex items-center justify-center relative bg-black ${isLoaded ? '' : 'opacity-0'}`}>
       {/* <JumpToHyperspace /> */}
+      <div className='absolute top-0'>
       <StarfieldEffect />
+
+
+      </div>
       <div className="absolute lg:top-[5%] top-[20%] w-full origin-center h-max z-10 flex items-center justify-center">
         <img src="/Hero/Line.svg" alt="" className='w-full lg:w-[80%] md:w-[90%] sm:w-[95%]' />
       </div>

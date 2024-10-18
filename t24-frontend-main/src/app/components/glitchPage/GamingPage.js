@@ -11,7 +11,7 @@ export default function GamingPage() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
   
-    // Initial animation for the blue background when visible
+    // Initial animation for the blue background 
     if (showBlueBg) {
       gsap.to(`.${styles.bluebg}`, {
         duration: 0.5,

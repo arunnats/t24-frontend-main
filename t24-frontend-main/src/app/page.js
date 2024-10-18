@@ -20,6 +20,24 @@ export default function Home() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    gsap.fromTo(
+      ".hero-container",
+      { scale:1},
+      {
+        opacity: 0,
+        y: 0,
+        duration: 2.5,
+        scale:5 ,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".hero-container",
+          start: "60% 50%",
+          toggleActions: "play reverse play reverse",
+          // markers: true
+        },
+      }
+    );
+
     // Scroll-triggered animation for Carousal
     gsap.fromTo(
       ".carousal-container",
@@ -27,7 +45,7 @@ export default function Home() {
       {
         opacity: 1,
         y: 0,
-        duration: 1.5,
+        duration: 0.5,
         scale:1,
         ease: "power2.out",
         scrollTrigger: {
@@ -57,8 +75,10 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-[760vh] relative overflow-clip bg-black flex flex-col">
-      <Hero />
+    <div className="min-h-[760vh] relative overflow-clip bg-black flex flex-col z-50">
+      <div className="hero-container h-[130vh]">
+        <Hero />
+      </div>
       <div className="carousal-container h-screen">
         <Carousal />
       </div>

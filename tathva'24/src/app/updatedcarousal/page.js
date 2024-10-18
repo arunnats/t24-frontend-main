@@ -1,15 +1,17 @@
-// pages/page.js (or your page file in Next.js)
+// Carousal/Carousal.js
 import React from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
 
-const Page = () => {
+const Carousal = () => {
   return (
     <div className="flex flex-row bg-black p-10 justify-evenly custom-sm:flex-col gap-6 text-2xl">
       {/* Card 1 - Workshops */}
       <Link href="/workshop" passHref legacyBehavior>
-        <a className={`${styles.divcont} relative flex flex-col items-center rounded-2xl overflow-hidden`}>
-          <div className={`${styles.heading} ${styles['workshop-heading']}`}>
+        <a
+          className={`${styles.divcont} relative flex flex-col items-center rounded-2xl overflow-hidden`}
+        >
+          <div className={`${styles.heading} ${styles["workshop-heading"]}`}>
             WORKSHOPS
           </div>
           <img
@@ -22,8 +24,10 @@ const Page = () => {
 
       {/* Card 2 - Lectures */}
       <Link href="/lecture" passHref legacyBehavior>
-        <a className={`${styles.divcont} relative flex flex-col items-center rounded-2xl overflow-hidden`}>
-          <h2 className={`${styles.heading} ${styles['lecture-heading']}`}>
+        <a
+          className={`${styles.divcont} relative flex flex-col items-center rounded-2xl overflow-hidden`}
+        >
+          <h2 className={`${styles.heading} ${styles["lecture-heading"]}`}>
             LECTURES
           </h2>
           <img
@@ -36,8 +40,10 @@ const Page = () => {
 
       {/* Card 3 - Competitions */}
       <Link href="/events" passHref legacyBehavior>
-        <a className={`${styles.divcont} relative flex flex-col items-center rounded-2xl overflow-hidden`}>
-          <h2 className={`${styles.heading} ${styles['competition-heading']}`}>
+        <a
+          className={`${styles.divcont} relative flex flex-col items-center rounded-2xl overflow-hidden`}
+        >
+          <h2 className={`${styles.heading} ${styles["competition-heading"]}`}>
             COMPETITIONS
           </h2>
           <img
@@ -51,4 +57,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Carousal;

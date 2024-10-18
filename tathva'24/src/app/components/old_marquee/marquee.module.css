@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "PostNoBillsJaffna";
+  src: url("/fonts/PostNoBillsJaffna-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.marquee {
+  font-size: 2rem;
+}
+
+.rotate {
+  font-size: 2rem;
+  transform: rotate(-90deg);
+}

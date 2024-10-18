@@ -40,5 +40,19 @@ html {
     font-weight: 300;
     font-style: normal;
   }
+  @font-face {
+    font-family: "valorant";
+    src: url('/fonts/Valorant.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
   
+  /* Font face for 'Plus Jakarta Sans' */
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/fonts/Plus-Jakarta-Sans-Regular.woff2') format('woff2'),
+         url('/fonts/Plus-Jakarta-Sans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
  

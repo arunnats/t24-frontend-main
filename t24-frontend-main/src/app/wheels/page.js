@@ -1,5 +1,6 @@
 import React from 'react'
 import AutomotiveSummit from '../../app/components/AutomotiveSummit/automotiveSummit'
+const Page = () => {  
   return (
     <div >
       <AutomotiveSummit/>
@@ -7,4 +8,4 @@ import AutomotiveSummit from '../../app/components/AutomotiveSummit/automotiveSu
   )
 }
 
-export default page
+export default Page

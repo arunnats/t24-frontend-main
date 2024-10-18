@@ -36,7 +36,7 @@ const AutomotiveSummit = () => {
       className="flex flex-col w-full text-white text-center  h-[80vh] bg-[url('/carbg.svg')] bg-no-repeat bg-cover  mt-[5vh]"
     >
       {/* Border Around the Entire Center Content */}
-      <div className="rounded-lg p-6 w-[100vw] sm:w-[80%] max-w-5xl mx-auto h-[70vh] ">
+      <div className="rounded-lg p-12 w-[100vw] sm:w-[80%] max-w-5xl mx-auto h-[70vh] ">
         {/* Header */}
         <h1 className="font-valorant text-3xl sm:text-4xl font-bold  ">
           AUTOMOTIVE 'SUMMIT
@@ -120,8 +120,8 @@ const AutomotiveSummit = () => {
         </div>
       
         {/* Explore Button Inside the Border */}
-        <div className="flex justify-center bg-[url('/explore_show.svg')] bg-contain">
-          <button className={`flex mt-6 mb-6 px-6 py-2 bg-red-600 rounded-full text-3xl font-semibold font-valorant ${styles.explore}`}>
+        <div className="flex justify-center">
+          <button className={`flex my-6 px-6 pt-3 text-red-500 border-gray-700 rounded-full text-3xl font-semibold font-valorant ${styles.explore}`}>
             EXPLORE THE SHOW
           </button>
         </div>
@@ -130,22 +130,22 @@ const AutomotiveSummit = () => {
       {/* Navigation Links */}
      <div className=" w-full flex justify-center align-center">
         {/* Curved background with SVG */}
-        <div className={`flex fixed bottom-0  w-[100vw]  bg-[url('/hud_down1.svg')] bg-no-repeat bg-center bg-contain ${styles.down} `}></div>
+        <div className={`flex fixed bottom-36  w-[100vw]  bg-[url('/hud_down1.svg')] bg-no-repeat bg-center bg-contain ${styles.down} `}></div>
         {/* Navigation Links */}
-        <div className={`relative z-10 flex justify-center align-center mt-3 text-white font-supply font-normal ${styles.links}`}>
-          <a  href="#!" className="px-4 py-2 text-xs sm:text-0.685rem border-x-r border-gray-600">
+        <div className={`relative bottom-32 z-10 flex justify-center align-center mt-3 text-white font-supply font-normal ${styles.links}`}>
+          <a href="#!" className="px-4 py-2 text-base sm:text-0.685rem border-x-r border-gray-600">
             Motography
           </a>
-          <a href="#!" className="px-4 py-2 text-xs sm:text-0.685rem border-x border-gray-600">
+          <a href="#!" className="px-4 py-2 text-base sm:text-0.685rem border-x border-gray-600">
             Rally
           </a>
-          <a href="#!" className="px-4 py-2 text-xs sm:text-0.685rem border-x border-gray-600">
+          <a href="#!" className="px-4 py-2 text-base sm:text-0.685rem border-x border-gray-600">
             Autoshow
           </a>
-          <a href="#!" className="px-4 py-2 text-xs sm:text-0.685rem border-x border-gray-600">
+          <a href="#!" className="px-4 py-2 text-base sm:text-0.685rem border-x border-gray-600">
             Stunts
           </a>
-          <a href="#!" className="px-4 py-2 text-xs sm:text-0.685rem border-x-l border-gray-600">
+          <a href="#!" className="px-4 py-2 text-base sm:text-0.685rem border-x-l border-gray-600">
             Superbikes
           </a>
         </div>
@@ -218,12 +218,12 @@ const AutomotiveSummit = () => {
               alt={currentCar.name}
               className={`w-48 sm:w-36 sm:h-20 object-contain ${styles.imgg}`}
             />
-            <p className="text-sm sm:text-base p-1 font-supply ">{currentCar.name}</p>
-            <p className="text-xs">{currentCar.model}</p>
+            <p className="text-sm text-white sm:text-base p-1 font-supply ">{currentCar.name}</p>
+            <p className="text-xs text-white">{currentCar.model}</p>
           </div>
           <div className="flex justify-center  bg-contain">
             <Image src='/Group 44.svg' width={15} height={15} />
-          <button className={`flex p-1 rounded-full text-4xl font-semibold font-valorant ${styles.explore}`} style={{textDecoration: 'underline'}}>
+          <button className={`flex p-1 text-white rounded-full text-4xl font-semibold font-valorant ${styles.explore}`} style={{textDecoration: 'underline'}}>
             EXPLORE THE SHOW
           </button>
           <Image src='/Group 43.svg' width={15} height={15} />

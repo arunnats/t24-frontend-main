@@ -13,10 +13,10 @@ const Page = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchWorkshops = async () => {
+    const fetchLectures = async () => {
       try {
         const res = await fetch(
-          `${CMS_URL}/api/workshops?populate=posterImage`,
+          `${CMS_URL}/api/glitches?populate=posterImage`,
           {
             method: "GET",
             headers: {
@@ -27,25 +27,25 @@ const Page = () => {
         );
         const fetchedData = await res.json();
         console.log(fetchedData);
-        setData(fetchedData.data || []);
+        setData(fetchedData.data || []); // Ensure data is always an array
         setLoading(false);
       } catch (error) {
-        console.error("Error fetching workshops:", error);
+        console.error("Error fetching lectures:", error);
         setLoading(false);
       }
     };
 
-    fetchWorkshops();
+    fetchLectures();
   }, []);
 
   return (
     <div className="min-h-[100vh] bg-black">
-      {loading || (data && data.length === 0) ? (
-        <div className="flex  items-center h-[100vh]">
+      {loading || (data && data.length === 0) ? ( // Render Pacman if loading or data is empty
+        <div className="flex justify-center items-center h-[100vh]">
           <Pacman />
         </div>
       ) : (
-        <Eventpage event="WORKSHOPS" cards={data} />
+        <Eventpage event="GLITCH" cards={data} />
       )}
     </div>
   );

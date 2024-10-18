@@ -8,10 +8,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        presstart: ["Press Start 2P", "sans-serif"],
+        presstart: ["PressStart", "sans-serif"],
         pricedown: ["Pricedown", "sans-serif"],
-        valorant: ['valorant', 'sans-serif'], // Add the Valorant font
-        PlusJakartaSans: ['PlusJakartaSans', 'sans-serif'], 
+        valorant: ["valorant", "sans-serif"],
+        PlusJakartaSans: ["PlusJakartaSans", "sans-serif"],
+        akira: ["Akira", "sans-serif"],
       },
       height: {
         115: "115%", // Add a custom height of 60vh
@@ -25,10 +26,10 @@ module.exports = {
       },
 
       screens: {
-        'custom1': { 'max': '600px' },
-        'custom': { 'max': '750px' },
-        'custom-md': { 'max': '950px' }, 
-        'custom-sm': { 'max': '450px' },// Custom media query for below 1040px
+        custom1: { max: "600px" },
+        custom: { max: "750px" },
+        "custom-md": { max: "950px" },
+        "custom-sm": { max: "450px" }, // Custom media query for below 1040px
       },
     },
   },

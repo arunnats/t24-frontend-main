@@ -28,7 +28,7 @@ const FooterMobile = () => {
 
   return (
     <div className="flex flex-col justify-end h-[100vh] box-border relative overflow-y-hidden">
-      <div className={styles.foot_mob}>
+      <div className={{styles.foot_mob}}>
         <img
           src="/screw.svg"
           alt="My Icon"

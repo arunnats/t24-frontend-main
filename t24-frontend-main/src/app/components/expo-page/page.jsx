@@ -1,16 +1,73 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Dinosaur from "./components/dinosaur";
 import Marque from "./components/marque";
 import Torch from "./components/torch";
 import styles from ".//page.module.css";
 
+import { gsap } from "gsap";
+
 const DesktopComponent = () => {
+
+useEffect(() => {
+  gsap.fromTo(
+    ".expo-marque",
+    { opacity: 0, y: 50 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".expo-page",
+        start: "top 60%",
+        toggleActions: "play none none none",
+        // markers: true,
+      },
+    }
+  );
+  gsap.fromTo(
+    ".expo-img",
+    { opacity: 0, y: 50 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".expo-page",
+        start: "top 50%",
+        toggleActions: "play none none none",
+        // markers: true,
+      },
+    }
+  );
+
+  gsap.fromTo(
+    ".expo-txt",
+    { opacity: 0, y: 50 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".expo-page",
+        start: "top 50%",
+        toggleActions: "play none none none",
+        // markers: true,
+      },
+    }
+  );
+
+
+}, []);
+
   return (
-    <div>
-      <div className="pt-[2%] h-[10vh]">
+    <div className="expo-page">
+      <div className="expo-marque pt-[2%] h-[10vh]">
         <Marque />
       </div>
-      <div className="h-[90vh] flex flex-row">
+      <div className=" expo-img h-[90vh] flex flex-row">
         <div className="w-[50vw] relative overflow-hidden">
           <div className="w-full h-full relative flex items-center">
             <img
@@ -20,7 +77,7 @@ const DesktopComponent = () => {
           </div>
         </div>
 
-        <div className="flex-[1] flex flex-col justify-around mr-10 ml-8">
+        <div className="expo-txt flex-[1] flex flex-col justify-around mr-10 ml-8">
           <div className="mt-20">
             <img src="/expo.svg" className="select-none	" />
             <div className="mb-4">

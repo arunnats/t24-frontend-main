@@ -55,7 +55,7 @@ const FooterDesktop = () => {
 
             <div className="flex-[8] h-[80%] mt-[3vh] mr-[-1vw] relative z-[5]">
               <img
-                src="/small_display.svg"
+                src="/small_display_edit.png"
                 alt="My Icon"
                 className="h-115 object-fit"
               />

@@ -15,16 +15,13 @@ const Page = () => {
   useEffect(() => {
     const fetchLectures = async () => {
       try {
-        const res = await fetch(
-          `${CMS_URL}/api/lectures?populate=posterImage`,
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${CMS_API_TOKEN}`,
-            },
-          }
-        );
+        const res = await fetch(`${CMS_URL}/api/lectures?populate=coverImage`, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${CMS_API_TOKEN}`,
+          },
+        });
         const fetchedData = await res.json();
         console.log(fetchedData);
         setData(fetchedData.data || []); // Ensure data is always an array

@@ -5,6 +5,8 @@ import FooterMobile from "../components/FooterMobile/FooterMobile";
 import FooterDesktop from "../components/FooterDesktop/FooterDesktop";
 import InnerDescription from "../components/InnerPages/InnerDescription/InnerDescription";
 import Link from "next/link";
+import Navbar from "../components/Navbar/Navbar";
+
 const page = () => {
   const desc =
     "Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!";
@@ -13,7 +15,9 @@ const page = () => {
   const venue = "Ground";
 
   return (
-    <div className="w-full h-[232vh] md:h-[205vh] relative overflow-hidden ">
+    <div className="w-full h-[232vh] md:h-[208vh] relative overflow-hidden ">
+      <Navbar />
+
       <div className="h-screen">
         <div className="w-full h-[15%] lg:h-[20%] flex justify-between items-center p-2 ">
           <div className="m-2 h-full w-full p-2 rounded  ">
@@ -85,7 +89,7 @@ const page = () => {
             </div>
           </div>
           <div className="m-3 ml-0 h-full w-[61%] p-2 rounded flex justify-end">
-            <div className="w-[95%] h-full border-4 border-white rounded-2xl overflow-clip relative object-cover">
+            <div className="w-[95%] h-full border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px] object-cover">
               <img
                 src={"/grid/expo.webp"}
                 className="object-cover absolute bottom-0 fill h-full w-full "
@@ -96,13 +100,13 @@ const page = () => {
 
         <div className=" h-[57%] hidden lg:flex justify-between items-center p-2 ">
           <div className="h-full w-[60%] rounded">
-            <InnerDescription num="02" heading="About" text={desc} />
+            <InnerDescription num="05" heading="About" text={desc} />
           </div>
           <div className="m-2 h-full w-[39%] p-2 rounded flex flex-col justify-between items-center ">
             <div className="w-full h-[49%] m-1 flex justify-between">
               <Link
                 href={"./drone-racing"}
-                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
               >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
@@ -116,7 +120,7 @@ const page = () => {
               </Link>
               <Link
                 href={"./automotive-summit"}
-                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
               >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
@@ -132,11 +136,11 @@ const page = () => {
             <div className="w-full h-[49%] m-1 flex justify-between">
               <Link
                 href={"./glitch-inner"}
-                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
               >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
-                  Gaming Conclave
+                  Glitch
                 </p>{" "}
                 <img
                   src={"/grid/arcade.jpg"}
@@ -146,11 +150,11 @@ const page = () => {
               </Link>
               <Link
                 href={"./proshow"}
-                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative"
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
               >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
-                  Pro Show
+                  Proshow
                 </p>{" "}
                 <img
                   src={"/grid/concert.webp"}
@@ -221,9 +225,9 @@ const page = () => {
             </div>
           </div>
           <div className="m-2 h-[100%] w-full rounded flex items-center justify-center ">
-            <div className="w-[99%] h-full border-4 border-white rounded-3xl overflow-clip relative object-cover mt-3">
+            <div className="w-[99%] h-full border-4 border-white rounded-3xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px] object-cover mt-3">
               <img
-                src={"/grid/concert.webp"}
+                src={"/grid/expo.webp"}
                 className="object-cover absolute bottom-0 fill h-full w-full "
               />
             </div>
@@ -231,17 +235,23 @@ const page = () => {
 
           <div className="m-2 h-[75%] w-full rounded flex flex-col items-center justify-center ">
             <div className="w-full h-[49%] m-1 flex justify-between">
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              <Link
+                href={"./proshow"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown ">
-                  Pro Show
+                  Proshow
                 </p>{" "}
                 <img
                   src={"/grid/concert.webp"}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              </Link>
+              <Link
+                href={"./automotive-summit"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
                   Automotive Summit
@@ -250,20 +260,26 @@ const page = () => {
                   src={"/grid/red_car.jpg"}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
+              </Link>
             </div>
             <div className="w-full h-[49%] m-1 flex justify-between">
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              <Link
+                href={"./glitch-inner"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
-                  Arcade
+                  Glitch
                 </p>{" "}
                 <img
                   src={"/grid/arcade.jpg"}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
-              <div className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative">
+              </Link>
+              <Link
+                href={"./drone-racing"}
+                className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
+              >
                 {" "}
                 <p className="w-full h-[15%] absolute bottom-0 bg-black bg-opacity-65 z-10 text-white flex justify-center items-center text-pricedown">
                   Drone Racing
@@ -272,7 +288,7 @@ const page = () => {
                   src={"/grid/drone.webp"}
                   className=" object-cover fill h-full w-full "
                 />
-              </div>
+              </Link>
             </div>
           </div>
         </div>

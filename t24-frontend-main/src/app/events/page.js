@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Eventpage from "../components/Event_card/eventpageComp";
 import Pacman from "../components/pacman/Pacman";
+import Navbar from "../components/Navbar/Navbar";
 
 const CMS_URL = "https://cms.tathva.org";
 const CMS_API_TOKEN =
@@ -44,7 +45,10 @@ const Page = () => {
           <Pacman />
         </div>
       ) : (
-        <Eventpage event="COMPETITIONS" cards={data} />
+        <>
+          <Navbar />
+          <Eventpage event="COMPETITIONS" cards={data} />
+        </>
       )}
     </div>
   );

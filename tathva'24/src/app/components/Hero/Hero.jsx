@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import gsap from 'gsap';
+import StarfieldEffect from './Stars';
 // import JumpToHyperspace from '../HyperSpace/Hyperspace';
 
 const Hero = () => {
@@ -32,6 +33,7 @@ const Hero = () => {
   return (
     <div className={`w-screen min-h-screen overflow-x-hidden flex items-center justify-center relative bg-black overflow-clip ${isLoaded ? '' : 'opacity-0'}`}>
       {/* <JumpToHyperspace /> */}
+      <StarfieldEffect />
       <div className="absolute lg:top-[5%] top-[20%] w-full origin-center h-max z-10 flex items-center justify-center">
         <img src="/Hero/Line.svg" alt="" className='w-full lg:w-[80%] md:w-[90%] sm:w-[95%]' />
       </div>

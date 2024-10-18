@@ -1,0 +1,20 @@
+@import url("https://fonts.cdnfonts.com/css/post-no-bills-jaffna");
+
+.marquee {
+  opacity: 0; /* Initially hidden */
+  transform: scale(0.5); /* Initially scaled down */
+  will-change: opacity, transform; /* Optimize animation performance */
+}
+
+.marqueecont {
+  /* Other styles for the marquee container */
+  overflow: hidden;
+  position: relative;
+}
+.element1,
+.element2 {
+  font-family: "Post No Bills Jaffna Medium", sans-serif;
+}
+.elem2div {
+  clip-path: polygon(70% 0, 100% 45%, 70% 100%, 0 100%, 0 0);
+}

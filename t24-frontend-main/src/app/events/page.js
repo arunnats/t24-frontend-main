@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Eventpage from "../components/Event_card/eventpageComp";
 import Pacman from "../components/pacman/Pacman";
+import Marqueework from "../components/marquee_workshop/marquee_comp";
 import Navbar from "../components/Navbar/Navbar";
 
 const CMS_URL = "https://cms.tathva.org";
@@ -39,16 +40,31 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="min-h-[100vh] bg-black">
+    <div className="min-h-full bg-black overflow-hidden relative p-10 md:p-8">
       {loading || (data && data.length === 0) ? (
         <div className="flex  items-center h-[100vh]">
           <Pacman />
         </div>
       ) : (
-        <>
+        <div>
+          <div className="absolute inset-0 flex justify-center overflow-hidden left-0">
+            <div
+              className="-rotate-90"
+              style={{
+                height: "100vw",
+                display: "flex",
+              }}
+            >
+              <Marqueework
+                element1={"TATHVA 2024"}
+                element2={"COMPETITIONS"}
+                color={"#f6b25e"}
+              />
+            </div>
+          </div>
           <Navbar />
           <Eventpage event="COMPETITIONS" cards={data} />
-        </>
+        </div>
       )}
     </div>
   );

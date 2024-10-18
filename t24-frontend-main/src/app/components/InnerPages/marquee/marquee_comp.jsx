@@ -65,12 +65,13 @@ export default function Marquee({ element1, element2, color1, color2 }) {
         </span>
 
         <span
-          ref={element2Ref} // Add ref here
+          className={` mx-4  ${styles.element2}`}
           style={{
             color: "black",
             textShadow: `-2px -2px 0 ${color1}, 2px -2px 0 ${color1}, -2px 2px 0 ${color1}, 2px 2px 0 ${color1}`,
             WebkitTextStroke: `2px ${color1}`,
           }}
+
           className={`mx-4 ${styles.element2}`}
         >
           {element2}

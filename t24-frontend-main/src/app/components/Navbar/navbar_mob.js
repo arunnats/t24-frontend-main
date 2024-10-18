@@ -13,7 +13,7 @@ const Navbar_mob = () => {
     <div className="relative ">
       {/* Hamburger/Close Icon */}
       <div
-        className="fixed top-4 pt-10 left-4  z-50 cursor-pointer"
+        className="fixed top-4 pt-6 left-1  z-50 cursor-pointer"
         onClick={toggleNavbar}
       >
         <div className="space-y-1">
@@ -23,12 +23,7 @@ const Navbar_mob = () => {
               ✕
             </div>
           ) : (
-            // Hamburger icon
-            <>
-              <div className="w-8 h-1 bg-white"></div>
-              <div className="w-8 h-1 bg-white"></div>
-              <div className="w-8 h-1 bg-white  "></div>
-            </>
+            <img src="/hamburgerIcon.svg" alt="Menu" className="w-10 h-10" />
           )}
         </div>
       </div>
@@ -41,8 +36,8 @@ const Navbar_mob = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/navbar_mab.svg')",
-            filter: "blur(4px)",
+            WebkitBackdropFilter: "blur(14px)",
+            backdropFilter: "blur(14px)",
           }}
         ></div>
 

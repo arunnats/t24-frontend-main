@@ -14,14 +14,6 @@ const formatDate = (dateString) => {
 const Eventpage = ({ event, cards }) => {
   return (
     <div className="flex bg-black">
-      <marquee
-        className=" w-[5%] h-[100vh] p-4"
-        direction="up"
-        scrollamount="3"
-      >
-        This is a vertical marquee
-      </marquee>
-
       <div className="flex-grow">
         <div className={`py-[2%] pl-[4%] `}>
           <span

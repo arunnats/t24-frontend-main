@@ -110,7 +110,7 @@ const StarfieldEffect = () => {
         previousTime = currentTime - (deltaTime % interval);
 
         mainContext.clearRect(0, 0, canvasWidth, canvasHeight);
-        mainContext.fillStyle = '#111';
+        mainContext.fillStyle = '#000';
         mainContext.fillRect(0, 0, canvasWidth, canvasHeight);
 
         mainContext.save();
@@ -118,7 +118,7 @@ const StarfieldEffect = () => {
 
         stars.forEach((star) => {
           star.drawStar();
-        });
+        });gti 
 
         mainContext.restore();
       }

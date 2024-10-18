@@ -12,6 +12,7 @@ import ExpoPage from "./components/expo-page/page";
 import FooterDesktop from "./components/FooterDesktop/FooterDesktop";
 import FooterMobile from "./components/FooterMobile/FooterMobile";
 import ProShow from "./components/pro/ProShow";
+import OthersLanding from "./components/Others/Other";
 
 export default function Home() {
   useEffect(() => {
@@ -54,7 +55,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-[560vh] relative overflow-clip bg-black flex flex-col">
+    <div className="min-h-[760vh] relative overflow-clip bg-black flex flex-col">
       <Hero />
       <div className="carousal-container h-[80vh]">
         <Carousal />
@@ -66,6 +67,7 @@ export default function Home() {
       <div className="w-screen h-min-screen">
         <ExpoPage />
       </div>
+      <OthersLanding />
       <div className="footer flex h-max w-full absolute bottom-0">
         <FooterDesktop />
         <FooterMobile />

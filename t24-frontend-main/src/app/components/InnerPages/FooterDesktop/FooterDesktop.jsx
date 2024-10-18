@@ -32,8 +32,8 @@ const FooterDesktop = () => {
         <img src="/screw.svg" alt="My Icon" className="h-10 hover:rotate-180 transition-all object-fit z-30 absolute bottom-4 left-5 " />
         <img src="/screw.svg" alt="My Icon" className="h-10 hover:rotate-180 transition-all object-fit z-30 absolute top-4 right-4" />
         <img src="/screw.svg" alt="My Icon" className="h-10 hover:rotate-180 transition-all object-fit z-30 absolute top-4 left-5" />
-            
-        <img src="/upper1.svg" alt="My Icon" className="w-[20%] object-fit z-[-6] absolute top-[-5%] right-0"/>
+
+        <img src="/upper1.svg" alt="My Icon" className="w-[20%] object-fit z-[-6] absolute top-[-5%] right-0" />
         <img src="/upper2.svg" alt="My Icon" className="w-[20%] object-fit z-[-2] absolute top-[-5%] left-0" />
 
         <img src="/metal.svg" alt="My Icon" className="h-[140px] object-fit origin-center absolute left-[50%] top-[-5%] z-2 " />
@@ -60,7 +60,7 @@ const FooterDesktop = () => {
           </div>
         </div>
 
-        <img src="/small_display.svg" alt="" className='w-[35%] absolute left-[5%] top-[5%]' />
+        <img src="/small_display_edit.png" alt="" className='w-[35%] absolute left-[5%] top-[5%]' />
 
         <div className="h-[50%] aspect-square flex justify-between items-center border-l-[3px] border-b-[3px] rounded-bl-[100px] border-[#BCC3CB] absolute right-0 top-0">
           <div className="cont relative w-full h-full">

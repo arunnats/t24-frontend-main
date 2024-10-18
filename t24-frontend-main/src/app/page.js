@@ -169,7 +169,9 @@ export default function Home() {
         <ExpoPage />
       </div>
 
-      <div>{/* <AutomotiveSummit /> */}</div>
+      <div>
+        <AutomotiveSummit />
+      </div>
 
       <div className="proshow-container my-[2vh]">
         <ProShow />

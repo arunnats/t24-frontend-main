@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./auto.module.css"; // Assuming this has any additional custom styling
 import Image from "next/image";
+import Link from "next/link";
 const cars = [
   {
     name: "Exotic Executioner",
@@ -36,9 +37,12 @@ const AutomotiveSummit = () => {
           {/* Border Around the Entire Center Content */}
           <div className="rounded-lg p-12 w-[100vw] sm:w-[80%] max-w-5xl mx-auto h-[70vh] ">
             {/* Header */}
-            <h1 className="font-valorant text-3xl sm:text-4xl font-bold  ">
+            <Link
+              href={"./automotive-summit"}
+              className="font-valorant text-3xl sm:text-4xl font-bold  "
+            >
               AUTOMOTIVE 'SUMMIT
-            </h1>
+            </Link>
 
             {/* Dashboard */}
             <div
@@ -125,11 +129,12 @@ const AutomotiveSummit = () => {
 
             {/* Explore Button Inside the Border */}
             <div className="flex justify-center">
-              <button
+              <Link
+                href={"./automotive-summit"}
                 className={`flex my-6 px-6 pt-3 text-red-500 border-gray-700 rounded-full text-3xl font-semibold font-valorant ${styles.explore}`}
               >
                 EXPLORE THE SHOW
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -143,36 +148,21 @@ const AutomotiveSummit = () => {
           <div
             className={`relative bottom-24 z-10 flex justify-center align-center mt-3 text-white font-supply font-normal ${styles.links}`}
           >
-            <a
-              href="#!"
-              className="px-4 py-2 text-base sm:text-0.685rem border-x-r border-gray-600"
-            >
+            <div className="px-4 py-2 text-base sm:text-0.685rem border-x-r border-gray-600">
               Motography
-            </a>
-            <a
-              href="#!"
-              className="px-4 py-2 text-base sm:text-0.685rem border-x border-gray-600"
-            >
+            </div>
+            <div className="px-4 py-2 text-base sm:text-0.685rem border-x border-gray-600">
               Rally
-            </a>
-            <a
-              href="#!"
-              className="px-4 py-2 text-base sm:text-0.685rem border-x border-gray-600"
-            >
+            </div>
+            <div className="px-4 py-2 text-base sm:text-0.685rem border-x border-gray-600">
               Autoshow
-            </a>
-            <a
-              href="#!"
-              className="px-4 py-2 text-base sm:text-0.685rem border-x border-gray-600"
-            >
+            </div>
+            <div className="px-4 py-2 text-base sm:text-0.685rem border-x border-gray-600">
               Stunts
-            </a>
-            <a
-              href="#!"
-              className="px-4 py-2 text-base sm:text-0.685rem border-x-l border-gray-600"
-            >
+            </div>
+            <div className="px-4 py-2 text-base sm:text-0.685rem border-x-l border-gray-600">
               Superbikes
-            </a>
+            </div>
           </div>
         </div>
       </div>

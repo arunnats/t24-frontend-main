@@ -12,7 +12,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 const Page = () => {
   return (
-    <div className="h-[800vh] relative overflow-clip bg-black">
+    <div className="h-[430vh] relative overflow-clip bg-black">
       <Hero />
       <Carousal />
       <ProshowMod />

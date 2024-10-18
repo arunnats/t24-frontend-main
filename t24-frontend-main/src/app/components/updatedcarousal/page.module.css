@@ -78,5 +78,8 @@
 
 .divcont:hover {
   transform: scale(1.03);
-  transition: all 0.3s;
+  
+}
+.divcont{
+  transition: all 0.4s ease-in-out;
 }

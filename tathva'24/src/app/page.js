@@ -1,21 +1,25 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-import Image from "next/image";
-import Cartridge from "./components/workshopCartridge/cartridge_comp";
-import Workshopmodal from "./components/Workshopmodal/Workshopmodal";
-=======
+"use client";
+import React from "react";
+import styles from "./page.module.css"
+
+const Page = () => {
+  return (
+   
+      <div>
+        
+      </div>
+ 
+  );
+};
+
+export default Page;
 "use client";
 import Image from "next/image";
-import Hero from "./components/Hero/Hero";
->>>>>>> proshow
+
 
 export default function Home() {
   return (
-<<<<<<< HEAD
-    <div className="flex">
-      <Workshopmodal/>
-=======
+
     <div className="h-screen w-screen">
       <Hero />
       {/* <Flappy /> */}
@@ -36,8 +40,7 @@ export default function Home() {
           </div>
         </div>
       </div>
->>>>>>> proshow
     </div>
   );
 }
->>>>>>> origin/workshopCartridge
+

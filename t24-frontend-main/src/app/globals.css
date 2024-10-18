@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Pricedown";
-    src: url("/fonts/pricedown-bl.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  
+  font-family: "Pricedown";
+  src: url("/fonts/pricedown-bl.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  @apply bg-black text-white; /* Set background color to black and text color to white */
+}

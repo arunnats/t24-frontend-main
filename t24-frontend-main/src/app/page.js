@@ -32,13 +32,52 @@ export default function Home() {
         scrollTrigger: {
           trigger: ".hero-container",
           start: "60% 50%",
-          toggleActions: "play reverse play reverse",
+          end: "100% 50%",
+          // markers: true,
+          toggleActions: "play none play reverse",
           // markers: true
         },
       }
     );
 
     // Scroll-triggered animation for Carousal
+    gsap.fromTo(
+      ".text-container",
+      { opacity: 0, y: 50 ,scale:0.1},
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        scale:1,
+        ease: "power2.out",
+        // marker: true,
+        scrollTrigger: {
+          trigger: ".text-container", 
+          start: "top 50%",
+          toggleActions: "play none none none",
+          // markers: true
+        },
+      }
+    );
+    gsap.fromTo(
+      ".text-container2",
+      { opacity: 0, y: 50 ,scale:0.1},
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        scale:1,
+        ease: "power2.out",
+        // marker: true,
+        scrollTrigger: {
+          trigger: ".text-container2", 
+          start: "top 50%",
+          toggleActions: "play none none none",
+          // markers: true
+        },
+      }
+    );
+
     gsap.fromTo(
       ".carousal-container",
       { opacity: 0, y: 50 ,scale:0.1},
@@ -48,9 +87,12 @@ export default function Home() {
         duration: 0.5,
         scale:1,
         ease: "power2.out",
+        position: "sticky",
         scrollTrigger: {
           trigger: ".carousal-container",
           start: "top 80%",
+          // markers: true,
+
           toggleActions: "play none none none",
         },
       }
@@ -67,33 +109,73 @@ export default function Home() {
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".proshow-container",
-          start: "top 80%",
+          start: "top 20%",
           toggleActions: "play none none none",
+          // markers: true,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ".expo-container",
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".expo-container",
+          start: "top 0%",
+          toggleActions: "play none none none",
+          // markers: true,
         },
       }
     );
   }, []);
 
   return (
-    <div className="min-h-[760vh] relative overflow-clip bg-black flex flex-col z-50">
+    <div className="min-h-[760vh] relative overflow-x-clip bg-black flex flex-col z-50">
       <div className="hero-container h-[130vh]">
         <Hero />
+      </div>
+      <div className="text-container h-[50vh] opacity-0">
+        <div className="w-full h-full">
+          <div className="upppercase w-full h-full text-white flex flex-col items-center justify-center ">
+            <p className="text-9xl text-pricedown">What have we </p>
+            <p className="text-9xl text-pricedown">got f<span className="ooo">o</span>r you ?</p>
+          </div>
+        </div>
       </div>
       <div className="carousal-container h-screen">
         <Carousal />
       </div>
+
+      <div className="text-container2 h-[50vh] opacity-0">
+        <div className="w-full h-full">
+          <div className="upppercase w-full h-full text-white flex flex-col items-center ">
+            <p className="text-9xl text-pricedown">And much More... </p>
+          </div>
+        </div>
+      </div>
+
       <GamingPage />
+
       <div className="proshow-container">
         <ProShow />
       </div>
-      <div className="w-screen h-min-screen">
+
+      <div className="expo-container w-screen h-min-screen">
         <ExpoPage />
       </div>
+
       <OthersLanding />
+
       <div className="footer flex h-max w-full absolute bottom-0">
         <FooterDesktop />
         <FooterMobile />
       </div>
+      <Analytics />
     </div>
   );
 }

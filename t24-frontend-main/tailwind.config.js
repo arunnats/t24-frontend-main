@@ -12,6 +12,7 @@ module.exports = {
         pricedown: ["Pricedown", "sans-serif"],
         valorant: ["valorant", "sans-serif"],
         PlusJakartaSans: ["PlusJakartaSans", "sans-serif"],
+        akira: ["Akira", "sans-serif"],
       },
       height: {
         115: "115%", // Add a custom height of 60vh

@@ -118,7 +118,7 @@ const StarfieldEffect = () => {
 
         stars.forEach((star) => {
           star.drawStar();
-        });gti 
+        });
 
         mainContext.restore();
       }

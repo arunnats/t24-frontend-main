@@ -6,6 +6,7 @@ const Page = () => {
       <AutomotiveSummit/>
     </div>
   )
+}
 
 
-export default Page
+export default Page;

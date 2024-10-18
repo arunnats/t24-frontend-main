@@ -165,18 +165,30 @@ export default function Home() {
 
       {/* <GamingPage /> */}
 
-      <div className="expo-container w-screen h-min-screen">
-        {/* <ExpoPage /> */}
+      <div className="expo-container w-screen h-min-screen my-[4vh] mt-[8vh]">
+        <ExpoPage />
       </div>
 
-      <div>{/* <AutomotiveSummit /> */}</div>
+      <div className="mt-[5vh">
+        <AutomotiveSummit />
+      </div>
 
-      <div className="proshow-container my-[2vh]">
+      <div className="w-full mt-[8vh] mb-[18vh]">
+        <Image
+          src="/divider.svg"
+          alt="Divider"
+          layout="responsive"
+          width={100}
+          height={10}
+          className="w-full"
+        />
+      </div>
+
+      <div className="proshow-container my-[2vh] mb-[5vh]">
         <ProShow />
       </div>
 
-      <div>
-        {" "}
+      <div className=" mt-[10vh] h-full">
         <OthersLanding />
       </div>
 

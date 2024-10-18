@@ -10,8 +10,7 @@ import Navbar from "../components/Navbar/Navbar";
 
 const page = () => {
   const desc =
-    "Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!";
-
+    "The Engines roar! The Tyres whir! The sleek metallic bodies shine under the lights. The most eye-catching rides await to be admired at the Automotive Expo at Tathva '24.";
   return (
     <div className="w-full h-[200vh] md:h-[220vh] relative overflow-hidden ">
       <Navbar />

@@ -9,8 +9,7 @@ import Navbar from "../components/Navbar/Navbar";
 
 const page = () => {
   const desc =
-    "Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!";
-
+    "Ready to race in the skies, 8-bit style? With pixelated skies and obstacles aplenty, pilots navigate the course like it's a game level from your favorite classic. Gear up for a retro-fueled ride as we see who has what it takes to become the king of the clouds. Be there or stay grounded!";
   const date = "26-27th Oct";
   const venue = "Ground";
 

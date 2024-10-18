@@ -9,8 +9,7 @@ import Navbar from "../components/Navbar/Navbar";
 
 const page = () => {
   const desc =
-    "Metal mayhem in the arena! Witness the clash of steel and sparks at RoboWars - where all the metal enthusiasts are invited to prepare their robots to battle for supremacy in the ultimate mechanical showdown and earn prizes worth 7 lakhs!";
-
+    "From booming basslines to retro synths, it’s all happening in one epic showdown. The stage lights up with a pixel-perfect display of musical mastery. Step into the night of electric vibes, old-school flair, and a live spectacle that'll take you back to the arcade days.";
   const date = "26-27th Oct";
   const venue = "Ground";
 

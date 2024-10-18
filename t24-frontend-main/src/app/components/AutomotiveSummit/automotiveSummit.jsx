@@ -31,7 +31,7 @@ const AutomotiveSummit = () => {
   return (
     <>
       <div
-        className={`flex flex-col bg-black h-screen relative my-2 ${styles.main}`}
+        className={`flex flex-col bg-black h-screen relative  ${styles.main}`}
       >
         <div className="flex flex-col w-full text-white text-center  h-[80vh] bg-[url('/carbg.svg')] bg-no-repeat bg-cover  mt-[5vh]">
           {/* Border Around the Entire Center Content */}

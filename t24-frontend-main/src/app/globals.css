@@ -37,6 +37,7 @@ html {
   font-family: "SupplyUltraLight";
   src: url("/fonts/Supply-UltraLight.otf") format("opentype");
   font-weight: 300;
+ 
   font-style: normal;
 }
 @font-face {
@@ -53,7 +54,6 @@ html {
   font-style: normal;
 }
 
-/* Font face for 'Plus Jakarta Sans' */
 @font-face {
   font-family: "Plus Jakarta Sans";
   src: url("/fonts/Plus-Jakarta-Sans-Regular.woff2") format("woff2"),

@@ -8,7 +8,7 @@ const Page = () => {
 
     <div className="flex flex-row bg-black p-10 justify-evenly custom-sm:flex-col gap-6 items-center text-2xl">
       {/* Card 1 - Workshops */}
-      <Link href="/workshop" passHref legacyBehavior>
+      <Link href="/workshops" passHref legacyBehavior>
         <a
           className={`${styles.divcont} relative flex flex-col items-center rounded-2xl overflow-hidden`}
         >
@@ -24,7 +24,7 @@ const Page = () => {
       </Link>
 
       {/* Card 2 - Lectures */}
-      <Link href="/lecture" passHref legacyBehavior>
+      <Link href="/lectures" passHref legacyBehavior>
         <a
           className={`${styles.divcont} relative flex flex-col items-center rounded-2xl overflow-hidden`}
         >

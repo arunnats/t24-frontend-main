@@ -24,7 +24,7 @@ export default function GamingPage() {
         onComplete: () => setShowBlueBg(false),
         scrollTrigger: {
           trigger: `.${styles.main}`, // The trigger element
-          start: "top 50%", // Start animation when the element is 80% into view
+          start: "top 50%", // Start animation when the element is 50% into view
           toggleActions: "play none none none", // Only play once
         },
       });

@@ -64,6 +64,10 @@ export default function Marquee({ element1, element2, color1, color2 }) {
         y: isMediumOrLarger ? -65 : 0,
       }
     );
+
+    setTimeout(() => {
+      marquee.style.textShadow = `-2px -2px 0 ${color1}, 2px -2px 0 ${color1}, -2px 2px 0 ${color1}, 2px 2px 0 ${color1}`;
+    }, 100);
   }, [marqueeRef]);
 
   return (

@@ -23,10 +23,12 @@ export default function Home() {
     gsap.fromTo(
       ".hero-container",
       { scale: 1 },
+      { scale: 1 },
       {
         opacity: 0,
         y: 0,
         duration: 2.5,
+        scale: 5,
         scale: 5,
         ease: "power2.out",
         scrollTrigger: {
@@ -43,16 +45,16 @@ export default function Home() {
     // Scroll-triggered animation for Carousal
     gsap.fromTo(
       ".text-container",
-      { opacity: 0, y: 50 ,scale:0.1},
+      { opacity: 0, y: 50, scale: 0.1 },
       {
         opacity: 1,
         y: 0,
         duration: 0.5,
-        scale:1,
+        scale: 1,
         ease: "power2.out",
         // marker: true,
         scrollTrigger: {
-          trigger: ".text-container", 
+          trigger: ".text-container",
           start: "top 50%",
           toggleActions: "play none none none",
           // markers: true
@@ -61,16 +63,16 @@ export default function Home() {
     );
     gsap.fromTo(
       ".text-container2",
-      { opacity: 0, y: 50 ,scale:0.1},
+      { opacity: 0, y: 50, scale: 0.1 },
       {
         opacity: 1,
         y: 0,
         duration: 0.5,
-        scale:1,
+        scale: 1,
         ease: "power2.out",
         // marker: true,
         scrollTrigger: {
-          trigger: ".text-container2", 
+          trigger: ".text-container2",
           start: "top 50%",
           toggleActions: "play none none none",
           // markers: true
@@ -143,7 +145,9 @@ export default function Home() {
         <div className="w-full h-full">
           <div className="upppercase w-full h-full text-white flex flex-col items-center justify-center ">
             <p className="text-9xl text-pricedown">What have we </p>
-            <p className="text-9xl text-pricedown">got f<span className="ooo">o</span>r you ?</p>
+            <p className="text-9xl text-pricedown">
+              got f<span className="ooo">o</span>r you ?
+            </p>
           </div>
         </div>
       </div>

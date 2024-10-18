@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        '115': '115%', // Add a custom height of 60vh
+        '115': '115%',
         '95': '95%',
         '120': '125%',
-        '98': '98%', // Add a custom height of 60vh
+        '98': '98%',
       },
       fontFamily: {
         jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
@@ -19,6 +19,8 @@ module.exports = {
 
 
       screens: {
+        'custom1': { 'max': '600px' },
+        'custom': { 'max': '750px' },
         'custom-md': { 'max': '950px' }, 
         'custom-sm': { 'max': '450px' },// Custom media query for below 1040px
       },
@@ -26,6 +28,7 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+     
     },
   },
   plugins: [],

@@ -1,7 +1,8 @@
 import styles from "./page.module.css";
 import FooterMobile from "./components/FooterMobile/FooterMobile";
 import FooterDesktop from "./components/FooterDesktop/FooterDesktop";
-import Carousal from "./Carousal/Carousal";
+// import Carousal from "./Carousal/Carousal";
+import Carousal from "./components/updatedcarousal/page";
 import Hero from "./components/Hero/Hero";
 import ExpoPage from "./components/expo-page/page";
 import ProshowMod from "./components/Proshow/ProshowMod";

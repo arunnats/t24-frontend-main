@@ -11,7 +11,7 @@ const CartridgeMob = ({
   registrationLink,
 }) => {
   return (
-    <div className="relative w-[292px] h-[309px] mt-10">
+    <div className="relative w-[292px] h-[309px] mt-10 ">
       {/* Background image */}
       <img src="/card.svg" alt="Background" className="" />
 

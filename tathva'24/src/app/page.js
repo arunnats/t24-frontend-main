@@ -71,5 +71,6 @@ export default function Home() {
         <FooterMobile />
       </div>
     </div>
-  );
+  )
 }
+

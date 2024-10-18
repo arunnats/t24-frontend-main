@@ -9,7 +9,7 @@ import styles from "./marquee.module.css";
 
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, CSSRulePlugin, Draggable);
 
-export default function Marquee({ element1, element2, color1, color2 }) {
+export default function Marqueework({ element1, element2, color }) {
   const marqueeRef = useRef(null);
 
   // How to use :
@@ -34,20 +34,19 @@ export default function Marquee({ element1, element2, color1, color2 }) {
 
   useEffect(() => {
     const marquee = marqueeRef.current;
-    marquee.innerHTML += marquee.innerHTML;
-    marquee.innerHTML += marquee.innerHTML;
-    marquee.innerHTML += marquee.innerHTML;
-    marquee.innerHTML += marquee.innerHTML;
-
+    marquee.innerHTML +=
+      marquee.innerHTML +
+      marquee.innerHTML +
+      marquee.innerHTML +
+      marquee.innerHTML +
+      marquee.innerHTML;
     const totalWidth = marquee.scrollWidth / 2;
 
-    const isMediumOrLarger = window.matchMedia("(min-width: 768px)").matches;
-
-    // Animate the marquee scrolling
     gsap.to(marquee, {
       x: -totalWidth,
-      duration: 2200,
-      repeat: -1,
+      duration: 100, // Adjust the duration to control the speed (lower value makes it faster)
+      ease: "linear", // Linear animation for smooth continuous scrolling
+      repeat: -1, // Infinite loop
       delay: 0,
     });
 
@@ -57,33 +56,33 @@ export default function Marquee({ element1, element2, color1, color2 }) {
       { opacity: 0, scale: 0.5 },
       {
         opacity: 1,
-        scale: isMediumOrLarger ? 0.8 : 1.2,
-        duration: 1,
-        delay: 0.1,
+        scale: 1,
+        duration: 1.5,
+        delay: 0.5,
         ease: "power2.out",
-        y: isMediumOrLarger ? -65 : 0,
       }
     );
   }, [marqueeRef]);
 
   return (
     <div
-      className={`relative overflow-hidden flex h-min items-center justify-center m-0 ${styles.marqueecont}`}
+      className={`relative overflow-hidden w-full flex h-min items-center justify-center m-0 md:pt-2 pt-0 ${styles.marqueecont}`}
+      style={{ backgroundColor: `${color}` }}
     >
       <div
         ref={marqueeRef}
-        className={`${styles.marquee} whitespace-nowrap flex text-[4rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem]   `}
+        className={`${styles.marquee} whitespace-nowrap flex text-[1.5rem] md:text-[2rem] items-center justify-center`}
       >
-        <span style={{ color: color1 }} className={` mx-4 ${styles.element1}`}>
-          {element1}
+        <span
+          className={`text-white px-1 flex justify-center items-center ${styles.element1}`}
+        >
+          <div className={`bg-black pl-3 pr-14 ${styles.elem2div}`}>
+            {element1}
+          </div>
         </span>
 
         <span
-          className={` mx-4  ${styles.element2}`}
-          style={{
-            color: "black",
-            textShadow: `-2px -2px 0  ${color1}, 2px -2px 0 ${color1}, -2px 2px 0 ${color1}, 2px 2px 0 ${color1} ; -webkit-text-stroke: 2px ${color1};`,
-          }}
+          className={` m-1 text-black px-1 flex justify-center items-center ${styles.element2}`}
         >
           {element2}
         </span>

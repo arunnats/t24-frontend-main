@@ -141,11 +141,11 @@ export default function Home() {
       <div className="hero-container h-[130vh]">
         <Hero />
       </div>
-      <div className="text-container h-[50vh] opacity-0">
+      <div className="text-container mt-[15vh] md:mb-0 h-[15vh] md:h-[50vh] opacity-0">
         <div className="w-full h-full">
           <div className="upppercase w-full h-full text-white flex flex-col items-center justify-center ">
-            <p className="text-9xl text-pricedown">What have we </p>
-            <p className="text-9xl text-pricedown">
+            <p className="text-6xl md:text-9xl text-pricedown">What have we </p>
+            <p className="text-6xl md:text-9xl text-pricedown">
               got f<span className="ooo">o</span>r you ?
             </p>
           </div>
@@ -155,10 +155,12 @@ export default function Home() {
         <Carousal />
       </div>
 
-      <div className="text-container2 h-[50vh] opacity-0">
+      <div className="text-container2 mb-[15vh] md:mb-0 h-[15vh] md:h-[50vh] opacity-0 flex items-center justify-center">
         <div className="w-full h-full">
-          <div className="upppercase w-full h-full text-white flex flex-col items-center ">
-            <p className="text-9xl text-pricedown">And much More... </p>
+          <div className="uppercase w-full h-full text-white flex flex-col items-center justify-center">
+            <p className="text-6xl md:text-9xl text-pricedown my-5 text-center">
+              And much More...
+            </p>
           </div>
         </div>
       </div>

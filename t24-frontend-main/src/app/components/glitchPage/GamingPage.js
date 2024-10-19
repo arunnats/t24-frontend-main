@@ -4,6 +4,7 @@ import styles from "./gaming.module.css";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 export default function GamingPage() {
   const [showBlueBg, setShowBlueBg] = useState(true);
@@ -29,23 +30,6 @@ export default function GamingPage() {
         },
       });
     }
-
-    // Other animations for elements triggered by scroll
-    gsap.fromTo(
-      `.${styles.buttonplay}`,
-      { y: -200, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.7,
-        ease: "bounce.out",
-        scrollTrigger: {
-          trigger: `.${styles.buttonplay}`,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
 
     gsap.fromTo(
       `.${styles.middleimgg}`,
@@ -126,7 +110,7 @@ export default function GamingPage() {
         <div className={`flex bg-black w-full h-screen ${styles.desktop}`}>
           {/* Left side */}
           <div
-            className={`flex flex-col  justify-evenly h-screen ${styles.left}`}
+            className={`flex flex-col justify-evenly items-center h-screen ${styles.left}`}
           >
             <div
               className={`text-white text-8xl pl-[55px]   mt-[40px] ${styles.text}`}
@@ -142,8 +126,11 @@ export default function GamingPage() {
               the screen Glitch with your impeccable gaming skills, here at
               Tathva '24.
             </div>
-            <div className="flex relative  w-full">
-              <div className="flex flex-col justify-center align-center absolute bottom-16 right-7 pl-[55px]  ">
+            <div className="flex relative w-full">
+              <Link
+                href="./glitch-inner"
+                className="flex flex-col justify-center align-center absolute bottom-12  right-36 "
+              >
                 <button
                   className={`flex bg-white text-white text-[15px] text-center font-IBM Plex Sans pt-1  ${styles.buttonplay}`}
                 >
@@ -154,7 +141,7 @@ export default function GamingPage() {
                 >
                   COMPETITIVE
                 </button>
-              </div>
+              </Link>
             </div>
           </div>
 
@@ -216,11 +203,12 @@ export default function GamingPage() {
             screen Glitch with your impeccable gaming skills, here at Tathva
             '24.
           </div>
-          <button
+          <Link
+            href="./glitch-inner"
             className={`flex bg-[#ed404f] text-white text-2xl text-center font-IBM Plex Sans py-1 ${styles.mobilebutton}`}
           >
             PLAY
-          </button>
+          </Link>
         </div>
       </div>
     </>

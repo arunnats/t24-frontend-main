@@ -148,24 +148,24 @@ const menuItems = [
     backgroundImage: "/dronebg.svg",
     link: "/drone-racing",
   },
-  {
-    label: "CERTIFICATES",
-    backgroundImage: "/dronebg.svg",
-    link: "/certificates",
-  },
+  // {
+  //   label: "CERTIFICATES",
+  //   backgroundImage: "/dronebg.svg",
+  //   link: "/certificates",
+  // },
   { label: "FAQ", backgroundImage: "/faqbg.svg", link: "/faq" },
-  {
-    label: "COMPETITIONS",
-    backgroundImage: "/compbg.svg",
-    link: "/competitions",
-  },
+  // {
+  //   label: "COMPETITIONS",
+  //   backgroundImage: "/compbg.svg",
+  //   link: "/events",
+  // },
   { label: "TEAMS", backgroundImage: "/teamsbg.svg", link: "/teams" },
   { label: "WHEELS", backgroundImage: "/wheelsbg.svg", link: "/wheels" },
-  { label: "CONTACTS", backgroundImage: "/contactsbg.svg", link: "/contacts" },
+  // { label: "CONTACTS", backgroundImage: "/contactsbg.svg", link: "/contacts" },
   {
     label: "GAMING CONCLAVE",
     backgroundImage: "/gcbg.svg",
-    link: "/gaming-conclave",
+    link: "/glitch",
   },
 ];
 

@@ -128,7 +128,7 @@ export default function GamingPage() {
             </div>
             <div className="flex relative w-full">
               <Link
-                href="./glitch-inner"
+                href="./glitch"
                 className="flex flex-col justify-center align-center absolute bottom-12  right-36 "
               >
                 <button

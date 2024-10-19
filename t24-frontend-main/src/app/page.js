@@ -167,7 +167,7 @@ export default function Home() {
 
       <GamingPage />
 
-      <div className="expo-container w-screen h-min-screen my-[3vh] md:my-[10vh]">
+      <div className="expo-container w-screen h-min-screen my-[10vh]">
         <ExpoPage />
       </div>
 
@@ -175,7 +175,7 @@ export default function Home() {
         <AutomotiveSummit />
       </div>
 
-      <div className="w-full mt-[5vh] mb-[12vh] md:mt-[8vh] md:mb-[18vh]">
+      <div className="w-full mt-[8vh] mb-[18vh]">
         <Image
           src="/divider.svg"
           alt="Divider"
@@ -190,7 +190,7 @@ export default function Home() {
         <ProShow />
       </div>
 
-      <div className=" mt-[6vh] md:mt-[10vh] h-full">
+      <div className=" mt-[10vh] h-full">
         <OthersLanding />
       </div>
 

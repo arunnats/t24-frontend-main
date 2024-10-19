@@ -23,7 +23,7 @@ const Dinosaur = () => {
       animation.restart();
 
       setTimeout(() => {
-        router.push("/expo-inner");
+        router.push("/expo");
       }, 1500); // Adjust duration as needed
     }
   };

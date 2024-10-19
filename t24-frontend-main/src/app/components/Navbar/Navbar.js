@@ -138,11 +138,11 @@ const menuItems = [
   { label: "EVENTS", backgroundImage: "/eventbg.svg", link: "/events" },
   { label: "LECTURES", backgroundImage: "/lectbg.svg", link: "/lectures" },
   { label: "PROSHOW", backgroundImage: "/proshowbg.svg", link: "/proshow" },
-  {
-    label: "ACCOMMODATION",
-    backgroundImage: "/dronebg.svg",
-    link: "/accommodation",
-  },
+  // {
+  //   label: "ACCOMMODATION",
+  //   backgroundImage: "/dronebg.svg",
+  //   link: "/accommodation",
+  // },
   {
     label: "DRONE RACING",
     backgroundImage: "/dronebg.svg",
@@ -159,7 +159,7 @@ const menuItems = [
   //   backgroundImage: "/compbg.svg",
   //   link: "/events",
   // },
-  { label: "TEAMS", backgroundImage: "/teamsbg.svg", link: "/teams" },
+  // { label: "TEAMS", backgroundImage: "/teamsbg.svg", link: "/teams" },
   { label: "WHEELS", backgroundImage: "/wheelsbg.svg", link: "/wheels" },
   // { label: "CONTACTS", backgroundImage: "/contactsbg.svg", link: "/contacts" },
   {

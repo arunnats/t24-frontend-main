@@ -76,6 +76,7 @@ const OthersLanding = () => {
               "We at tathva team have compiled a list of queries we’ve got and answered some frequently asked questions."
             }
           />
+
         </div>
       </div>
 

@@ -37,12 +37,14 @@ const AutomotiveSummit = () => {
           {/* Border Around the Entire Center Content */}
           <div className="rounded-lg p-12 w-[100vw] sm:w-[80%] max-w-5xl mx-auto h-[70vh] ">
             {/* Header */}
-            <Link
-              href={"./automotive-summit"}
-              className="font-valorant text-3xl sm:text-4xl font-bold  "
-            >
-              AUTOMOTIVE 'SUMMIT
-            </Link>
+            <div className="transform transition-transform duration-300 hover:translate-y-[-5px]">
+              <Link
+                href={"./automotive-summit"}
+                className="font-valorant text-3xl sm:text-4xl font-bold  "
+              >
+                AUTOMOTIVE 'SUMMIT
+              </Link>
+            </div>
 
             {/* Dashboard */}
             <div
@@ -128,7 +130,7 @@ const AutomotiveSummit = () => {
             </div>
 
             {/* Explore Button Inside the Border */}
-            <div className="flex justify-center">
+            <div className="flex justify-center transform transition-transform duration-300 hover:translate-y-[-5px]">
               <Link
                 href={"./automotive-summit"}
                 className={`flex my-6 px-6 pt-3 text-red-500 border-gray-700 rounded-full text-3xl font-semibold font-valorant ${styles.explore}`}
@@ -168,14 +170,17 @@ const AutomotiveSummit = () => {
       </div>
       {/* //mobile */}
       <div
-        className={`flex relative justify-center align-center flex-col w-full  items-center min-h-screen ${styles.mobile}`}
+        className={`flex relative justify-center align-center flex-col w-full items-center min-h-screen ${styles.mobile}`}
       >
         {/* Header */}
-        <dev
-          className={`font-valorant text-3xl text-white sm:text-4xl  font-bold ${styles.header} `}
+        <Link
+          href={"./automotive-summit"}
+          className={`font-valorant  text-white font-bold ${styles.header}`}
         >
-          AUTOMOTIVE 'SUMMIT
-        </dev>
+          <p>AUTOMOTIVE</p>
+          <p>'SUMMIT</p>
+        </Link>
+
         <div className="flex justify-center py-5">
           <Image
             src="/hud dials 1.svg"
@@ -250,54 +255,14 @@ const AutomotiveSummit = () => {
         </div>
         <div className="flex justify-center  bg-contain">
           <Image src="/Group 44.svg" width={15} height={15} />
-          <button
+          <Link
+            href={"./automotive-summit"}
             className={`flex p-1 text-white rounded-full text-4xl font-semibold font-valorant ${styles.explore}`}
             style={{ textDecoration: "underline" }}
           >
             EXPLORE THE SHOW
-          </button>
+          </Link>
           <Image src="/Group 43.svg" width={15} height={15} />
-        </div>
-        <div className=" w-full flex justify-center align-center">
-          {/* Curved background with SVG */}
-          <div
-            className={`flex  bottom-0 bg-[url('/hud_down1.svg')] bg-no-repeat bg-center bg-cover ${styles.downmob} `}
-          ></div>
-          {/* Navigation Links */}
-          <div
-            className={`absolute bottom-10 z-10 flex justify-center align-center mt-3 text-white font-supply font-normal ${styles.links}`}
-          >
-            <a
-              href="#!"
-              className="px-4 py-2  sm:text-0.685rem border-x-r border-gray-600"
-            >
-              Motography
-            </a>
-            <a
-              href="#!"
-              className="px-4 py-2  sm:text-0.685rem border-x border-gray-600"
-            >
-              Rally
-            </a>
-            <a
-              href="#!"
-              className="px-4 py-2  sm:text-0.685rem border-x border-gray-600"
-            >
-              Autoshow
-            </a>
-            <a
-              href="#!"
-              className="px-4 py-2  sm:text-0.685rem border-x border-gray-600"
-            >
-              Stunts
-            </a>
-            <a
-              href="#!"
-              className="px-4 py-2  sm:text-0.685rem border-x-l border-gray-600"
-            >
-              Superbikes
-            </a>
-          </div>
         </div>
       </div>
     </>

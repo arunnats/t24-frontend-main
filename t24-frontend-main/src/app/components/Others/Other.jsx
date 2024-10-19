@@ -41,13 +41,12 @@ const OthersLanding = () => {
     animateOnScroll(ref5, "top 50%");
     animateOnScroll(ref6, "top 55%");
     animateOnScroll(ref7, "top 60%");
-
   }, []);
 
   return (
     <div ref={ref1} className="bg-black lg:px-[5%] pb-5 overflow-x-hidden">
       <div ref={ref2} className="flex w-full ">
-        <div className="w-[100%] sm:w-[62%] p-5">
+        <div className="w-[100%] sm:w-[62%] p-5 transform transition-transform duration-300 hover:translate-y-[-5px]">
           <InnerDescription
             heading={"Meet The Team"}
             text={
@@ -70,7 +69,7 @@ const OthersLanding = () => {
             className=" w-full h-full object-cover rounded-3xl border-white border-2"
           />
         </div>
-        <div className="sm:w-2/3 w-screen p-5">
+        <div className="sm:w-2/3 w-screen p-5 transform transition-transform duration-300 hover:translate-y-[-5px]">
           <InnerDescription
             heading={"We've Got FAQ"}
             text={
@@ -82,14 +81,23 @@ const OthersLanding = () => {
 
       <div className="flex w-full">
         <div className="flex w-1/2 flex-col">
-          <div ref={ref4} className="w-full p-5 text-white lg:text-[3.5vw] md:text-[4.5vw] text-[5.5vw]">
+          <div
+            ref={ref4}
+            className="w-full p-5 text-white lg:text-[3.5vw] md:text-[4.5vw] text-[5.5vw]"
+          >
             <h1>Other sites</h1>
             <hr className="border-white mt-2" />
           </div>
-          <div ref={ref5} className="w-full sm:p-5 p-3">
+          <div
+            ref={ref5}
+            className="w-full sm:p-5 p-3 transform transition-transform duration-300 hover:translate-y-[-5px]"
+          >
             <NewDesc heading={"Book Rooms"} text={"ROOMS.TATHVA.ORG"} />
           </div>
-          <div ref={ref6} className="w-full sm:p-5 p-3">
+          <div
+            ref={ref6}
+            className="w-full sm:p-5 p-3 transform transition-transform duration-300 hover:translate-y-[-5px]"
+          >
             <NewDesc heading={"Tathva Passes"} text={"PASSES.TATHVA.ORG"} />
           </div>
         </div>

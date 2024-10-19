@@ -48,7 +48,7 @@ const Eventpage = ({ event, cards }) => {
                     <CartridgeMob
                       imageSrc={CMS_URL + card.coverImage.url}
                       title={card.title}
-                      price={card.price}
+                      price={price}
                       date={formatDate(card.eventDate)}
                       registrationLink={card.regLink}
                       docID={card.documentId}

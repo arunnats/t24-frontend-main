@@ -27,7 +27,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative ">
       {/* Check if the screen is mobile */}
       {isMobile ? (
         <Navbar_mob />
@@ -36,7 +36,7 @@ const Navbar = () => {
           {/* Hamburger Icon for larger screens */}
           {!isOpen && ( // Only show the hamburger if the menu is closed
             <button
-              className="text-white p-2 fixed top-5 right-5 z-20"
+              className="text-white p-2 fixed top-5 right-5 z-[1000]"
               style={{ fontSize: "2rem" }}
               onClick={toggleMenu}
             >
@@ -51,7 +51,7 @@ const Navbar = () => {
 
           {/* Slide Down Menu */}
           <div
-            className={`fixed inset-0 z-10 transition-transform ease-in-out ${
+            className={`fixed inset-0 z-[1000] transition-transform ease-in-out ${
               isOpen ? "translate-y-0" : "-translate-y-full"
             }`}
           >
@@ -70,7 +70,7 @@ const Navbar = () => {
                 }}
               ></div>
 
-              <div className="md:ml-0 w-full lg:ml-40 p-4 flex flex-col md:flex-row gap-5 md:gap-11 mt-28 mb-28 mr-24 z-10">
+              <div className="md:ml-0 w-full lg:ml-40 p-4 flex flex-col md:flex-row gap-5 md:gap-11 mt-28 mb-28 mr-24 z-[1000]">
                 <div className="flex justify-between items-start">
                   <button
                     onClick={toggleMenu}

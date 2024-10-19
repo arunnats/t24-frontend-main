@@ -138,6 +138,7 @@ export default function Home() {
   return (
     <div className=" min-h-[200vh] relative overflow-x-clip bg-black flex flex-col z-50">
       <Navbar />
+
       <div className="hero-container h-[130vh]">
         <Hero />
       </div>

@@ -46,14 +46,14 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black overflow-hidden relative p-10 md:p-8">
+    <div className="min-h-screen bg-black overflow-hidden relative p-10 md:p-14">
       {loading || (data && data.length === 0) ? ( // Render Pacman if loading or data is empty
         <div className="flex justify-center items-center h-[100vh]">
           <Pacman />
         </div>
       ) : (
         <>
-          <div className="absolute inset-0 flex justify-center items-center overflow-hidden  z-20">
+          <div className="absolute inset-0 flex justify-center items-center overflow-hidden ">
             <div
               className="-rotate-90 "
               style={{
@@ -72,8 +72,8 @@ const Page = () => {
           {/* Navbar and Event Content */}
           <Navbar />
 
-          <div className="relative z-10">
-            <Eventpage event="LECTURES" cards={data} />
+          <div className="relative">
+            <Eventpage event="LECTURES" cards={data} type="lectures" />
           </div>
         </>
       )}

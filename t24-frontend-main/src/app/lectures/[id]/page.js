@@ -27,7 +27,7 @@ const Page = ({ params }) => {
     const fetchWorkshop = async () => {
       try {
         const res = await fetch(
-          `${CMS_URL}/api/lectures/${id}?populate=posterImage`,
+          `${CMS_URL}/api/lectures/${id}?populate=coverImage`,
           {
             method: "GET",
             headers: {
@@ -42,6 +42,7 @@ const Page = ({ params }) => {
         }
 
         const data = await res.json();
+
         setWorkshop(data.data);
         setLoading(false);
       } catch (error) {
@@ -49,7 +50,6 @@ const Page = ({ params }) => {
         setLoading(false);
       }
     };
-
     fetchWorkshop();
   }, [id]);
 
@@ -67,10 +67,10 @@ const Page = ({ params }) => {
     <div>
       {
         <Workshopmodal
-          imageSrc={CMS_URL + workshop.posterImage.url}
+          imageSrc={CMS_URL + workshop.coverImage.url}
           title={workshop.name}
           price={workshop.regPrice}
-          date={formatDate(workshop.eventDate)}
+          date={formatDate(workshop.eventDateTime)}
           registrationLink={workshop.regLink}
           description={workshop.description}
           type="Workshop"

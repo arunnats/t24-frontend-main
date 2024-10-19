@@ -17,7 +17,7 @@ const CartridgeMob = ({
       {/* Background image */}
       <img src="/card.svg" alt="Background" className="" />
 
-      <Link href={`./workshops/${docID}`}>
+      <Link href={`./${type}/${docID}`}>
         <div className="absolute top-0 left-3 flex flex-col justify-between overflow-hidden">
           <div className=" flex justify-center pr-[0.4%] ">
             <div
@@ -87,75 +87,75 @@ const CartridgeMob = ({
 
 export default CartridgeMob;
 
-const Cartridge = ({
-  imageSrc,
-  title,
-  description,
-  price,
-  date,
-  registrationLink,
-}) => {
-  return (
-    <div className="relative h-full w-full ">
-      {/* Background image */}
-      <img
-        src="/WorkshopCartridge/bg.svg"
-        alt="Background"
-        className="w-full h-auto"
-      />
+// const Cartridge = ({
+//   imageSrc,
+//   title,
+//   description,
+//   price,
+//   date,
+//   registrationLink,
+// }) => {
+//   return (
+//     <div className="relative h-full w-full ">
+//       {/* Background image */}
+//       <img
+//         src="/WorkshopCartridge/bg.svg"
+//         alt="Background"
+//         className="w-full h-auto"
+//       />
 
-      <div className="absolute top-1 left-0 right-0 bottom-0 flex flex-col justify-between">
-        <div className="h-[61%] flex justify-center pr-[0.4%]">
-          <div
-            className={`w-[77.4%] h-full rounded-md md:rounded-xl pb-[3%] px-[7.5%] ${styles.innerShadow}`}
-          >
-            {/* poster image */}
-            <img src={imageSrc} alt={title} className="w-full h-full" />
-          </div>
-        </div>
-      </div>
+//       <div className="absolute top-1 left-0 right-0 bottom-0 flex flex-col justify-between">
+//         <div className="h-[61%] flex justify-center pr-[0.4%]">
+//           <div
+//             className={`w-[77.4%] h-full rounded-md md:rounded-xl pb-[3%] px-[7.5%] ${styles.innerShadow}`}
+//           >
+//             {/* poster image */}
+//             <img src={imageSrc} alt={title} className="w-full h-full" />
+//           </div>
+//         </div>
+//       </div>
 
-      <div className="w-full h-max flex flex-col items-center justify-center relative bg-gray-500">
-        <div className="w-full h-max flex items-center justify-center">
-          <p className={`${styles.title}`}>{title}</p>
-        </div>
+//       <div className="w-full h-max flex flex-col items-center justify-center relative bg-gray-500">
+//         <div className="w-full h-max flex items-center justify-center">
+//           <p className={`${styles.title}`}>{title}</p>
+//         </div>
 
-        {/* Lower div with image and the columns */}
-        <div className="w-full h-max flex flex-col items-center justify-center">
-          <img
-            src="/barcodeBG.png"
-            alt="Inner box"
-            className=" absolute bottom-4"
-          />
+//         {/* Lower div with image and the columns */}
+//         <div className="w-full h-max flex flex-col items-center justify-center">
+//           <img
+//             src="/barcodeBG.png"
+//             alt="Inner box"
+//             className=" absolute bottom-4"
+//           />
 
-          {/* Columns placed over the image */}
-          <div className="absolute w-full flex left-[20%] items-center p-4 bottom-0">
-            {/* Left column with price, date, and team size */}
-            <div className="flex flex-col text-white">
-              <p className={`${styles.price}`}>{price}</p>
-              <p className={`${styles.date}`}>{date}</p>
-              <p className="border-[0.5px] border-dashed p-1">{`Team Size : 5`}</p>
-            </div>
+//           {/* Columns placed over the image */}
+//           <div className="absolute w-full flex left-[20%] items-center p-4 bottom-0">
+//             {/* Left column with price, date, and team size */}
+//             <div className="flex flex-col text-white">
+//               <p className={`${styles.price}`}>{price}</p>
+//               <p className={`${styles.date}`}>{date}</p>
+//               <p className="border-[0.5px] border-dashed p-1">{`Team Size : 5`}</p>
+//             </div>
 
-            {/* Right column with REGISTER and Learn More buttons */}
-            <div className="flex flex-col">
-              <Link
-                className={`text-white font-bold rounded-[03%] py-[1%] px-[4%] w-max bg-red-600 ${styles.register}`}
-                href={registrationLink}
-              >
-                REGISTER
-              </Link>
-              <div
-                className={`text-white font-bold rounded-[03%] py-[1%] px-[3%] w-max bg-yellow-600 ${styles.register}`}
-              >
-                Learn More
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+//             {/* Right column with REGISTER and Learn More buttons */}
+//             <div className="flex flex-col">
+//               <Link
+//                 className={`text-white font-bold rounded-[03%] py-[1%] px-[4%] w-max bg-red-600 ${styles.register}`}
+//                 href={registrationLink}
+//               >
+//                 REGISTER
+//               </Link>
+//               <div
+//                 className={`text-white font-bold rounded-[03%] py-[1%] px-[3%] w-max bg-yellow-600 ${styles.register}`}
+//               >
+//                 Learn More
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
-// export default Cartridge;
+// // export default Cartridge;

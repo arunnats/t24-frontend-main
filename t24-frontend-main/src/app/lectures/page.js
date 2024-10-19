@@ -24,8 +24,17 @@ const Page = () => {
           },
         });
         const fetchedData = await res.json();
-        console.log(fetchedData);
-        setData(fetchedData.data || []); // Ensure data is always an array
+
+        const transformedData = fetchedData.data.map((item) => {
+          return {
+            ...item,
+            posterImage: item.coverImage,
+            eventDate: item.eventDateTime,
+          };
+        });
+
+        console.log(transformedData);
+        setData(transformedData || []);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching lectures:", error);
@@ -44,7 +53,7 @@ const Page = () => {
         </div>
       ) : (
         <>
-          <div className="absolute inset-0 flex justify-center items-center overflow-hidden md:-translate-x-2 z-20">
+          <div className="absolute inset-0 flex justify-center items-center overflow-hidden  z-20">
             <div
               className="-rotate-90 "
               style={{

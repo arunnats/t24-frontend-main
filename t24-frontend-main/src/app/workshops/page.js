@@ -39,7 +39,7 @@ const Page = () => {
     fetchWorkshops();
   }, []);
   return (
-    <div className="min-h-full bg-black overflow-hidden relative p-10 md:p-8 ">
+    <div className="min-h-full bg-black overflow-hidden relative p-10 md:p-14">
       <div>
         {loading || (data && data.length === 0) ? (
           <div className="flex items-center justify-center h-screen">
@@ -62,8 +62,8 @@ const Page = () => {
                 />
               </div>
             </div>
-<Navbar />
-            <Eventpage event="WORKSHOPS" cards={data} />
+            <Navbar />
+            <Eventpage event="WORKSHOPS" cards={data} type="workshops" />
           </div>
         )}
       </div>

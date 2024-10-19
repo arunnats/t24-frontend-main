@@ -11,7 +11,7 @@ const formatDate = (dateString) => {
   return date.toLocaleDateString("en-US", options).toUpperCase(); // e.g., "27 OCT"
 };
 
-const Eventpage = ({ event, cards }) => {
+const Eventpage = ({ event, cards, type }) => {
   return (
     <div className="flex bg-black">
       <div className="flex-grow">
@@ -28,7 +28,7 @@ const Eventpage = ({ event, cards }) => {
           </p>
         </div>
         <hr className="border-t-2 border-white" />
-        <div className="flex flex-wrap p-[3vh] md:p-[4%] mx-auto">
+        <div className="flex flex-wrap p-[3vh] md:p-[2%] mx-auto">
           {cards.map((card, index) => {
             // Check if all required fields are present
             if (
@@ -53,7 +53,7 @@ const Eventpage = ({ event, cards }) => {
                       date={formatDate(card.eventDate)}
                       registrationLink={card.regLink}
                       docID={card.documentId}
-                      type="workshops"
+                      type={type}
                     />
                   </div>
                 </div>

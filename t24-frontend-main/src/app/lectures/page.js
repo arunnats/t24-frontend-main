@@ -46,16 +46,16 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black overflow-hidden relative p-10 md:p-14">
+    <div className="min-h-screen bg-black overflow-hidden relative p-12 md:p-14">
       {loading || (data && data.length === 0) ? ( // Render Pacman if loading or data is empty
         <div className="flex justify-center items-center h-[100vh]">
           <Pacman />
         </div>
       ) : (
         <>
-          <div className="absolute inset-0 flex justify-center items-center overflow-hidden ">
+          <div className="absolute inset-0 flex justify-center items-center overflow-hidden left-0 w-full h-full">
             <div
-              className="-rotate-90 "
+              className="-rotate-90 flex"
               style={{
                 height: "100vw",
                 display: "flex",

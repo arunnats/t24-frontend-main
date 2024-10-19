@@ -47,9 +47,9 @@ const Page = () => {
         </div>
       ) : (
         <div>
-          <div className="absolute inset-0 flex justify-center overflow-hidden left-0">
+          <div className="absolute inset-0 flex justify-center items-center overflow-hidden left-0 w-full h-full">
             <div
-              className="-rotate-90"
+              className="-rotate-90 flex"
               style={{
                 height: "100vw",
                 display: "flex",

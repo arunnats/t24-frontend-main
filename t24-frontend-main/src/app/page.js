@@ -136,7 +136,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-[200vh] relative overflow-x-clip bg-black flex flex-col z-50">
+    <div className=" min-h-[200vh] relative overflow-x-clip bg-black flex flex-col z-50">
       <Navbar />
       <div className="hero-container h-[130vh]">
         <Hero />
@@ -144,9 +144,9 @@ export default function Home() {
       <div className="text-container h-[50vh] opacity-0">
         <div className="w-full h-full">
           <div className="upppercase w-full h-full text-white flex flex-col items-center justify-center ">
-            <p className="text-5xl md:text-8xl lg:text-9xl  text-pricedown">What have we </p>
-            <p className="text-5xl md:text-8xl lg:text-9xl  text-pricedown">
-              got for you ?
+            <p className="text-9xl text-pricedown">What have we </p>
+            <p className="text-9xl text-pricedown">
+              got f<span className="ooo">o</span>r you ?
             </p>
           </div>
         </div>
@@ -158,22 +158,22 @@ export default function Home() {
       <div className="text-container2 h-[50vh] opacity-0">
         <div className="w-full h-full">
           <div className="upppercase w-full h-full text-white flex flex-col items-center ">
-            <p className="text-5xl md:text-8xl lg:text-9xl text-pricedown">And much More... </p>
+            <p className="text-9xl text-pricedown">And much More... </p>
           </div>
         </div>
       </div>
 
       <GamingPage />
 
-      <div className="expo-container w-screen h-min-screen my-[4vh] mt-[8vh]">
+      <div className="expo-container w-screen h-min-screen my-[3vh] md:my-[10vh]">
         <ExpoPage />
       </div>
 
-      <div className="mt-[5vh">
+      <div className="">
         <AutomotiveSummit />
       </div>
 
-      <div className="w-full mt-[8vh] mb-[18vh]">
+      <div className="w-full mt-[5vh] mb-[12vh] md:mt-[8vh] md:mb-[18vh]">
         <Image
           src="/divider.svg"
           alt="Divider"
@@ -188,7 +188,7 @@ export default function Home() {
         <ProShow />
       </div>
 
-      <div className=" mt-[10vh] h-full">
+      <div className=" mt-[6vh] md:mt-[10vh] h-full">
         <OthersLanding />
       </div>
 

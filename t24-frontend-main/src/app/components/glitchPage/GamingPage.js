@@ -137,9 +137,10 @@ export default function GamingPage() {
             <div
               className={`text-white text-1xl -mt-[130px] ${styles.text_description} pl-[55px] `}
             >
-              Gekko the Angeleno leads a tight-knit crew of calamitous
-              creatures. His buddies bound forward, scattering enemies out of
-              the way, with Gekko chasing them down to regroup and go again.
+              Grab your controllers and get your headphones on! Add flair to
+              your player and engage with the enemy on the digital field! Let
+              the screen Glitch with your impeccable gaming skills, here at
+              Tathva '24.
             </div>
             <div className="flex relative  w-full">
               <div className="flex flex-col justify-center align-center absolute bottom-16 right-7 pl-[55px]  ">
@@ -210,9 +211,10 @@ export default function GamingPage() {
           <div
             className={`text-white text-1xl text-start w-1/2 ${styles.mobiletext} mb-10`}
           >
-            Gekko the Angeleno leads a tight-knit crew of calamitous creatures.
-            His buddies bound forward, scattering enemies out of the way, with
-            Gekko chasing them down to regroup and go again.
+            Grab your controllers and get your headphones on! Add flair to your
+            player and engage with the enemy on the digital field! Let the
+            screen Glitch with your impeccable gaming skills, here at Tathva
+            '24.
           </div>
           <button
             className={`flex bg-[#ed404f] text-white text-2xl text-center font-IBM Plex Sans py-1 ${styles.mobilebutton}`}

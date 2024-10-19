@@ -57,30 +57,30 @@ const Navbar_mob = () => {
           <Link href="/workshops" className="p-2">
             <img src="/workshopbg.svg" alt="Workshops" className="w-30 h-16" />
           </Link>
-          <Link href="/competitions" className="p-2">
+          {/* <Link href="/competitions" className="p-2">
             <img src="/compbg.svg" alt="Competitions" className="w-30 h-16" />
-          </Link>
+          </Link> */}
           <Link href="/wheels" className="p-2">
             <img src="/wheelsbg.svg" alt="Wheels" className="w-30 h-16" />
           </Link>
-          <Link href="/gaming" className="p-2">
+          <Link href="/glitch" className="p-2">
             <img src="/gcbg.svg" alt="Gaming Conclave" className="w-30 h-16" />
           </Link>
           <Link href="/proshow" className="p-2">
             <img src="/proshowbg.svg" alt="Proshow" className="w-30 h-16" />
           </Link>
-          <Link href="/drone" className="p-2">
+          <Link href="/drone-racing" className="p-2">
             <img src="/dronebg.svg" alt="Drone Racing" className="w-30 h-16" />
           </Link>
           <Link href="/faq" className="p-2">
             <img src="/faqbg.svg" alt="FAQ" className="w-30 h-16" />
           </Link>
-          <Link href="/teams" className="p-2">
+          {/* <Link href="/teams" className="p-2">
             <img src="/teamsbg.svg" alt="Teams" className="w-30 h-16" />
-          </Link>
-          <Link href="/contacts" className="p-2">
+          </Link> */}
+          {/* <Link href="/contacts" className="p-2">
             <img src="/contactsbg.svg" alt="Contacts" className="w-30 h-16" />
-          </Link>
+          </Link> */}
         </nav>
       </div>
 

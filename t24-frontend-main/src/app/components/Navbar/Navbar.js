@@ -138,34 +138,34 @@ const menuItems = [
   { label: "EVENTS", backgroundImage: "/eventbg.svg", link: "/events" },
   { label: "LECTURES", backgroundImage: "/lectbg.svg", link: "/lectures" },
   { label: "PROSHOW", backgroundImage: "/proshowbg.svg", link: "/proshow" },
-  {
-    label: "ACCOMMODATION",
-    backgroundImage: "/dronebg.svg",
-    link: "/accommodation",
-  },
+  // {
+  //   label: "ACCOMMODATION",
+  //   backgroundImage: "/dronebg.svg",
+  //   link: "/accommodation",
+  // },
   {
     label: "DRONE RACING",
     backgroundImage: "/dronebg.svg",
     link: "/drone-racing",
   },
-  {
-    label: "CERTIFICATES",
-    backgroundImage: "/dronebg.svg",
-    link: "/certificates",
-  },
+  // {
+  //   label: "CERTIFICATES",
+  //   backgroundImage: "/dronebg.svg",
+  //   link: "/certificates",
+  // },
   { label: "FAQ", backgroundImage: "/faqbg.svg", link: "/faq" },
-  {
-    label: "COMPETITIONS",
-    backgroundImage: "/compbg.svg",
-    link: "/competitions",
-  },
-  { label: "TEAMS", backgroundImage: "/teamsbg.svg", link: "/teams" },
+  // {
+  //   label: "COMPETITIONS",
+  //   backgroundImage: "/compbg.svg",
+  //   link: "/events",
+  // },
+  // { label: "TEAMS", backgroundImage: "/teamsbg.svg", link: "/teams" },
   { label: "WHEELS", backgroundImage: "/wheelsbg.svg", link: "/wheels" },
-  { label: "CONTACTS", backgroundImage: "/contactsbg.svg", link: "/contacts" },
+  // { label: "CONTACTS", backgroundImage: "/contactsbg.svg", link: "/contacts" },
   {
     label: "GAMING CONCLAVE",
     backgroundImage: "/gcbg.svg",
-    link: "/gaming-conclave",
+    link: "/glitch",
   },
 ];
 

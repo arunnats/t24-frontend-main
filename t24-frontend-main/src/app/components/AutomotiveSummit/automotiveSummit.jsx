@@ -33,7 +33,7 @@ const AutomotiveSummit = () => {
       <div
         className={`flex flex-col bg-black h-screen relative  ${styles.main}`}
       >
-        <div className="flex flex-col w-full text-white text-center  h-[80vh] bg-[url('/carbg.svg')] bg-no-repeat bg-cover  mt-[5vh]">
+        <div className="flex flex-col w-full text-white text-center  h-[80vh] mt-[5vh]">
           {/* Border Around the Entire Center Content */}
           <div className="rounded-lg p-12 w-[100vw] sm:w-[80%] max-w-5xl mx-auto h-[70vh] ">
             {/* Header */}
@@ -144,25 +144,25 @@ const AutomotiveSummit = () => {
         <div className=" w-full flex justify-center align-center">
           {/* Curved background with SVG */}
           <div
-            className={`flex absolute -translate-y-[14.5vh] w-[100vw]  bg-[url('/hud_down1.svg')] bg-no-repeat bg-center bg-contain ${styles.down} `}
+            className={`flex absolute -translate-y-[27.5vh] w-[100vw]  bg-[url('/hud_down1.svg')] bg-no-repeat bg-center bg-contain ${styles.down} `}
           ></div>
           {/* Navigation Links */}
           <div
-            className={`relative bottom-24 z-10 flex justify-center align-center mt-3 text-white font-supply font-normal ${styles.links}`}
+            className={`relative bottom-52 z-10 flex justify-center align-center mt-3 text-white font-supply font-normal ${styles.links}`}
           >
-            <div className="px-4 py-2 text-base sm:text-0.685rem border-x-r border-gray-600">
+            <div className="px-4 py-2 text-lg sm:text-0.685rem border-x-r border-gray-600">
               Motography
             </div>
-            <div className="px-4 py-2 text-base sm:text-0.685rem border-x border-gray-600">
+            <div className="px-4 py-2 text-lg sm:text-0.685rem border-x border-gray-600">
               Rally
             </div>
-            <div className="px-4 py-2 text-base sm:text-0.685rem border-x border-gray-600">
+            <div className="px-4 py-2 text-lg sm:text-0.685rem border-x border-gray-600">
               Autoshow
             </div>
-            <div className="px-4 py-2 text-base sm:text-0.685rem border-x border-gray-600">
+            <div className="px-4 py-2 text-lg sm:text-0.685rem border-x border-gray-600">
               Stunts
             </div>
-            <div className="px-4 py-2 text-base sm:text-0.685rem border-x-l border-gray-600">
+            <div className="px-4 py-2 text-lg sm:text-0.685rem border-x-l border-gray-600">
               Superbikes
             </div>
           </div>

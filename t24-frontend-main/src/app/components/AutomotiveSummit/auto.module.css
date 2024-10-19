@@ -57,16 +57,16 @@
   }
 }
 .mobile {
-  background-image: url("../../../../public/Group\ 14038.svg");
-  background-position: center;
+  /* background-image: url("../../../../public/Group\ 14038.svg"); */
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
   @media (min-width: 834px) {
     display: none;
   }
-  @media (min-width: 450px) {
+  /* @media (min-width: 450px) {
     background-size: fill;
-  }
+  } */
 }
 .header {
   padding-top: 20px;

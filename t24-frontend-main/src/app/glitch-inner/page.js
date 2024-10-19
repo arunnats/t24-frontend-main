@@ -14,7 +14,7 @@ const page = () => {
   const venue = "Ground";
 
   return (
-    <div className="w-full h-[232vh] md:h-[208vh] relative overflow-hidden ">
+    <div className="w-full h-[247vh] md:h-[208vh] relative overflow-hidden ">
       <Navbar />
 
       <div className="h-screen">

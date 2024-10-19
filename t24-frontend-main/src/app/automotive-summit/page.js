@@ -12,7 +12,7 @@ const page = () => {
   const desc =
     "The Engines roar! The Tyres whir! The sleek metallic bodies shine under the lights. The most eye-catching rides await to be admired at the Automotive Expo at Tathva '24.";
   return (
-    <div className="w-full h-[200vh] md:h-[220vh] relative overflow-hidden ">
+    <div className="w-full h-[220vh] md:h-[220vh] relative overflow-hidden ">
       <Navbar />
 
       <div className="h-screen">

@@ -173,7 +173,10 @@ const page = () => {
         {/* Mobile */}
         <div className="w-full lg:hidden h-full flex flex-col justify-between items-center p-2">
           <div className="w-[90%] ">
-            <div className="relative flex h-min justify-center items-center xl:mt-[2rem] lg:mt-[1rem] md:mt-[0.8rem] sm:mt-[0.7rem] mt-[0.6rem]">
+            <Link
+              href="./expo/register"
+              className="relative flex h-min justify-center items-center xl:mt-[2rem] lg:mt-[1rem] md:mt-[0.8rem] sm:mt-[0.7rem] mt-[0.6rem]"
+            >
               <img
                 src="/left_top.jpeg"
                 alt="idk"
@@ -226,7 +229,7 @@ const page = () => {
                   <div className="h-4 w-4 border-2 border-white"></div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div className="m-2 h-[100%] w-full rounded flex items-center justify-center ">
             <div className="w-[99%] h-full border-4 border-white rounded-3xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px] object-cover mt-3">

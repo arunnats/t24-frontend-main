@@ -71,8 +71,8 @@ const PassCard = ({}) => {
 
         <div className="text-white absolute left-[4.5%] top-[65%] border-white pt-2 flex flex-col">
           <ul className="list-disc pl-[40px] text-[20px] tracking-[2px] text-black">
-            <li>Fejo</li>
-            <li>Malayali Monkeys</li>
+            <li>aaaaa</li>
+            <li>aa</li>
           </ul>
           <div className="text-black">.</div>
           <a
@@ -115,9 +115,9 @@ const PassCard = ({}) => {
 
         <div className="text-white absolute left-[4.5%] top-[65%] border-white pt-2 flex flex-col">
           <ul className="list-disc pl-[40px] text-[20px] tracking-[2px] text-black">
-            <li>Shilpa Rao</li>
-            <li>Masala Coffee</li>
-            <li>Ola Ras</li>
+            <li>aaaa</li>
+            <li>aaaa</li>
+            <li>aaa</li>
           </ul>
           <a
             href="https://tiqr.events/e/Tathva-Pass-450"

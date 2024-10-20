@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./eventpage.module.css";
-import PassCard from "../workshopCartridge/passcard";
+import PassCard from "../passes/passcard";
 
 const CMS_URL = "https://cms.tathva.org";
 
@@ -24,7 +24,7 @@ const Passes = ({ event, cards, type }) => {
           <p
             className={`text-white text-[12vw] m-0 leading-none ${styles.supplyregular}`}
           >
-            {event}
+            PASSES
           </p>
         </div>
         <hr className="border-t-2 border-white" />

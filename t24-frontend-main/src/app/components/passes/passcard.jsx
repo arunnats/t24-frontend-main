@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./workshopCartridge.module.css";
+import styles from "./page.module.css";
 import Link from "next/link";
 
 const PassCard = ({
@@ -13,8 +13,8 @@ const PassCard = ({
   type,
 }) => {
   return (
-    <div className="flex flex-row justify-around">
-      <div className="relative h-[900px] w-[400px] font-postnobillsS">
+    <div className="flex flex-row justify-around flex-wrap">
+      <div className="relative h-[900px] w-[400px] min-w-[330px] font-postnobillsS">
         <img
           src="/Layout.svg"
           alt="Background"
@@ -41,15 +41,15 @@ const PassCard = ({
             <li>Conclave</li>
           </ul>
 
-          <div className="mt-4 items-center text-center border-[0.5px] w-[270px] h-[40px] tracking-[3px] border-white ml-[3px] font-bold rounded-lg text-xl flex justify-around">
-            <div className="text-green-400"> BUY NOW</div>
-            <div>-/390 Rs</div>
+          <div className={`${styles.button}  mt-4 items-center text-center border-[0.5px] w-[270px] h-[40px] tracking-[3px] border-white ml-[3px] font-bold rounded-lg text-xl flex justify-around`}>
+            <div className="text-green-400 "> BUY NOW</div>
+            <div>199/-</div>
           </div>
-          <div className="font-barcode text-5xl pl-[0px] py-5">nigga yourEasterEG</div>
+          <div className="font-barcode text-5xl pl-[12px] py-5">nigga urnet'slow</div>
         </div>
       </div>
 
-      <div className="relative h-[900px] w-[400px] font-postnobillsS">
+      <div className="relative h-[900px] w-[400px] min-w-[330px] font-postnobillsS">
         <img
           src="/Layout2.svg"
           alt="Background"
@@ -76,15 +76,15 @@ const PassCard = ({
             <li>Conclave</li>
           </ul>
 
-          <div className="mt-4 items-center text-center border-[0.5px] w-[270px] h-[40px] tracking-[3px] border-black ml-[3px] font-bold rounded-lg text-xl flex justify-around">
+          <div className={`${styles.button1}  mt-4 items-center text-center border-[0.5px] w-[270px] h-[40px] tracking-[3px] border-black ml-[3px] font-bold rounded-lg text-xl flex justify-around`}>
             <div className="text-red-600"> BUY NOW</div>
-            <div>-/390 Rs</div>
+            <div>599/-</div>
           </div>
-          <div className="font-barcode text-5xl pl-[0px] py-5">nigga yourEasterEG</div>
+          <div className="font-barcode text-5xl pl-[12px] py-5">nigga urnet'slow</div>
         </div>
       </div>
 
-      <div className="relative h-[900px] w-[400px] font-postnobillsS">
+      <div className="relative h-[900px] w-[400px] min-w-[330px] font-postnobillsS">
         <img
           src="/Layout.svg"
           alt="Background"
@@ -111,11 +111,11 @@ const PassCard = ({
             <li>Conclave</li>
           </ul>
 
-          <div className="mt-4 items-center text-center border-[0.5px] w-[270px] h-[40px] tracking-[3px] border-white ml-[3px] font-bold rounded-lg text-xl flex justify-around">
+          <div className={`${styles.button}  mt-4 items-center text-center border-[0.5px] w-[270px] h-[40px] tracking-[3px] border-white ml-[3px] font-bold rounded-lg text-xl flex justify-around`}>
             <div className="text-green-400"> BUY NOW</div>
-            <div>-/390 Rs</div>
+            <div>1299/-</div>
           </div>
-          <div className="font-barcode text-5xl pl-[0px] py-5">nigga yourEasterEG</div>
+          <div className="font-barcode text-5xl pl-[12px] py-5">nigga urnet'slow</div>
         </div>
       </div>
     </div>

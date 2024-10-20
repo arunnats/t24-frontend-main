@@ -27,7 +27,7 @@ const PassCard = ({}) => {
 
         <div className="text-white absolute left-[4.5%] top-[65%] border-white pt-2 flex flex-col">
           <ul className="list-disc pl-[40px] text-[20px] tracking-[2px]">
-          <li>Entry Pass</li>
+            <li>Entry Pass</li>
             <li>Stalls</li>
             <li>Informals Stage</li>
           </ul>
@@ -44,7 +44,7 @@ const PassCard = ({}) => {
             </div>
           </a>
           <div className="font-barcode text-5xl pl-[11px] py-5">
-          giganwlosn'teurrr
+            giganwlosn'teurrr
           </div>
         </div>
       </div>
@@ -71,8 +71,8 @@ const PassCard = ({}) => {
 
         <div className="text-white absolute left-[4.5%] top-[65%] border-white pt-2 flex flex-col">
           <ul className="list-disc pl-[40px] text-[20px] tracking-[2px]">
-            <li>Fejo</li>
-            <li>Malayali Monkeys</li>
+            {/* <li>Fejo</li>
+            <li>Malayali Monkeys</li> */}
           </ul>
           <div className="text-black">.</div>
           <a
@@ -88,7 +88,7 @@ const PassCard = ({}) => {
             </div>
           </a>
           <div className="font-barcode text-5xl pl-[10px] py-5">
-          gi ganwlosn'teurr
+            gi ganwlosn'teurr
           </div>
         </div>
       </div>
@@ -115,9 +115,9 @@ const PassCard = ({}) => {
 
         <div className="text-white absolute left-[4.5%] top-[65%] border-white pt-2 flex flex-col">
           <ul className="list-disc pl-[40px] text-[20px] tracking-[2px]">
-            <li>Shilpa Rao</li>
+            {/* <li>Shilpa Rao</li>
             <li>Masala Coffee</li>
-            <li>Ola Ras</li>
+            <li>Ola Ras</li> */}
           </ul>
           <a
             href="https://tiqr.events/e/Tathva-Pass-450"
@@ -132,11 +132,10 @@ const PassCard = ({}) => {
             </div>
           </a>
           <div className="font-barcode text-5xl pl-[12px] py-5">
-          giganwlosn  'teurr
+            giganwlosn 'teurr
           </div>
         </div>
       </div>
-      
 
       <div className="relative h-[950px] w-[400px] min-w-[330px] font-postnobillsS">
         <img
@@ -159,7 +158,9 @@ const PassCard = ({}) => {
         </div>
 
         <div className=" absolute left-[14.5%] top-[60%] pt-2 flex flex-col">
-          <div className="text-[18px] w-[400px] pl-3 -mt-[5px] mb-[8px] tracking-[4px] flex justify-between">-ACCESS TO ALL EVENTS-</div>
+          <div className="text-[18px] w-[400px] pl-3 -mt-[5px] mb-[8px] tracking-[4px] flex justify-between">
+            -ACCESS TO ALL EVENTS-
+          </div>
           <ul className="list-disc pl-[40px] text-[20px] tracking-[2px]">
             <li>ProShows</li>
             <li>Wheels</li>
@@ -182,8 +183,6 @@ const PassCard = ({}) => {
           </div>
         </div>
       </div>
-
-      
     </div>
   );
 };

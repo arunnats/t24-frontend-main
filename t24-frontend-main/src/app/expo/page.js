@@ -13,7 +13,7 @@ const page = () => {
     "The Student Expo offers the emerging geniuses and bright young minds a platform. A platform to learn, create, connect, share and grow. Join us at Tathva '24 for exciting competitions,  engaging workshops, insightful lectures and much more.";
 
   const date = "26-27th Oct";
-  const venue = "Ground";
+  const venue = "Auditorium";
 
   return (
     <div className="w-full h-[247vh] md:h-[208vh] relative overflow-hidden ">
@@ -34,7 +34,10 @@ const page = () => {
         {/* desktop */}
         <div className="w-full hidden h-[40%] lg:flex justify-around items-center p-2 ">
           <div className="w-[50%] h-full pl-10 mt-5">
-            <div className="relative flex h-min justify-center items-center xl:mt-[2rem] lg:mt-[1rem] md:mt-[0.8rem] sm:mt-[0.7rem] mt-[0.6rem]">
+            <Link
+              href="./expo/register"
+              className="relative flex h-min justify-center items-center xl:mt-[2rem] lg:mt-[1rem] md:mt-[0.8rem] sm:mt-[0.7rem] mt-[0.6rem]"
+            >
               <img
                 src="/left_top.jpeg"
                 alt="idk"
@@ -87,7 +90,7 @@ const page = () => {
                   <div className="h-4 w-4 border-2 border-white"></div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div className="m-3 ml-0 h-full w-[61%] p-2 rounded flex justify-end">
             <div className="w-[95%] h-full border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px] object-cover">

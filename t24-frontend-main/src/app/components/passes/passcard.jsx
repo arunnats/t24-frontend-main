@@ -3,14 +3,6 @@ import styles from "./page.module.css";
 import Link from "next/link";
 
 const PassCard = ({
-  imageSrc,
-  title,
-  price,
-  date,
-  registrationLink,
-  docID,
-  teamSize,
-  type,
 }) => {
   return (
     <div className="flex flex-row justify-around flex-wrap">
@@ -30,7 +22,7 @@ const PassCard = ({
         </div>
         <div className="text-white absolute left-[18%] top-[57%] text-[20px] w-[250px] flex justify-between">
           <div>OCT</div>
-          <div>26TH</div>
+          <div>25TH</div>
           <div>2024</div>
         </div>
 
@@ -40,11 +32,16 @@ const PassCard = ({
             <li>Wheels</li>
             <li>Conclave</li>
           </ul>
-
+          <a 
+  href="https://tiqr.events/e/Tathva-Pass-450" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
           <div className={`${styles.button}  mt-4 items-center text-center border-[0.5px] w-[270px] h-[40px] tracking-[3px] border-white ml-[3px] font-bold rounded-lg text-xl flex justify-around`}>
             <div className="text-green-400 "> BUY NOW</div>
             <div>199/-</div>
           </div>
+          </a>
           <div className="font-barcode text-5xl pl-[12px] py-5">nigga urnet'slow</div>
         </div>
       </div>
@@ -65,7 +62,7 @@ const PassCard = ({
         </div>
         <div className=" absolute left-[18%] top-[57%] text-[20px] w-[250px] flex justify-between">
           <div>OCT</div>
-          <div>27TH</div>
+          <div>26TH</div>
           <div>2024</div>
         </div>
 
@@ -75,11 +72,16 @@ const PassCard = ({
             <li>Wheels</li>
             <li>Conclave</li>
           </ul>
-
+          <a 
+  href="https://tiqr.events/e/Tathva-Pass-450" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
           <div className={`${styles.button1}  mt-4 items-center text-center border-[0.5px] w-[270px] h-[40px] tracking-[3px] border-black ml-[3px] font-bold rounded-lg text-xl flex justify-around`}>
             <div className="text-red-600"> BUY NOW</div>
             <div>599/-</div>
           </div>
+          </a>
           <div className="font-barcode text-5xl pl-[12px] py-5">nigga urnet'slow</div>
         </div>
       </div>
@@ -100,7 +102,7 @@ const PassCard = ({
         </div>
         <div className="text-white absolute left-[18%] top-[57%] text-[20px] w-[250px] flex justify-between">
           <div>OCT</div>
-          <div>28TH</div>
+          <div>27TH</div>
           <div>2024</div>
         </div>
 
@@ -111,10 +113,16 @@ const PassCard = ({
             <li>Conclave</li>
           </ul>
 
+          <a 
+  href="https://tiqr.events/e/Tathva-Pass-450" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
           <div className={`${styles.button}  mt-4 items-center text-center border-[0.5px] w-[270px] h-[40px] tracking-[3px] border-white ml-[3px] font-bold rounded-lg text-xl flex justify-around`}>
             <div className="text-green-400"> BUY NOW</div>
             <div>1299/-</div>
           </div>
+          </a>
           <div className="font-barcode text-5xl pl-[12px] py-5">nigga urnet'slow</div>
         </div>
       </div>

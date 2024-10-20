@@ -57,3 +57,7 @@
 .button,.button1{
   transition: all 0.2s ease-in-out;
 }
+.button:active,
+.button1:active {
+  transform: scale(0.95); 
+}

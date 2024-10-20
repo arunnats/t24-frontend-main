@@ -148,6 +148,7 @@ const menuItems = [
     backgroundImage: "/dronebg.svg",
     link: "/drone-racing",
   },
+  
   // {
   //   label: "CERTIFICATES",
   //   backgroundImage: "/dronebg.svg",
@@ -163,7 +164,7 @@ const menuItems = [
   { label: "WHEELS", backgroundImage: "/wheelsbg.svg", link: "/wheels" },
   // { label: "CONTACTS", backgroundImage: "/contactsbg.svg", link: "/contacts" },
   {
-    label: "GAMING CONCLAVE",
+    label: "GLITCH",
     backgroundImage: "/gcbg.svg",
     link: "/glitch",
   },

@@ -43,8 +43,8 @@ const PassCard = ({}) => {
               <div>199/-</div>
             </div>
           </a>
-          <div className="font-barcode text-5xl pl-[12px] py-5">
-            nigga urnet'slow
+          <div className="font-barcode text-5xl pl-[11px] py-5">
+          giganwlosn'teurrr
           </div>
         </div>
       </div>
@@ -81,14 +81,14 @@ const PassCard = ({}) => {
             rel="noopener noreferrer"
           >
             <div
-              className={`${styles.button}  mt-4 items-center text-center border-[0.5px] w-[270px] h-[40px] tracking-[3px] border-white ml-[7px] font-bold rounded-lg text-xl flex justify-around`}
+              className={`${styles.button}  mt-5 items-center text-center border-[0.5px] w-[270px] h-[40px] tracking-[3px] border-white ml-[7px] font-bold rounded-lg text-xl flex justify-around`}
             >
               <div className="text-green-400 "> BUY NOW</div>
               <div>599/-</div>
             </div>
           </a>
-          <div className="font-barcode text-5xl pl-[12px] py-5">
-            nigga urnet'slow
+          <div className="font-barcode text-5xl pl-[10px] py-5">
+          gi ganwlosn'teurr
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@ const PassCard = ({}) => {
             </div>
           </a>
           <div className="font-barcode text-5xl pl-[12px] py-5">
-            nigga urnet'slow
+          giganwlosn  'teurr
           </div>
         </div>
       </div>

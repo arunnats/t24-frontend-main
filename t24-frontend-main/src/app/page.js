@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
+import PassPage from "./components/passes/page";
 import Cartridge from "./components/workshopCartridge/cartridge_comp";
 import Workshopmodal from "./components/Workshopmodal/Workshopmodal";
 import Hero from "./components/Hero/Hero";
@@ -167,8 +168,11 @@ export default function Home() {
       </div>
 
       <ProShow />
+      <div className="mt-[3vh] -mb-[10vh]">
+        <PassPage />
+      </div>
 
-      <div className="expo-container w-screen h-min-screen my-[10vh]">
+      <div className="expo-container w-screen h-min-screen mt-0 mb-[5vh]">
         <ExpoPage />
       </div>
 

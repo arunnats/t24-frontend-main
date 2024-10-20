@@ -80,10 +80,9 @@ const DesktopComponent = () => {
             <img src="/expo.svg" className="select-none	" />
             <div className="mb-4">
               <p className="text-white">
-                National Institute of Technology, Calicut, presents Tathva
-                Interface - Asia&apos;s largest student-run Tech Startup Expo.
-                We at the Tathva Interface aim to provide a platform for
-                all-entrepreneurs.
+              National Institute of Technology, Calicut, presents Tathva Interface – Asia's
+  largest student-run Tech Startup Expo. We at the Tathva Interface aim to
+  provide a platform for all entrepreneurs.
               </p>
             </div>
             <Dinosaur />
@@ -109,11 +108,10 @@ const MobileComponent = () => {
         <div className="flex-1 flex flex-col mr-8 ml-8">
           <div className="flex flex-col items-center">
             <img src="/expo.svg" className="ml-3 select-none	" />
-            <p className="text-justify text-center px-3 text-white">
-              National Institute of Technology, Calicut, presents Tathva
-              Interface - Asia&apos;s largest student-run Tech Startup Expo. We
-              at the Tathva Interface aim to provide a platform for
-              all-entrepreneurs.
+            <p className="text-justify  px-3 text-white">
+            National Institute of Technology, Calicut, presents Tathva Interface – Asia's
+  largest student-run Tech Startup Expo. We at the Tathva Interface aim to
+  provide a platform for all entrepreneurs.
             </p>
           </div>
 
@@ -146,10 +144,9 @@ const TabComponent = () => {
             <img src="/expo.svg" className="ml-3 select-none	" />
 
             <p className=" text-justify mx-3 text-white ">
-              National Institute of Technology, Calicut, presents Tathva
-              Interface - Asia&apos;s largest student-run Tech Startup Expo. We
-              at the Tathva Interface aim to provide a platform for
-              all-entrepreneurs.
+            National Institute of Technology, Calicut, presents Tathva Interface – Asia's
+  largest student-run Tech Startup Expo. We at the Tathva Interface aim to
+  provide a platform for all entrepreneurs.
             </p>
           </div>
           <div className="flex flex-col m-3 select-none	">

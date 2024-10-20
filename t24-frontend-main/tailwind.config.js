@@ -13,6 +13,9 @@ module.exports = {
         valorant: ["valorant", "sans-serif"],
         PlusJakartaSans: ["PlusJakartaSans", "sans-serif"],
         akira: ["Akira", "sans-serif"],
+        postnobillsS: ["PostNoBillsColomboSemi", "sans-serif"],
+        postnobillsEB: ["PostNoBillsColomboBold", "sans-serif"],
+        barcode: ["LibreBarcode128", "sans-serif"],
       },
       height: {
         115: "115%", // Add a custom height of 60vh

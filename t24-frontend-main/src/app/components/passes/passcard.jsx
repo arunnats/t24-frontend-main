@@ -56,9 +56,9 @@ const PassCard = ({}) => {
           className="absolute left-[0%] top-[3%]"
         />
         <img
-          src="/day3.svg"
+          src="/da3.svg"
           alt="Background"
-          className="absolute z-1 left-[11%] top-[13%]"
+          className=" absolute z-1 h-[350px] left-[10%] top-[16%]"
         />
         <div className="text-white absolute left-[17%] top-[6%] text-7xl font-postnobillsEB tracking-[10px] ">
           DAY 2
@@ -100,9 +100,9 @@ const PassCard = ({}) => {
           className="absolute left-[0%] top-[3%]"
         />
         <img
-          src="/da3.svg"
+          src="/day3.svg"
           alt="Background"
-          className="absolute z-1 h-[350px] left-[10%] top-[16%]"
+          className="absolute z-1 left-[11%] top-[13%]"
         />
         <div className="text-white absolute left-[17%] top-[6%] text-7xl font-postnobillsEB tracking-[10px] ">
           DAY 3
@@ -152,15 +152,15 @@ const PassCard = ({}) => {
         <div className=" absolute left-[23%] top-[6%] text-7xl font-postnobillsEB tracking-[10px] ">
           SUPER
         </div>
-        <div className=" absolute left-[25%] top-[55%] text-[23px] w-[190px] flex justify-between">
+        <div className=" absolute left-[21%] top-[54.5%] text-[20px] w-[230px] tracking-[4px] flex justify-between">
           <div>TATHVA</div>
           <div>SUPER</div>
           <div>PASS</div>
         </div>
 
         <div className=" absolute left-[14.5%] top-[60%] pt-2 flex flex-col">
-          <div className="pl-[26px] text-[21px] tracking-[2px]">ACCESS TO ALL EVENTS</div>
-          <ul className="list-disc pl-[65px] text-[20px] tracking-[2px]">
+          <div className="text-[18px] w-[400px] pl-3 -mt-[5px] mb-[8px] tracking-[4px] flex justify-between">-ACCESS TO ALL EVENTS-</div>
+          <ul className="list-disc pl-[40px] text-[20px] tracking-[2px]">
             <li>ProShows</li>
             <li>Wheels</li>
             <li>Conclave</li>
@@ -177,8 +177,8 @@ const PassCard = ({}) => {
               <div>1799/-</div>
             </div>
           </a>
-          <div className="font-barcode text-5xl pl-[12px] py-5">
-            nigga urnet'slow
+          <div className="font-barcode text-5xl pl-[4px] py-5">
+            your in'net isbad
           </div>
         </div>
       </div>

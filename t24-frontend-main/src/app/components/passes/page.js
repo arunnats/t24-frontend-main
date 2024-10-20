@@ -29,7 +29,7 @@ const PassPage = () => {
                 PASSES
               </p>
             </div>
-            <hr className="border-t-2  border-white" />
+            <hr className="border-t-2 mb-10 border-white" />
             <PassCard />
           </div>
         </div>

@@ -39,7 +39,7 @@ const AutomotiveSummit = () => {
             {/* Header */}
             <div className="transform transition-transform duration-300 hover:translate-y-[-5px]">
               <Link
-                href={"./automotive-summit"}
+                href={"./wheels"}
                 className="font-valorant text-3xl sm:text-4xl font-bold  "
               >
                 AUTOMOTIVE 'SUMMIT
@@ -132,7 +132,7 @@ const AutomotiveSummit = () => {
             {/* Explore Button Inside the Border */}
             <div className="flex justify-center transform transition-transform duration-300 hover:translate-y-[-5px]">
               <Link
-                href={"./automotive-summit"}
+                href={"./wheels"}
                 className={`flex my-6 px-6 pt-3 text-red-500 border-gray-700 rounded-full text-3xl font-semibold font-valorant ${styles.explore}`}
               >
                 EXPLORE THE SHOW
@@ -174,7 +174,7 @@ const AutomotiveSummit = () => {
       >
         {/* Header */}
         <Link
-          href={"./automotive-summit"}
+          href={"./wheels"}
           className={`font-valorant  text-white font-bold ${styles.header}`}
         >
           <p>AUTOMOTIVE</p>
@@ -256,7 +256,7 @@ const AutomotiveSummit = () => {
         <div className="flex justify-center  bg-contain">
           <Image src="/Group 44.svg" width={15} height={15} />
           <Link
-            href={"./automotive-summit"}
+            href={"./wheels"}
             className={`flex p-1 text-white rounded-full text-4xl font-semibold font-valorant ${styles.explore}`}
             style={{ textDecoration: "underline" }}
           >

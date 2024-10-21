@@ -129,18 +129,14 @@ export default function GamingPage() {
             <div className="flex relative w-full">
               <Link
                 href="./glitch"
-                className="flex flex-col justify-center align-center absolute bottom-12  right-36 "
+                className="flex flex-col justify-center align-center absolute bottom-24 pl-[60px] "
               >
                 <button
-                  className={`flex bg-white text-white text-[15px] text-center font-IBM Plex Sans pt-1  ${styles.buttonplay}`}
+                  className={`flex bg-white text-white text-[15px] w-[100px] text-center font-IBM Plex Sans pt-1  ${styles.buttonplay}`}
                 >
-                  PLAY
+                  Know More
                 </button>
-                <button
-                  className={`flex bg-white text-[15px] text-white text-center font-IBM Plex pt-1  px-2 ${styles.buttoncomp}`}
-                >
-                  COMPETITIVE
-                </button>
+            
               </Link>
             </div>
           </div>
@@ -179,7 +175,7 @@ export default function GamingPage() {
 
         {/* Mobile view */}
         <div
-          className={`flex flex-col bg-black justify-evenly items-center w-full min-h-screen py-5 ${styles.mobile}`}
+          className={`flex flex-col bg-black justify-evenly items-center w-full  py-5 ${styles.mobile}`}
         >
           <div className="flex flex-col items-center gap-5">
             <div className={`text-white text-8xl ${styles.text} mb-2`}>
@@ -196,7 +192,7 @@ export default function GamingPage() {
             />
           </div>
           <div
-            className={`text-white text-1xl text-start w-1/2 ${styles.mobiletext} mb-10`}
+            className={`text-white text-xl mt-10 text-justify px-12 font-PlusJakartaSans ${styles.mobiletext} mb-10`}
           >
             Grab your controllers and get your headphones on! Add flair to your
             player and engage with the enemy on the digital field! Let the
@@ -204,10 +200,10 @@ export default function GamingPage() {
             '24.
           </div>
           <Link
-            href="./glitch-inner"
-            className={`flex bg-[#ed404f] text-white text-2xl text-center font-IBM Plex Sans py-1 ${styles.mobilebutton}`}
+            href="./glitch"
+            className={`flex bg-[#ed404f] text-white text-[17px] text-center font-PlusJakartaSans  ${styles.mobilebutton}`}
           >
-            PLAY
+            Know More
           </Link>
         </div>
       </div>

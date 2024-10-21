@@ -248,7 +248,7 @@ const page = () => {
                 />
               </Link>
               <Link
-                href={"./automotive-summit"}
+                href={"./wheels"}
                 className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
               >
                 {" "}

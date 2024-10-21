@@ -172,7 +172,7 @@ export default function Home() {
         <ProShow />
       </div>
 
-      <div className="expo-container w-screen h-min-screen mt-0 mb-[5vh]">
+      <div className="expo-container w-screen h-min-screen mt-[6vh] mb-[5vh]">
         <ExpoPage />
       </div>
 

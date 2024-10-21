@@ -104,14 +104,14 @@ export default function Home() {
   }, [isLoading]);
 
   return (
-    <div className="min-h-[200vh] relative overflow-x-clip bg-black flex flex-col z-50">
+    <div className=" relative overflow-x-clip bg-black flex flex-col z-50">
       {isLoading && (
         <div className="flex items-center justify-center h-screen">
           <Pacman />
         </div>
       )}
       {!isLoading && (
-        <>
+        <div className="min-h-200[vh]">
           <Navbar />
           <div className="hero-container h-[130vh]">
             <Hero />
@@ -179,7 +179,7 @@ export default function Home() {
             <FooterMobile />
           </div>
           <Analytics />
-        </>
+        </div>
       )}
     </div>
   );

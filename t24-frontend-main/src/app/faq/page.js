@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Navbar from "../components/Navbar/Navbar";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -229,6 +230,7 @@ const TracingBeam = ({ children }) => {
 const FAQBeamTracingAccordion = () => {
   return (
     <div className="bg-black min-h-screen py-10 md:py-20 px-4 md:px-0 font-PlusJakartaSans">
+      <Navbar/>
       <TracingBeam>
         <h1 className="text-white text-5xl md:text-6xl mb-10 md:mb-20 faq-heading font-valorant ">
           FAQs

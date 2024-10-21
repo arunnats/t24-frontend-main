@@ -64,7 +64,7 @@ const Navbar_mob = () => {
             <img src="/wheelsbg.svg" alt="Wheels" className="w-30 h-16" />
           </Link>
           <Link href="/glitch" className="p-2">
-            <img src="/gcbg.svg" alt="Gaming Conclave" className="w-30 h-16" />
+            <img src="/glitchnavbar.svg" alt="Glitch" className="w-30 h-16" />
           </Link>
           <Link href="/proshow" className="p-2">
             <img src="/proshowbg.svg" alt="Proshow" className="w-30 h-16" />

@@ -42,7 +42,7 @@
 }
 
 .text_description {
-    font-family: JakartaSans;
+    font-family: 'JakartaSans';
     opacity: 0.5;
     width: 40vw;
 
@@ -61,8 +61,7 @@
     justify-content: center;
     height: 30px;
     transition: color 0.1s;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px;
 }
 
 
@@ -131,17 +130,12 @@
 }
 
 .mobilebutton {
-    height: 50px;
+    height: 40px;
     align-items: center;
     justify-content: center;
-    width: 12%;
-
-    @media(max-width:600px) {
-        width: 18%;
-    }
-    @media(max-width:600px) {
-        width: 25%;
-    }
+    width: 120px;
+   border-radius: 6px;
+   
 }
 @media(max-width:1400px){
 .gekko{

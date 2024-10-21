@@ -32,7 +32,7 @@ const page = () => {
           <div className="m-2 h-full w-[38%] p-2 rounded flex flex-col justify-between items-center ">
             <div className="w-full h-[49%] m-1 flex justify-between">
               <Link
-                href={"./expo-inner"}
+                href={"./expo"}
                 className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px] "
               >
                 {" "}
@@ -62,7 +62,7 @@ const page = () => {
             </div>
             <div className="w-full h-[49%] m-1 flex justify-between">
               <Link
-                href={"./glitch-inner"}
+                href={"./glitch"}
                 className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
               >
                 {" "}

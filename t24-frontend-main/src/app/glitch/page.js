@@ -235,7 +235,7 @@ const page = () => {
           <div className="m-2 h-[75%] w-full rounded flex flex-col items-center justify-center ">
             <div className="w-full h-[49%] m-1 flex justify-between">
               <Link
-                href={"./expo-inner"}
+                href={"./expo"}
                 className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
               >
                 {" "}
@@ -248,7 +248,7 @@ const page = () => {
                 />
               </Link>
               <Link
-                href={"./automotive-summit"}
+                href={"./wheels"}
                 className="w-[49%] border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px]"
               >
                 {" "}

@@ -165,7 +165,7 @@ const menuItems = [
   // { label: "CONTACTS", backgroundImage: "/contactsbg.svg", link: "/contacts" },
   {
     label: "GLITCH",
-    backgroundImage: "/gcbg.svg",
+    backgroundImage: "/glitchnavbar.svg",
     link: "/glitch",
   },
 ];

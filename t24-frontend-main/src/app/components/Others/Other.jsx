@@ -3,6 +3,7 @@ import InnerDescription from "./InnerDescription";
 import NewDesc from "./newdesc";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 const OthersLanding = () => {
   const ref1 = useRef(null);
@@ -35,12 +36,12 @@ const OthersLanding = () => {
     };
 
     // Apply animations on all referenced elements
-    animateOnScroll(ref2, "top 30%");
-    animateOnScroll(ref3, "top 40%");
-    animateOnScroll(ref4, "top 45%");
-    animateOnScroll(ref5, "top 50%");
-    animateOnScroll(ref6, "top 55%");
-    animateOnScroll(ref7, "top 60%");
+    animateOnScroll(ref2, "top 70%");
+    animateOnScroll(ref3, "top 70%");
+    animateOnScroll(ref4, "top 75%");
+    animateOnScroll(ref5, "top 75%");
+    animateOnScroll(ref6, "top 75%");
+    animateOnScroll(ref7, "top 80%");
   }, []);
 
   return (
@@ -69,15 +70,17 @@ const OthersLanding = () => {
             className=" w-full h-full object-cover rounded-3xl border-white border-2"
           />
         </div>
-        <div className="sm:w-2/3 w-screen p-5 transform transition-transform duration-300 hover:translate-y-[-5px]">
+        <Link
+          href="./faq"
+          className="sm:w-2/3 w-screen p-5 transform transition-transform duration-300 hover:translate-y-[-5px]"
+        >
           <InnerDescription
             heading={"We've Got FAQ"}
             text={
               "We at tathva team have compiled a list of queries we’ve got and answered some frequently asked questions."
             }
           />
-
-        </div>
+        </Link>
       </div>
 
       <div className="flex w-full">
@@ -89,18 +92,20 @@ const OthersLanding = () => {
             <h1>Other sites</h1>
             <hr className="border-white mt-2" />
           </div>
-          <div
+          <Link
+            href="https://tiqr.events/e/Hospitality---Tathva-24'-397"
             ref={ref5}
             className="w-full sm:p-5 p-3 transform transition-transform duration-300 hover:translate-y-[-5px]"
           >
             <NewDesc heading={"Book Rooms"} text={"ROOMS.TATHVA.ORG"} />
-          </div>
-          <div
+          </Link>
+          <Link
+            href="https://tiqr.events/e/Tathva-Pass-450/"
             ref={ref6}
             className="w-full sm:p-5 p-3 transform transition-transform duration-300 hover:translate-y-[-5px]"
           >
             <NewDesc heading={"Tathva Passes"} text={"PASSES.TATHVA.ORG"} />
-          </div>
+          </Link>
         </div>
         <div ref={ref7} className="w-1/2 sm:p-5 flex">
           <img

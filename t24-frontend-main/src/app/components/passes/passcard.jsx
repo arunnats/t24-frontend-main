@@ -27,9 +27,9 @@ const PassCard = ({}) => {
 
         <div className="text-white absolute left-[4.5%] top-[65%] border-white pt-2 flex flex-col">
           <ul className="list-disc pl-[40px] text-[20px] tracking-[2px]">
-            <li>Entry Pass</li>
-            <li>Stalls</li>
-            <li>Informals Stage</li>
+            <li>Automotive Summit</li>
+            <li>Glitch Tathva</li>
+            <li>Tech Conclave</li>
           </ul>
           <a
             href="https://tiqr.events/e/Tathva-Pass-450"
@@ -70,24 +70,24 @@ const PassCard = ({}) => {
         </div>
 
         <div className="text-white absolute left-[4.5%] top-[65%] border-white pt-2 flex flex-col">
-          <ul className="list-disc pl-[40px] text-[20px] tracking-[2px] text-black">
-            <li>aaaaa</li>
-            <li>aa</li>
+          <ul className="list-disc pl-[40px] text-[20px] tracking-[2px]">
+            <li>Proshows</li>
+            <li>Drone Racing</li>
+            <li>Tech Conclave</li>
           </ul>
-          <div className="text-black">.</div>
           <a
             href="https://tiqr.events/e/Tathva-Pass-450"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div
-              className={`${styles.button}  mt-5 items-center text-center border-[0.5px] w-[270px] h-[40px] tracking-[3px] border-white ml-[7px] font-bold rounded-lg text-xl flex justify-around`}
+              className={`${styles.button}  mt-4 items-center text-center border-[0.5px] w-[270px] h-[40px] tracking-[3px] border-white ml-[7px] font-bold rounded-lg text-xl flex justify-around`}
             >
               <div className="text-green-400 "> BUY NOW</div>
               <div>599/-</div>
             </div>
           </a>
-          <div className="font-barcode text-5xl pl-[10px] py-5">
+          <div className="font-barcode text-5xl pl-[11px] py-5">
             gi ganwlosn'teurr
           </div>
         </div>
@@ -114,10 +114,10 @@ const PassCard = ({}) => {
         </div>
 
         <div className="text-white absolute left-[4.5%] top-[65%] border-white pt-2 flex flex-col">
-          <ul className="list-disc pl-[40px] text-[20px] tracking-[2px] text-black">
-            <li>aaaa</li>
-            <li>aaaa</li>
-            <li>aaa</li>
+          <ul className="list-disc pl-[40px] text-[20px] tracking-[2px]">
+            <li>Proshows</li>
+            <li>Student Expo</li>
+            <li>Tech Conclave</li>
           </ul>
           <a
             href="https://tiqr.events/e/Tathva-Pass-450"
@@ -162,8 +162,8 @@ const PassCard = ({}) => {
             -ACCESS TO ALL EVENTS-
           </div>
           <ul className="list-disc pl-[40px] text-[20px] tracking-[2px]">
-            <li>ProShows</li>
-            <li>Wheels</li>
+            <li>Proshows</li>
+            <li>Automotive Expo</li>
             <li>Conclave</li>
           </ul>
           <a

@@ -133,7 +133,7 @@ const AutomotiveSummit = () => {
             <div className="flex justify-center transform transition-transform duration-300 hover:translate-y-[-5px]">
               <Link
                 href={"./wheels"}
-                className={`flex my-6 px-6 pt-3 text-red-500 border-gray-700 rounded-full text-3xl font-semibold font-valorant ${styles.explore}`}
+                className={`flex my-6 px-6 z-[99] text-red-500 border-gray-700 rounded-full text-3xl font-semibold font-valorant ${styles.explore}`}
               >
                 EXPLORE THE SHOW
               </Link>
@@ -144,7 +144,7 @@ const AutomotiveSummit = () => {
         <div className=" w-full flex justify-center align-center">
           {/* Curved background with SVG */}
           <div
-            className={`flex absolute -translate-y-[27.5vh] w-[100vw]  bg-[url('/hud_down1.svg')] bg-no-repeat bg-center bg-contain ${styles.down} `}
+            className={`flex absolute -translate-y-[27.5vh] w-[100vw] z-0  bg-[url('/hud_down1.svg')] bg-no-repeat bg-center bg-contain ${styles.down} `}
           ></div>
           {/* Navigation Links */}
           <div

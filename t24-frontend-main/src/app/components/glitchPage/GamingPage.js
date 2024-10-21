@@ -118,9 +118,7 @@ export default function GamingPage() {
               GLiTCH
             </div>
 
-            <div
-              className={`text-white text-1xl -mt-[130px] ${styles.text_description} pl-[55px] `}
-            >
+            <div className={`text-white text-[1.3vw] -mt-[130px] pl-[55px] `}>
               Grab your controllers and get your headphones on! Add flair to
               your player and engage with the enemy on the digital field! Let
               the screen Glitch with your impeccable gaming skills, here at
@@ -136,7 +134,6 @@ export default function GamingPage() {
                 >
                   Know More
                 </button>
-            
               </Link>
             </div>
           </div>

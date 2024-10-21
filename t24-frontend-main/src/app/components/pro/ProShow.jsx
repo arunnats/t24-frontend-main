@@ -94,6 +94,11 @@ const ProShow = () => {
           <img src="TVWhite.svg" className="mr-4" alt="TV Logo" />
           <img src="Wonderwall.svg" alt="Wonderwall Logo" />
         </div>
+        <h1
+          className={`font-[pricedown] ${styles.proshowtext} transform transition-transform duration-300 hover:translate-y-[-5px] `}
+        >
+          Oct 27
+        </h1>
       </Link>
 
       <div ref={proShowRef2} className="relative z-0">

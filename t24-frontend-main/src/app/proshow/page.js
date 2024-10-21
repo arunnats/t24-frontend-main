@@ -3,13 +3,18 @@ import Marquee from "../components/InnerPages/marquee/marquee_comp";
 import Arrow from "../components/InnerPages/InnerDescription/arrow";
 import FooterMobile from "../components/FooterMobile/FooterMobile";
 import FooterDesktop from "../components/FooterDesktop/FooterDesktop";
-import InnerDescription from "../components/InnerPages/InnerDescription/InnerDescription";
+import InnerDescription from "../components/InnerPages/InnerDescription/InnerDescriptionProshow";
 import Link from "next/link";
 import Navbar from "../components/Navbar/Navbar";
 
 const page = () => {
-  const desc =
-    "From booming basslines to retro synths, it’s all happening in one epic showdown. The stage lights up with a pixel-perfect display of musical mastery. Step into the night of electric vibes, old-school flair, and a live spectacle that'll take you back to the arcade days.";
+  const lineup = [
+    { name: "Malayalee Monkeys", date: "2024-10-26" },
+    { name: "DJ Fejo", date: "2024-10-26" },
+    { name: "Shilpa Rao", date: "2024-10-27" },
+    { name: "Masala Coffee", date: "2024-10-27" },
+    { name: "DJ Ola Ras", date: "2024-10-27" },
+  ];
   const date = "26-27th Oct";
   const venue = "Ground";
 
@@ -32,7 +37,10 @@ const page = () => {
         {/* desktop */}
         <div className="w-full hidden h-[40%] lg:flex justify-around items-center p-2 ">
           <div className="w-[50%] h-full pl-10 mt-5">
-            <div className="relative flex h-min justify-center items-center xl:mt-[2rem] lg:mt-[1rem] md:mt-[0.8rem] sm:mt-[0.7rem] mt-[0.6rem]">
+            <Link
+              href="https://tiqr.events/e/Tathva-Pass-450/"
+              className="relative flex h-min justify-center items-center xl:mt-[2rem] lg:mt-[1rem] md:mt-[0.8rem] sm:mt-[0.7rem] mt-[0.6rem]"
+            >
               <img
                 src="/left_top.jpeg"
                 alt="idk"
@@ -85,7 +93,7 @@ const page = () => {
                   <div className="h-4 w-4 border-2 border-white"></div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div className="m-3 ml-0 h-full w-[61%] p-2 rounded flex justify-end">
             <div className="w-[95%] h-full border-4 border-white rounded-2xl overflow-clip relative transform transition-transform duration-300 hover:translate-y-[-5px] object-cover">
@@ -99,7 +107,7 @@ const page = () => {
 
         <div className=" h-[57%] hidden lg:flex justify-between items-center p-2 ">
           <div className="h-full w-[60%] rounded">
-            <InnerDescription num="04" heading="About" text={desc} />
+            <InnerDescription num="04" heading="Lineup" lineup={lineup} />
           </div>
           <div className="m-2 h-full w-[39%] p-2 rounded flex flex-col justify-between items-center ">
             <div className="w-full h-[49%] m-1 flex justify-between">
@@ -293,7 +301,7 @@ const page = () => {
         </div>
 
         <div className="h-[32%] md:hidden rounded p-2 pt-0">
-          <InnerDescription num="02" heading="About" text={desc} />
+          <InnerDescription num="04" heading="Lineup" lineup={lineup} />
         </div>
 
         {/* Mobile */}

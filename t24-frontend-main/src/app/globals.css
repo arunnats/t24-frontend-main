@@ -76,8 +76,7 @@ html {
 
 @font-face {
   font-family: "Plus Jakarta Sans";
-  src: url("/fonts/Plus-Jakarta-Sans-Regular.woff2") format("woff2"),
-    url("/fonts/Plus-Jakarta-Sans-Regular.woff") format("woff");
+  src: url("/fonts/PlusJakartaSans.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

@@ -11,7 +11,7 @@ module.exports = {
         presstart: ["PressStart", "sans-serif"],
         pricedown: ["Pricedown", "sans-serif"],
         valorant: ["valorant", "sans-serif"],
-        PlusJakartaSans: ["PlusJakartaSans", "sans-serif"],
+        PlusJakartaSans: ["Plus Jakarta Sans", "sans-serif"],
         akira: ["Akira", "sans-serif"],
         postnobillsS: ["PostNoBillsColomboSemi", "sans-serif"],
         postnobillsEB: ["PostNoBillsColomboBold", "sans-serif"],

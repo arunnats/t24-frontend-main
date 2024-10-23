@@ -70,10 +70,16 @@ const ProShow = () => {
   return (
     <div className="relative h-screen overflow-hidden bg-black">
       <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+      <div className="absolute w-[40%] h-[40%] md:w-[20%] md:h-[20%] right-0 z-20 p-5">
+        <img src="Aurora.png" />
+      </div>
+      <div className="absolute w-[50%] h-[50%] md:w-[25%] md:h-[25%] left-0 z-20 p-5">
+        <img src="CNLlogo.png" />
+      </div>
       <Link
         ref={proShowRef}
         href={"./proshow"}
-        className="absolute top-1/4 left-0 w-full text-center text-white text-8xl p-4 z-10 md:text-9xl flex flex-col "
+        className="absolute top-[10%] left-0 w-full text-center text-white text-8xl p-4 z-10 md:text-9xl flex flex-col "
       >
         <h1
           className={`font-[pricedown] ${styles.proshowtext} transform transition-transform duration-300 hover:translate-y-[-5px] `}

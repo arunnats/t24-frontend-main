@@ -42,11 +42,14 @@ const CartridgeMob = ({
         </p>
       </div>
 
-      <p
-        className={`absolute top-[74%] left-[28%] text-white text-[1.3rem] font-bold`}
-      >
-        ₹{price}
-      </p>
+      {price != 0 && (
+        <p
+          className={`absolute top-[74%] left-[28%] text-white text-[1.3rem] font-bold`}
+        >
+          ₹{price}
+        </p>
+      )}
+
       <p
         className={`absolute top-[83%] left-[28%] text-white text-[0.7rem] font-bold`}
       >

@@ -53,12 +53,14 @@ const Cartridge = ({
 
                 <div className="h-[50%] flex font-bold ">
                   <div className={`w-[30%] h-full`}>
-                    {/* price  */}
-                    <div
-                      className={`h-1/2 flex items-center justify-center text-white  text-[100%] ${styles.supplyFont}`}
-                    >
-                      ₹{price}
-                    </div>
+                    {price != 0 && (
+                      <div
+                        className={`h-1/2 flex items-center justify-center text-white  text-[100%] ${styles.supplyFont}`}
+                      >
+                        ₹{price}
+                      </div>
+                    )}
+
                     {/* date  */}
                     <div
                       className={`h-1/2 flex justify-center text-[#808080] text-[90%] ${styles.supplyFont}`}

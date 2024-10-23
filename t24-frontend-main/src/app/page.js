@@ -143,11 +143,11 @@ export default function Home() {
           </div>
 
           <PassPage />
-          <div className="mt-[3vh] -mb-[10vh]">
+          <div className="my-[6vh] mb:mt-[3vh] mb:-mb-[10vh]">
             <ProShow />
           </div>
 
-          <div className="expo-container w-screen h-min-screen mt-[6vh] mb-[5vh]">
+          <div className="expo-container w-screen h-min-screen mt-[6vh] md:mb-[5vh] mb-[2vh]">
             <ExpoPage />
           </div>
 

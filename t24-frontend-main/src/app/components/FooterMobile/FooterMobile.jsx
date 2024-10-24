@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import styles from "./footermobile.module.css";
 import Quicklink from "../QuixkLinks/QuickLinks";
+import Link from "next/link";
 
 const FooterMobile = () => {
   const [isMobile, setIsMobile] = useState(true);
@@ -73,19 +74,19 @@ const FooterMobile = () => {
 
           <div className="flex">
             <div className="flex flex-col flex-1">
-              <div className="h-[50%] border-b"></div>
-              <div></div>
+              <div className="h-[50%] border-b w-auto"></div>
+              
             </div>
             <div className="flex-[8] h-[80%] mt-[3vh] mr-[-1vw] relative z-[5]">
               <img
                 src="/small_display_edit.png"
                 alt="My Icon"
-                className="h-115 object-fit"
+                className="h-115 object-fit w-auto"
               />
             </div>
             <div className="flex-grow flex-col flex-[1.5]">
               <div className="h-[50%] border-b"></div>
-              <div></div>
+              
             </div>
             <div className="flex-[4] flex border border-b-l-2xl border-t-0 border-r-0 justify-center items-center rounded-bl-3xl h-full pl-4 mb-4 pb-4">
               <img
@@ -94,7 +95,7 @@ const FooterMobile = () => {
                 className="h-[11vh] object-fit pb-2"
               />
             </div>
-            <div></div>
+            
           </div>
         </div>
 
@@ -112,7 +113,7 @@ const FooterMobile = () => {
         </div>
 
         <div className="flex max-h-44">
-          <div className="w-[47%] flex justify-center items-center">
+          <div className="w-[47%] flex justify-center items-center ">
             <img
               src="/button.svg"
               alt="My Icon"
@@ -136,13 +137,13 @@ const FooterMobile = () => {
         </div>
 
         <div className="flex justify-center mr-5 overflow-y-hidden">
-          <div className="border-[1px] border-gray-200 rounded-tr-3xl rounded-tl-3xl w-1/3 h-full object-fit p-4 pt-3 border-b-0">
+          <Link href='/TOS' className="border-[1px] border-gray-200 rounded-tr-3xl rounded-tl-3xl w-1/3 h-full object-fit p-4 pt-3 border-b-0 cursor-pointer">
             <img
               src="/bottom.svg"
               alt="My Icon"
               className="w-full h-full object-fit"
             />
-          </div>
+          </Link>
         </div>
       </div>
     </div>

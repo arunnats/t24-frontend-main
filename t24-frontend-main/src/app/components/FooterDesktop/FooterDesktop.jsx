@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import Quicklink from '../QuixkLinks/QuickLinks';
+import Link from 'next/link';
 
 const FooterDesktop = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -50,7 +51,9 @@ const FooterDesktop = () => {
 
         <div className="border-[#BCC3CB] border-t-[3px] border-r-[3px] absolute w-[35%] h-[30%] bottom-0 left-0">
           <div className="relative">
-            <img src="/bottom.svg" alt="" className='absolute right-[1%] top-5 w-[40%]' />
+            <Link href='/TOS' className='w-max h-max cursor-pointer' >
+              <img src="/bottom.svg" alt="" className='absolute right-[1%] top-5 w-[40%]' />
+            </Link>
           </div>
         </div>
 

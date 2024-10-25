@@ -50,7 +50,7 @@ const Page = () => {
 
       <Navbar />
 
-      <div className="flex bg-black w-full text-white font-presstart">
+      <div className="flex bg-black w-full  font-presstart">
         <div className="flex-grow">
           <div className="py-6 md:py-[2%] pl-4 md:pl-[4%]">
             <span

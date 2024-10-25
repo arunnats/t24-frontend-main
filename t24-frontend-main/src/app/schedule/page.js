@@ -66,7 +66,7 @@ const Page = () => {
           </div>
           <hr className="border-t-2" />
 
-          <div className="px-4 md:px-8 py-8 md:py-16 ml-10">
+          <div className="px-4 md:px-8 py-8 md:py-16 ml-10 text-white">
             <h1 className="text-2xl md:text-4xl font-bold mb-8 md:mb-12 text-center">
               Tathva 2024 Schedule
             </h1>

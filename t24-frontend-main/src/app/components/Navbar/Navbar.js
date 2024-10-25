@@ -138,6 +138,8 @@ const menuItems = [
   { label: "EVENTS", backgroundImage: "/eventbg.svg", link: "/events" },
   { label: "LECTURES", backgroundImage: "/lectbg.svg", link: "/lectures" },
   { label: "PROSHOW", backgroundImage: "/proshowbg.svg", link: "/proshow" },
+  { label: "SPONSORS", backgroundImage: "/sponsorsNav.png", link: "/sponsors" },
+  { label: "SCHEDULE", backgroundImage: "", link: "/schedule" },
   // {
   //   label: "ACCOMMODATION",
   //   backgroundImage: "/dronebg.svg",
